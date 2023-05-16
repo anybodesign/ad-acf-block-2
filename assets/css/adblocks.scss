@@ -1,0 +1,38 @@
+// Blocks var & mixins
+// -
+// + + + + + + + + + + +
+
+// Vars
+
+@import 'vars.scss';
+
+// Common
+
+[class*=acf-block--] {
+	position: relative;
+	
+	&.alignfull {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.acf-block-container {
+		width: 100%;
+	}	
+}
+
+// Fancybox
+
+.fancybox-infobar,
+.fancybox-toolbar {
+	
+	.admin-bar & {
+		top: 46px;
+		
+		@include rwd($admin-bar) {
+			top: 32px;
+		}
+	}
+}
+
+

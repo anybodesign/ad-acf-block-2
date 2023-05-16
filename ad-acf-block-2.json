@@ -1,0 +1,29 @@
+{
+	"name": "AD ACF Blocks 2",
+	"version": "1.0",
+	"download_url": "https://lab.anybodesign.com/plugins/ad-acf-blocks-2/ad-acf-blocks-2.zip",
+
+	"homepage": "https://github.com/anybodesign/ad-acf-blocks-2",
+	"requires": "5.8",
+	"tested": "6.2",
+	"last_updated": "2023-05-12",
+
+	"author": "Thomas Villain",
+	"author_homepage": "https://anybodesign.com",
+
+	"sections": {
+		"description": "AD ACF Blocks 2 is a boilerplate of custom blocks for the new editor. They're all made with ACF.",
+		"installation": "Download the zip archive and upload it to your WordPress site. Activate the plugin, ACF Pro (at least version 5.8) must be activated as well. Start using the blocks in any post or page!",
+		"changelog": "<p><strong>Version 1.0</strong></p><ul><li>Initial Commit</li></ul><hr><p>Complete history available on <a href='https://github.com/anybodesign/ad-acf-blocks' targt='_blank'>GitHub.</a></p>"
+	},
+	
+	"icons" : {
+		"1x" : "https://lab.anybodesign.com/plugins/ad-acf-blocks-2/assets/icon-128x128.png",
+		"2x" : "https://lab.anybodesign.com/plugins/ad-acf-blocks-2/assets/icon-256x256.png"
+    },
+	
+	"banners": {
+		"low": "https://lab.anybodesign.com/plugins/ad-acf-blocks-2/assets/banner-772x250.jpg",
+		"high": "https://lab.anybodesign.com/plugins/ad-acf-blocks-2/assets/banner-1544x500.jpg"
+	}
+}

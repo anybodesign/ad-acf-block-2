@@ -1,0 +1,883 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AD ACF Blocks 2\n"
+"POT-Creation-Date: 2023-05-12 14:53+0200\n"
+"PO-Revision-Date: 2023-05-12 14:55+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ad-acf-blocks-2.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: ad-acf-blocks-2.php:84
+msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
+msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
+
+#: ad-acf-blocks-2.php:130
+msgid "AD ACF Blocks"
+msgstr "AD ACF Blocks"
+
+#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:56
+msgid "View details"
+msgstr "Voir les détails"
+
+#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:79
+#, php-format
+msgid "More information about %s"
+msgstr "Plus d'informations sur %s"
+
+#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:130
+msgid "Check for updates"
+msgstr "Vérifier les mises à jour"
+
+#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "L’extension %s est à jour."
+
+#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:219
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Une nouvelle version de l'extension %s est disponible."
+
+#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:221
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
+
+#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:227
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
+
+#: assets/plugin-update-checker-5.0/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr "Il n’y a aucun historique des mises à jour disponible."
+
+#: blocks/block-anchor/block-anchor-fields.php:9
+#: blocks/block-anchor/block-anchor.php:14
+msgid "Anchor"
+msgstr "Ancre"
+
+#: blocks/block-anchor/block-anchor-fields.php:13
+msgid "HTML Markup"
+msgstr "Balisage HTML"
+
+#: blocks/block-anchor/block-anchor-fields.php:16
+msgid "Choose the anchor markup."
+msgstr "Choisissez le balisage de l’ancre."
+
+#: blocks/block-anchor/block-anchor-fields.php:25
+msgid "<div>"
+msgstr "<div>"
+
+#: blocks/block-anchor/block-anchor-fields.php:26
+msgid "<span>"
+msgstr "<span>"
+
+#: blocks/block-anchor/block-anchor-fields.php:27
+msgid "<section>"
+msgstr "<section>"
+
+#: blocks/block-anchor/block-anchor-fields.php:39
+msgid "Anchor ID"
+msgstr "ID de l’Ancre"
+
+#: blocks/block-anchor/block-anchor-fields.php:58
+msgid "Offset"
+msgstr "Décalage"
+
+#: blocks/block-anchor/block-anchor-fields.php:61
+msgid "Set an offset value for the scroll, useful if you have a sticky header."
+msgstr ""
+"Définir une valeur de décalage pour le défilement, utile si vous avez un en-"
+"tête collant."
+
+#: blocks/block-anchor/block-anchor-fields.php:79
+msgid "Speed"
+msgstr "Vitesse"
+
+#: blocks/block-anchor/block-anchor-fields.php:82
+msgid "Set the scroll speed in milliseconds. (1000 = 1 sec)"
+msgstr "Définir la vitesse de défilement en millisecondes. (1000 = 1 sec)"
+
+#: blocks/block-anchor/block-anchor.php:15
+msgid "Add an anchor anywhere in your post and slide to it."
+msgstr ""
+"Ajoutez une ancre n’importe où dans votre publication et glissez vers celle-"
+"ci."
+
+#. Plugin Name of the plugin/theme
+#| msgid "AD ACF Blocks"
+msgid "AD ACF Blocks 2"
+msgstr "AD ACF Blocks 2"
+
+#. Description of the plugin/theme
+msgid "A collection of blocks made with ACF for WordPress"
+msgstr "Une collection de blocs réalisés avec ACF pour WordPress"
+
+#. Author of the plugin/theme
+msgid "Thomas Villain - Anybodesign"
+msgstr "Thomas Villain - Anybodesign"
+
+#. Author URI of the plugin/theme
+msgid "https://anybodesign.com/"
+msgstr "https://anybodesign.com/"
+
+#~ msgid "Read more"
+#~ msgstr "Lire la suite"
+
+#~ msgid "AD ACF Block 08: Advanced List"
+#~ msgstr "AD ACF Block 08: Liste avancée"
+
+#~ msgid "Title level"
+#~ msgstr "Niveau de titre"
+
+#~ msgid "Choose the title level for the list items"
+#~ msgstr "Choisissez le niveau de titre pour les éléments de liste"
+
+#~ msgid "None"
+#~ msgstr "Aucun"
+
+#~ msgid "H2"
+#~ msgstr "H2"
+
+#~ msgid "H3"
+#~ msgstr "H3"
+
+#~ msgid "H4"
+#~ msgstr "H4"
+
+#~ msgid "H5"
+#~ msgstr "H5"
+
+#~ msgid "H6"
+#~ msgstr "H6"
+
+#~ msgid "Reverse order"
+#~ msgstr "Ordre inverse"
+
+#~ msgid "Place the icon on the right and the numbers on the left"
+#~ msgstr "Placer l’icône à droite et les chiffres à gauche"
+
+#~ msgid "Advanced List"
+#~ msgstr "Liste avancée"
+
+#~ msgid "Add a list item"
+#~ msgstr "Ajouter un élément de liste"
+
+#~ msgid "Icon"
+#~ msgstr "Icône"
+
+#~ msgid "Infos"
+#~ msgstr "Infos"
+
+#~ msgid "Title"
+#~ msgstr "Titre"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid "Legend"
+#~ msgstr "Légende"
+
+#~ msgid "Could be a footnote"
+#~ msgstr "Peut-être une note de bas de page"
+
+#~ msgid "Link"
+#~ msgstr "Lien"
+
+#~ msgid "Featured text"
+#~ msgstr "Texte mis en avant"
+
+#~ msgid "Could be a date, a price, a letter, a number…"
+#~ msgstr "Peut-être une date, un prix, une lettre, un numéro…"
+
+#~ msgid "Icon size"
+#~ msgstr "Taille de l'icône"
+
+#~ msgid "Create advanced lists with titles, description, note, price, icon…"
+#~ msgstr ""
+#~ "Créez des listes avancées avec des titres, description, note, prix, icône…"
+
+#~ msgid "AD ACF Block 06: Anchor"
+#~ msgstr "AD ACF Bloc 06: Ancre"
+
+#~ msgid "AD ACF Block 09: Cards"
+#~ msgstr "AD ACF Block 09: Cartes"
+
+#~ msgid "Add cards"
+#~ msgstr "Ajouter des cartes"
+
+#~ msgid "Add a card"
+#~ msgstr "Ajouter une carte"
+
+#~ msgid "Card infos"
+#~ msgstr "Infos carte"
+
+#~ msgid "Subtitle"
+#~ msgstr "Sous-titre"
+
+#~ msgid "Text"
+#~ msgstr "Texte"
+
+#~ msgid "Picture and links"
+#~ msgstr "Image et liens"
+
+#~ msgid "Picture"
+#~ msgstr "Image"
+
+#~ msgid "Cards"
+#~ msgstr "Cartes"
+
+#~ msgid "Create a gallery of cards with or without thumbnails."
+#~ msgstr "Créez une galerie de cartes avec ou sans miniature."
+
+#, fuzzy
+#~| msgid "AD ACF Block 09: Cards"
+#~ msgid "AD ACF Block 04: CTA"
+#~ msgstr "AD ACF Block 09: Cartes"
+
+#~ msgid "CTA type"
+#~ msgstr "Type de bloc d’appel à l’action"
+
+#~ msgid "Box"
+#~ msgstr "Boîte"
+
+#~ msgid "Inline"
+#~ msgstr "En ligne"
+
+#~ msgid "Text area"
+#~ msgstr "Zone de texte"
+
+#~ msgid "CTA"
+#~ msgstr "Bloc d’appel à l’action"
+
+#~ msgid "Call to action block, with background color or background picture."
+#~ msgstr "Bloc de call to action, avec couleur de fond ou image de fond."
+
+#~ msgid "Enter text here..."
+#~ msgstr "Entrez du texte ici..."
+
+#~ msgid "AD ACF Block 11: File list"
+#~ msgstr "Bloc AD ACF 11 : Liste de fichiers"
+
+#~ msgid "Add files"
+#~ msgstr "Ajouter des fichiers"
+
+#~ msgid "Add a file"
+#~ msgstr "Ajouter un fichier"
+
+#~ msgid "File"
+#~ msgstr "Fichier"
+
+#~ msgid "Allowed file type: PDF, ZIP, DOC, JPEG, PNG, MP3 and MP4"
+#~ msgstr "Type de fichier autorisé: PDF, ZIP, DOC, JPEG, PNG, MP3 et MP4"
+
+#~ msgid "Custom title"
+#~ msgstr "Titre personnalisé"
+
+#~ msgid "Display file type icon"
+#~ msgstr "Afficher l’icône de type de fichier"
+
+#~ msgid "Use custom theme icons"
+#~ msgstr "Utiliser des icônes personnalisées du thème"
+
+#, fuzzy
+#~| msgid ""
+#~| "Icons path in the theme must be: <em>/img/icons/files/</em><br>\n"
+#~| "File names: <em>archive.svg, audio.svg, picture.svg, text.svg, video."
+#~| "svg, blank.svg</em>"
+#~ msgid ""
+#~ "Icons path in the theme must be: <em>/img/icons/files/</em><br>\n"
+#~ "File names: <em>archive.svg, audio.svg, picture.svg, text.svg,\tvideo."
+#~ "svg</em>"
+#~ msgstr ""
+#~ "Le chemin des icônes dans le thème doit être : <em>/img/icons/files/</"
+#~ "em><br>\n"
+#~ "Noms des fichiers : <em>archive.svg, audio.svg, image.svg, texte.svg, "
+#~ "video.svg, blank.svg</em>"
+
+#~ msgid "File list"
+#~ msgstr "Liste de fichiers"
+
+#~ msgid "Add an downloadable file list."
+#~ msgstr "Ajoutez une liste de fichiers téléchargeables."
+
+#~ msgid "Download "
+#~ msgstr "Télécharger "
+
+#~ msgid "AD ACF Block 03: Gallery"
+#~ msgstr "AD ACF Block 03 : Galerie"
+
+#~ msgid "Content type"
+#~ msgstr "Type de contenu"
+
+#~ msgid "Picture gallery"
+#~ msgstr "Galerie d’images"
+
+#~ msgid "Content gallery"
+#~ msgstr "Galerie de contenus"
+
+#~ msgid "Display"
+#~ msgstr "Affichage"
+
+#~ msgid "Contact sheet"
+#~ msgstr "Planche contact"
+
+#~ msgid "Grid"
+#~ msgstr "﻿Grille"
+
+#~ msgid "Select the pictures"
+#~ msgstr "Sélectionnez les images"
+
+#~ msgid "Picture grid gallery"
+#~ msgstr "Galerie d’images en grille"
+
+#~ msgid "Add a picture"
+#~ msgstr "Ajouter une photo"
+
+#~ msgid "Size"
+#~ msgstr "Taille"
+
+#~ msgid "Square"
+#~ msgstr "Carré"
+
+#~ msgid "Big Square"
+#~ msgstr "Grand Carré"
+
+#~ msgid "Horizontal"
+#~ msgstr "Horizontale"
+
+#~ msgid "Vertical"
+#~ msgstr "Verticale"
+
+#~ msgid "Enlarge pictures"
+#~ msgstr "Agrandir les images"
+
+#~ msgid "Enlarge pictures with Fancybox"
+#~ msgstr "Agrandir les images avec Fancybox"
+
+#~ msgid "Select the pages or posts you wish to have in this gallery"
+#~ msgstr ""
+#~ "Sélectionnez les pages ou les articles que vous souhaitez avoir dans "
+#~ "cette galerie"
+
+#~ msgid "Legend display"
+#~ msgstr "Affichage de la légende"
+
+#~ msgid "Inside"
+#~ msgstr "À l’intérieur"
+
+#~ msgid "Outside"
+#~ msgstr "À l'extérieur"
+
+#~ msgid "Featured image size"
+#~ msgstr "Taille de l’image de mise en avant"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Vignette"
+
+#~ msgid "Medium"
+#~ msgstr "Moyenne"
+
+#~ msgid "Large"
+#~ msgstr "Grande"
+
+#~ msgid "Display excerpt and <em>Read More</em> button"
+#~ msgstr "Afficher l’extrait et un bouton <em>En savoir plus</em>"
+
+#~ msgid "Gallery"
+#~ msgstr "Galerie"
+
+#~ msgid ""
+#~ "Create a picture gallery or a thumbnailed gallery of pages and/or posts."
+#~ msgstr ""
+#~ "Créez une galerie d'images ou une galerie de pages et/ou d’articles avec "
+#~ "vignettes."
+
+#~ msgid "Enlarge picture"
+#~ msgstr "Agrandir l'image"
+
+#~ msgid "Open a new tab"
+#~ msgstr "Ouvre un nouvel onglet"
+
+#~ msgid "Read "
+#~ msgstr "Lire "
+
+#~ msgid "Read More"
+#~ msgstr "En savoir plus"
+
+#~ msgid "AD ACF Block 10: Page banner"
+#~ msgstr "AD ACF Block 10: Page banner"
+
+#~ msgid "Background type"
+#~ msgstr "Type d’arrière-plan"
+
+#~ msgid "Image"
+#~ msgstr "Image"
+
+#~ msgid "MP4 Video"
+#~ msgstr "Vidéo MP4"
+
+#~ msgid "Slideshow"
+#~ msgstr "Diaporama"
+
+#~ msgid "Background image"
+#~ msgstr "Image d’arrière-plan"
+
+#~ msgid "Background video"
+#~ msgstr "Vidéo d'arrière-plan"
+
+#~ msgid "Video poster"
+#~ msgstr "Affiche vidéo"
+
+#~ msgid "Loop"
+#~ msgstr "En boucle"
+
+#~ msgid "Muted"
+#~ msgstr "En sourdine"
+
+#~ msgid "Autoplay"
+#~ msgstr "Lecture automatique"
+
+#~ msgid "Slides duration"
+#~ msgstr "Durée des slides"
+
+#~ msgid "Slideshow speed"
+#~ msgstr "Vitesse du diaporama"
+
+#~ msgid "Add a scroll button"
+#~ msgstr "Ajouter un bouton de défilement"
+
+#~ msgid "Custom scroll button image"
+#~ msgstr "Image personnalisée du bouton de défilement"
+
+#~ msgid "Show button label"
+#~ msgstr "Afficher le libellé du bouton"
+
+#~ msgid "Custom button label"
+#~ msgstr "Libellé personnalisé"
+
+#~ msgid "Page Banner"
+#~ msgstr "Bannière de page"
+
+#~ msgid "Add a page banner at the beginning of your page."
+#~ msgstr "Ajoutez une bannière au début de votre page."
+
+#~ msgid "Stop video playback"
+#~ msgstr "Arrêter la lecture vidéo"
+
+#~ msgid "Play video"
+#~ msgstr "Lire la vidéo"
+
+#~ msgid "AD ACF Block 05: Posts"
+#~ msgstr "AD ACF Bloc 05: Publications"
+
+#~ msgid "Add a title"
+#~ msgstr "Ajouter un titre"
+
+#~ msgid "Add an introduction text"
+#~ msgstr "Ajouter un texte d’introduction"
+
+#~ msgid "Introduction"
+#~ msgstr "Introduction"
+
+#~ msgid "Mode"
+#~ msgstr "Mode"
+
+#~ msgid "Manual"
+#~ msgstr "Manuel"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatique"
+
+#~ msgid "Number of posts to show"
+#~ msgstr "Nombre de publications à afficher"
+
+#~ msgid "Leave blank to show all posts"
+#~ msgstr "Laisser vide pour afficher toutes les publications"
+
+#~ msgid "Post type"
+#~ msgstr "Type de publication"
+
+#~ msgid ""
+#~ "<em>post</em> for Posts, <em>page</em> for Pages or <em>your_cpt_slug</"
+#~ "em> for any custom post type."
+#~ msgstr ""
+#~ "<em>post</em> pour les articles, <em>page</em> pour les pages ou "
+#~ "<em>votre_slug_de_cpt</em> pour n’importe quel type de publication "
+#~ "personnalisé."
+
+#~ msgid "Select one or many publications"
+#~ msgstr "Sélectionner une ou plusieurs publications"
+
+#~ msgid "Content to show"
+#~ msgstr "Contenu à afficher"
+
+#~ msgid "Excerpt"
+#~ msgstr "Extrait"
+
+#~ msgid "Full content"
+#~ msgstr "Contenu intégral"
+
+#~ msgid "Posts title level"
+#~ msgstr "Niveau de titre des publications"
+
+#~ msgid "Carousel mode"
+#~ msgstr "Mode carrousel"
+
+#~ msgid "Only on mobile"
+#~ msgstr "Seulement sur mobile"
+
+#~ msgid "Small breakpoint"
+#~ msgstr "Petit point de rupture"
+
+#~ msgid "Medium breakpoint"
+#~ msgstr "Point de rupture moyen"
+
+#~ msgid "Large breakpoint"
+#~ msgstr "Grand point de rupture"
+
+#~ msgid "Display post metas"
+#~ msgstr "Afficher les metas de l'article"
+
+#~ msgid "Additional metas"
+#~ msgstr "Métas supplémentaires"
+
+#~ msgid "Author"
+#~ msgstr "Auteur"
+
+#~ msgid "Category"
+#~ msgstr "Catégorie"
+
+#~ msgid "Add a link"
+#~ msgstr "Ajouter un lien"
+
+#~ msgid "Posts"
+#~ msgstr "Publications"
+
+#~ msgid "Insert one or many posts or custom posts."
+#~ msgstr ""
+#~ "Insérez une ou plusieurs publications ou publications personnalisées."
+
+#~ msgid "Posted on&nbsp;"
+#~ msgstr "Publié le&nbsp;"
+
+#~ msgid "by&nbsp;"
+#~ msgstr "par&nbsp;"
+
+#~ msgid "in&nbsp;"
+#~ msgstr "dans&nbsp;"
+
+#~ msgid "Next Pannel"
+#~ msgstr "Panneau suivant"
+
+#~ msgid "Previous Pannel"
+#~ msgstr "Panneau précédent"
+
+#~ msgid "Pannel"
+#~ msgstr "Panneau"
+
+#~ msgid "AD ACF Block 07: Testimonial"
+#~ msgstr "AD ACF Bloc 07: Témoignage"
+
+#~ msgid "Testimonials"
+#~ msgstr "Témoignages"
+
+#~ msgid "Add one or more testimonials."
+#~ msgstr "Ajoutez un ou plusieurs témoignages."
+
+#~ msgid "Add a testimonial"
+#~ msgstr "Ajouter un témoignage"
+
+#~ msgid "Portrait"
+#~ msgstr "Portrait"
+
+#~ msgid "Content"
+#~ msgstr "Contenu"
+
+#~ msgid "Author description"
+#~ msgstr "Description de l’auteur"
+
+#, fuzzy
+#~| msgid "role, job, society, country, city…"
+#~ msgid "role, job, company, country, city…"
+#~ msgstr "rôle, métier, société, pays, ville…"
+
+#~ msgid "Portrait on the right"
+#~ msgstr "Portrait à droite"
+
+#~ msgid "Testimonial"
+#~ msgstr "Témoignage"
+
+#~ msgid "Testimonial with author name and description."
+#~ msgstr "Témoignage avec nom et description de l'auteur."
+
+#~ msgid "AD ACF Block 01: Rich Text"
+#~ msgstr "AD ACF Bloc 01 : Texte riche"
+
+#~ msgid "Layout"
+#~ msgstr "Mise en page"
+
+#~ msgid "Choose a layout for this block"
+#~ msgstr "Choisir une mise en page pour ce bloc"
+
+#~ msgid "1 column"
+#~ msgstr "1 colonne"
+
+#~ msgid "2 columns"
+#~ msgstr "2 colonnes"
+
+#~ msgid "3 columns"
+#~ msgstr "3 colonnes"
+
+#~ msgid "Two thirds / One third"
+#~ msgstr "Deux tiers / Un tiers"
+
+#~ msgid "One third / Two thirds"
+#~ msgstr "Un tiers / Deux tiers"
+
+#~ msgid "Horizontal centering"
+#~ msgstr "Centrage horizontal"
+
+#~ msgid "Vertical centering"
+#~ msgstr "Centrage vertical"
+
+#~ msgid "Content area"
+#~ msgstr "Zone de contenu"
+
+#~ msgid "First column"
+#~ msgstr "Première colonne"
+
+#~ msgid "Second column"
+#~ msgstr "Deuxième colonne"
+
+#~ msgid "Third column"
+#~ msgstr "Troisième colonne"
+
+#~ msgid "Rich Text"
+#~ msgstr "Texte riche"
+
+#~ msgid "Rich text block with some background andd layout options."
+#~ msgstr ""
+#~ "Bloc de texte riche avec quelques options d'arrière-plan et de mise en "
+#~ "page."
+
+#~ msgid "AD ACF Block 02: Text + Image"
+#~ msgstr "AD ACF Bloc 02 : Texte et Image"
+
+#~ msgid "Proportions"
+#~ msgstr "Proportions"
+
+#~ msgid "Half half"
+#~ msgstr "Moitié moitié"
+
+#~ msgid "One third / Two third"
+#~ msgstr "Un tiers / Deux tiers"
+
+#~ msgid "Two third / One third"
+#~ msgstr "Deux tiers / Un tiers"
+
+#~ msgid "Media type"
+#~ msgstr "Type de Média"
+
+#~ msgid "Video embed"
+#~ msgstr "Intégrer de la vidéo"
+
+#~ msgid "Copy-paste your video URL from Youtube, Vimeo…"
+#~ msgstr "Copier-coller votre URL vidéo de Youtube, Vimeo…"
+
+#~ msgid ""
+#~ "Add an action button below the text, and a link on the picture. (Will "
+#~ "disable the enlarge picture option)"
+#~ msgstr ""
+#~ "Ajouter un bouton d’action sous le texte et un lien sur l’image. "
+#~ "(Désactivera l’option agrandir l’image)"
+
+#~ msgid "Picture on the right"
+#~ msgstr "Image à droite"
+
+#~ msgid "Enlarge picture with Fancybox"
+#~ msgstr "Agrandir l’image avec Fancybox"
+
+#~ msgid "Round picture"
+#~ msgstr "Image ronde"
+
+#~ msgid "Show caption"
+#~ msgstr "Afficher la légende"
+
+#~ msgid "Text and Image"
+#~ msgstr "Texte et image"
+
+#~ msgid "Text and picture block with reverse order option."
+#~ msgstr "Bloc texte image avec option d'ordre inversé."
+
+#~ msgid "Open in a new tab"
+#~ msgstr "Ouvre un nouvel onglet"
+
+#~ msgid "Block Options: Background"
+#~ msgstr "Options de bloc : Arrière-plan"
+
+#~ msgid "Background options"
+#~ msgstr "Option d’arrière-plan"
+
+#~ msgid "Background color"
+#~ msgstr "Couleur d’arrière-plan"
+
+#~ msgid "Choose a picture or a pattern"
+#~ msgstr "Choisissez une image ou un motif"
+
+#~ msgid "Text color"
+#~ msgstr "Couleur du texte"
+
+#~ msgid "Switch text to white"
+#~ msgstr "Passer le texte en blanc"
+
+#~ msgid "Keep content centered"
+#~ msgstr "Garde le contenu centré"
+
+#~ msgid "Repeat pattern"
+#~ msgstr "Répéter le motif"
+
+#~ msgid "Overlay"
+#~ msgstr "Calque de superposition"
+
+#~ msgid "Add an overlay over the background image"
+#~ msgstr "Ajouter un dégradé superposé à l’image d’arrière-plan"
+
+#~ msgid "Background options - end"
+#~ msgstr "Options d'arrière-plan - fin"
+
+#~ msgid "Block Options: Columns"
+#~ msgstr "Options de bloc : Colonnes"
+
+#~ msgid "Number of Columns"
+#~ msgstr "Nombre de colonnes"
+
+#~ msgid "4 columns"
+#~ msgstr "4 colonnes"
+
+#~ msgid "5 columns"
+#~ msgstr "5 colonnes"
+
+#~ msgid "6 columns"
+#~ msgstr "6 colonnes"
+
+#~ msgid "Block Options: Custom Sizes"
+#~ msgstr "Options de bloc : Tailles personnalisées"
+
+#~ msgid "Featured image custom size"
+#~ msgstr "Taille personnalisée de l’image de mise en avant"
+
+#~ msgid "Choose another custom size"
+#~ msgstr "Choisir une autre taille personnalisée"
+
+#~ msgid "Block Options: Gallery Pictures"
+#~ msgstr "Options de bloc : Images de Galerie"
+
+#~ msgid "External link"
+#~ msgstr "Lien Externe"
+
+#~ msgid "If you wish to add an external link to this picture."
+#~ msgstr "Si vous souhaitez ajouter un lien externe à cette image."
+
+#~ msgid "Scroll Down"
+#~ msgstr "Défiler vers le bas"
+
+#~ msgid "on&nbsp;"
+#~ msgstr "le&nbsp;"
+
+#~ msgid "H1"
+#~ msgstr "H1"
+
+#~ msgid "h2 title"
+#~ msgstr "Titre h2"
+
+#~ msgid "h3 title"
+#~ msgstr "Titre h3"
+
+#~ msgid "h4 title"
+#~ msgstr "Titre h4"
+
+#~ msgid "h5 title"
+#~ msgstr "Titre h5"
+
+#~ msgid "h6 title"
+#~ msgstr "Titre h6"
+
+#~ msgid ""
+#~ "<h4>Lorem ipsum</h4><p>Nullam id dolor id nibh ultricies vehicula ut id "
+#~ "elit.</p>"
+#~ msgstr ""
+#~ "<h4>Lorem ipsum</h4><p>Nullam id dolor id nibh ultricies vehicula ut id "
+#~ "elit.</p>"
+
+#~ msgid "Style"
+#~ msgstr "Style"
+
+#~ msgid "PIcture gallery"
+#~ msgstr "Galerie d’images"
+
+#~ msgid "Outside the picture"
+#~ msgstr "En dehors de l'image"
+
+#~ msgid "AD ACF Block 04: Content Gallery"
+#~ msgstr "AD ACF Bloc 04 : Galerie de contenus"
+
+#~ msgid "Mise en page"
+#~ msgstr "Mise en page"
+
+#~ msgid "Ajouter un overlay sur l'image"
+#~ msgstr "Ajouter un overlay sur l'image"
+
+#~ msgid "Agrandir l'image"
+#~ msgstr "Agrandir l'image"
+
+#~ msgid "AD Blocks"
+#~ msgstr "AD Blocks"
+
+#~ msgid "of "
+#~ msgstr "de "
+
+#~ msgid "AD ACF Block 04 : Call to action"
+#~ msgstr "AD ACF Block 04 : Appel à l’action"
+
+#~ msgid "Call to action type"
+#~ msgstr "Type d’appel à l’action"
+
+#~ msgid "Button background color"
+#~ msgstr "Couleur d'arrière-plan du bouton"
+
+#~ msgid "Button text color"
+#~ msgstr "Couleur du texte du bouton"
+
+#~ msgid "Display featured image"
+#~ msgstr "Afficher l'image mise en avant"
+
+#~ msgid "Slider option"
+#~ msgstr "Option carousel"
+
+#~ msgid "Number of columns"
+#~ msgstr "Nombre de colonnes"
+
+#~ msgid "Show dots"
+#~ msgstr "Afficher les points"
+
+#~ msgid "Show arrows"
+#~ msgstr "Afficher les flèches"
