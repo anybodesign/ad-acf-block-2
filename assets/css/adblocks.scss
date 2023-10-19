@@ -35,4 +35,8 @@
 	}
 }
 
+// Misc
 
+.a11y-hidden {
+	@include a11y-hidden();
+}

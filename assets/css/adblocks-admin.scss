@@ -1,3 +1,16 @@
 // Admin CSS
 // -
 // + + + + + + + + + + +
+
+// Inner blocks
+
+innerblocks,
+.block-editor-inner-blocks {
+	padding: 2rem;
+	border: #777 1px dotted;
+		
+	&:hover {
+		padding: 2rem;
+		border: #777 1px solid;
+	}
+}
