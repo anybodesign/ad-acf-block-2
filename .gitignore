@@ -1,3 +1,4 @@
 .nova
 .DS_Store
 prepros.config
+*.afdesign~lock~

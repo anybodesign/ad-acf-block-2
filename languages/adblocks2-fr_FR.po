@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2023-05-12 14:53+0200\n"
-"PO-Revision-Date: 2023-05-12 14:55+0200\n"
+"POT-Creation-Date: 2023-10-18 11:21+0200\n"
+"PO-Revision-Date: 2023-10-18 11:22+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: ad-acf-blocks-2.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -25,9 +25,18 @@ msgstr ""
 msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
 
-#: ad-acf-blocks-2.php:130
-msgid "AD ACF Blocks"
-msgstr "AD ACF Blocks"
+#: ad-acf-blocks-2.php:100
+msgid ""
+"It’s recommanded to deactivate the previous version of AD ACF Blocks to "
+"avoid any conflict."
+msgstr ""
+"Il est recommandé de désactiver la version précédente d'AD ACF Blocks pour "
+"éviter tout conflit."
+
+#. Plugin Name of the plugin/theme
+#: ad-acf-blocks-2.php:143
+msgid "AD ACF Blocks 2"
+msgstr "AD ACF Blocks 2"
 
 #: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:56
 msgid "View details"
@@ -122,10 +131,95 @@ msgstr ""
 "Ajoutez une ancre n’importe où dans votre publication et glissez vers celle-"
 "ci."
 
-#. Plugin Name of the plugin/theme
-#| msgid "AD ACF Blocks"
-msgid "AD ACF Blocks 2"
-msgstr "AD ACF Blocks 2"
+#: blocks/block-pagebanner/block-pagebanner-fields.php:9
+msgid "Page banner"
+msgstr "Bannière de page"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:13
+msgid "Background type"
+msgstr "Type d’arrière-plan"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:25
+msgid "Image"
+msgstr "Image"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:26
+msgid "MP4 Video"
+msgstr "Vidéo MP4"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:27
+#: blocks/block-pagebanner/block-pagebanner-fields.php:208
+msgid "Slideshow"
+msgstr "Diaporama"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:36
+msgid "Background image"
+msgstr "Image d’arrière-plan"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:68
+msgid "Background video"
+msgstr "Vidéo d'arrière-plan"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:95
+msgid "Video poster"
+msgstr "Affiche vidéo"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:127
+#: blocks/block-pagebanner/block-pagebanner-fields.php:301
+msgid "Loop"
+msgstr "En boucle"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:154
+msgid "Muted"
+msgstr "En sourdine"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:181
+msgid "Autoplay"
+msgstr "Lecture automatique"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:243
+msgid "Slides duration"
+msgstr "Durée des slides"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:272
+msgid "Slideshow speed"
+msgstr "Vitesse du diaporama"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:328
+msgid "Add a scroll button"
+msgstr "Ajouter un bouton de défilement"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:347
+msgid "Custom scroll button image"
+msgstr "Image personnalisée du bouton de défilement"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:379
+msgid "Show button label"
+msgstr "Afficher le libellé du bouton"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:398
+msgid "Custom button label"
+msgstr "Libellé personnalisé"
+
+#: blocks/block-pagebanner/block-pagebanner.php:14
+msgid "Page Banner"
+msgstr "Bannière de page"
+
+#: blocks/block-pagebanner/block-pagebanner.php:15
+msgid "Add a page banner at the beginning of your page."
+msgstr "Ajoutez une bannière au début de votre page."
+
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:59
+msgid "Add some text here"
+msgstr "Ajouter du texte ici"
+
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:77
+msgid "Stop video playback"
+msgstr "Arrêter la lecture vidéo"
+
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:80
+msgid "Play video"
+msgstr "Lire la vidéo"
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"
@@ -138,6 +232,9 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "AD ACF Blocks"
+#~ msgstr "AD ACF Blocks"
 
 #~ msgid "Read more"
 #~ msgstr "Lire la suite"
@@ -270,9 +367,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "Call to action block, with background color or background picture."
 #~ msgstr "Bloc de call to action, avec couleur de fond ou image de fond."
-
-#~ msgid "Enter text here..."
-#~ msgstr "Entrez du texte ici..."
 
 #~ msgid "AD ACF Block 11: File list"
 #~ msgstr "Bloc AD ACF 11 : Liste de fichiers"
@@ -425,66 +519,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "AD ACF Block 10: Page banner"
 #~ msgstr "AD ACF Block 10: Page banner"
-
-#~ msgid "Background type"
-#~ msgstr "Type d’arrière-plan"
-
-#~ msgid "Image"
-#~ msgstr "Image"
-
-#~ msgid "MP4 Video"
-#~ msgstr "Vidéo MP4"
-
-#~ msgid "Slideshow"
-#~ msgstr "Diaporama"
-
-#~ msgid "Background image"
-#~ msgstr "Image d’arrière-plan"
-
-#~ msgid "Background video"
-#~ msgstr "Vidéo d'arrière-plan"
-
-#~ msgid "Video poster"
-#~ msgstr "Affiche vidéo"
-
-#~ msgid "Loop"
-#~ msgstr "En boucle"
-
-#~ msgid "Muted"
-#~ msgstr "En sourdine"
-
-#~ msgid "Autoplay"
-#~ msgstr "Lecture automatique"
-
-#~ msgid "Slides duration"
-#~ msgstr "Durée des slides"
-
-#~ msgid "Slideshow speed"
-#~ msgstr "Vitesse du diaporama"
-
-#~ msgid "Add a scroll button"
-#~ msgstr "Ajouter un bouton de défilement"
-
-#~ msgid "Custom scroll button image"
-#~ msgstr "Image personnalisée du bouton de défilement"
-
-#~ msgid "Show button label"
-#~ msgstr "Afficher le libellé du bouton"
-
-#~ msgid "Custom button label"
-#~ msgstr "Libellé personnalisé"
-
-#~ msgid "Page Banner"
-#~ msgstr "Bannière de page"
-
-#~ msgid "Add a page banner at the beginning of your page."
-#~ msgstr "Ajoutez une bannière au début de votre page."
-
-#~ msgid "Stop video playback"
-#~ msgstr "Arrêter la lecture vidéo"
-
-#~ msgid "Play video"
-#~ msgstr "Lire la vidéo"
 
 #~ msgid "AD ACF Block 05: Posts"
 #~ msgstr "AD ACF Bloc 05: Publications"
