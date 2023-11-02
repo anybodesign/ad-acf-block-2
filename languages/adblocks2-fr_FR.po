@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2023-10-18 11:21+0200\n"
-"PO-Revision-Date: 2023-10-18 11:22+0200\n"
+"POT-Creation-Date: 2023-11-02 12:25+0100\n"
+"PO-Revision-Date: 2023-11-02 12:25+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -130,6 +130,54 @@ msgid "Add an anchor anywhere in your post and slide to it."
 msgstr ""
 "Ajoutez une ancre n’importe où dans votre publication et glissez vers celle-"
 "ci."
+
+#: blocks/block-counter/block-counter-fields.php:8
+msgid "Counter Block"
+msgstr "Bloc compteur"
+
+#: blocks/block-counter/block-counter-fields.php:12
+msgid "Number of columns"
+msgstr "Nombre de colonnes"
+
+#: blocks/block-counter/block-counter-fields.php:25
+msgid "3 columns"
+msgstr "3 colonnes"
+
+#: blocks/block-counter/block-counter-fields.php:26
+msgid "4 columns"
+msgstr "4 colonnes"
+
+#: blocks/block-counter/block-counter-fields.php:27
+msgid "6 columns"
+msgstr "6 colonnes"
+
+#: blocks/block-counter/block-counter-fields.php:36
+msgid "Counters"
+msgstr "Compteurs"
+
+#: blocks/block-counter/block-counter-fields.php:53
+msgid "Add a counter"
+msgstr "Ajouter un compteur"
+
+#: blocks/block-counter/block-counter-fields.php:58
+msgid "Number"
+msgstr "Nombre"
+
+#: blocks/block-counter/block-counter-fields.php:81
+msgid "Increment"
+msgstr "Incrément"
+
+#: blocks/block-counter/block-counter-fields.php:104
+msgid "Legend"
+msgstr "Légende"
+
+#: blocks/block-counter/block-counter.php:14
+msgid "Counter"
+msgstr "Compteur"
+
+#: blocks/block-counter/block-counter.php:15
+msgid "Add an animated counter, key numbers."
+msgstr "Ajouter un compteur animé, des chiffres clés."
 
 #: blocks/block-pagebanner/block-pagebanner-fields.php:9
 msgid "Page banner"
@@ -290,9 +338,6 @@ msgstr "https://anybodesign.com/"
 #~ msgid "Description"
 #~ msgstr "Description"
 
-#~ msgid "Legend"
-#~ msgstr "Légende"
-
 #~ msgid "Could be a footnote"
 #~ msgstr "Peut-être une note de bas de page"
 
@@ -320,9 +365,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "Add cards"
 #~ msgstr "Ajouter des cartes"
-
-#~ msgid "Add a card"
-#~ msgstr "Ajouter une carte"
 
 #~ msgid "Card infos"
 #~ msgstr "Infos carte"
@@ -678,9 +720,6 @@ msgstr "https://anybodesign.com/"
 #~ msgid "2 columns"
 #~ msgstr "2 colonnes"
 
-#~ msgid "3 columns"
-#~ msgstr "3 colonnes"
-
 #~ msgid "Two thirds / One third"
 #~ msgstr "Deux tiers / Un tiers"
 
@@ -804,14 +843,8 @@ msgstr "https://anybodesign.com/"
 #~ msgid "Number of Columns"
 #~ msgstr "Nombre de colonnes"
 
-#~ msgid "4 columns"
-#~ msgstr "4 colonnes"
-
 #~ msgid "5 columns"
 #~ msgstr "5 colonnes"
-
-#~ msgid "6 columns"
-#~ msgstr "6 colonnes"
 
 #~ msgid "Block Options: Custom Sizes"
 #~ msgstr "Options de bloc : Tailles personnalisées"
@@ -906,9 +939,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "Slider option"
 #~ msgstr "Option carousel"
-
-#~ msgid "Number of columns"
-#~ msgstr "Nombre de colonnes"
 
 #~ msgid "Show dots"
 #~ msgstr "Afficher les points"
