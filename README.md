@@ -21,6 +21,9 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 1.1 - 2023-11-02
+* Counter block
+
 ### 1.0 - 2023-10-19
 * Anchor block
 * Page banner block
