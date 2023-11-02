@@ -1,0 +1,45 @@
+// Counter Block
+// -
+// + + + + + + + + + + 
+
+@import '../../../assets/css/vars.scss';
+
+.acf-block--counter {
+	.acf-block-container {
+		
+	}
+}
+
+.acf-block-counter-container {
+	
+	@include rwd(medium) {
+		display: flex;
+		justify-content: center;
+		
+		&.col3 .counter-item {
+			width: 33.3333%;
+		}
+		&.col4 .counter-item {
+			width: 25%;
+		}
+		&.col6 .counter-item {
+			width: 16.6667%;
+		}
+	}
+	
+	.counter-item {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+		span {
+			text-align: center;
+		}
+		
+		.counter-item--number {
+			font-size: 200%;
+		}
+	}
+}
