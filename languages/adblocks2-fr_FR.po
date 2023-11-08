@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2023-11-02 12:25+0100\n"
-"PO-Revision-Date: 2023-11-02 12:25+0100\n"
+"POT-Creation-Date: 2023-11-08 10:10+0100\n"
+"PO-Revision-Date: 2023-11-08 10:10+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -118,6 +118,7 @@ msgstr ""
 "tête collant."
 
 #: blocks/block-anchor/block-anchor-fields.php:79
+#: blocks/block-carousel/block-carousel-fields.php:104
 msgid "Speed"
 msgstr "Vitesse"
 
@@ -130,6 +131,103 @@ msgid "Add an anchor anywhere in your post and slide to it."
 msgstr ""
 "Ajoutez une ancre n’importe où dans votre publication et glissez vers celle-"
 "ci."
+
+#: blocks/block-carousel/block-carousel-fields.php:8
+msgid "Carousel Block"
+msgstr "Bloc carrousel"
+
+#: blocks/block-carousel/block-carousel-fields.php:12
+msgid "Visible elements"
+msgstr "Éléments visibles"
+
+#: blocks/block-carousel/block-carousel-fields.php:25
+msgid "1"
+msgstr "1"
+
+#: blocks/block-carousel/block-carousel-fields.php:26
+msgid "2"
+msgstr "2"
+
+#: blocks/block-carousel/block-carousel-fields.php:27
+msgid "3"
+msgstr "3"
+
+#: blocks/block-carousel/block-carousel-fields.php:28
+msgid "4"
+msgstr "4"
+
+#: blocks/block-carousel/block-carousel-fields.php:29
+msgid "5"
+msgstr "5"
+
+#: blocks/block-carousel/block-carousel-fields.php:30
+msgid "6"
+msgstr "6"
+
+#: blocks/block-carousel/block-carousel-fields.php:39
+msgid "Type of elements"
+msgstr "Type d’éléments"
+
+#: blocks/block-carousel/block-carousel-fields.php:52
+msgid "Custom content"
+msgstr "Contenu personnalisé"
+
+#: blocks/block-carousel/block-carousel-fields.php:53
+msgid "Exisiting posts"
+msgstr "Publications existantes"
+
+#: blocks/block-carousel/block-carousel-fields.php:62
+#: blocks/block-pagebanner/block-pagebanner-fields.php:181
+msgid "Autoplay"
+msgstr "Lecture automatique"
+
+#: blocks/block-carousel/block-carousel-fields.php:82
+msgid "Slide duration"
+msgstr "Durée des slides"
+
+#: blocks/block-carousel/block-carousel-fields.php:86
+msgid "Slide duration in Autoplay mode"
+msgstr "Durée des slides en mode lecture automatique"
+
+#: blocks/block-carousel/block-carousel-fields.php:108
+msgid "Transition speed between two slides"
+msgstr "Durée de la transition entre deux slides"
+
+#: blocks/block-carousel/block-carousel-fields.php:126
+msgid "Display arrows"
+msgstr "Afficher les flèches"
+
+#: blocks/block-carousel/block-carousel-fields.php:146
+msgid "Display dots"
+msgstr "Afficher les points"
+
+#: blocks/block-carousel/block-carousel-fields.php:166
+msgid "Posts"
+msgstr "Publications"
+
+#: blocks/block-carousel/block-carousel.php:14
+msgid "Carousel"
+msgstr "Carrousel"
+
+#: blocks/block-carousel/block-carousel.php:15
+msgid "Add a carousel made of posts or custom content."
+msgstr "Ajoutez un carrousel composé d'articles ou de contenu personnalisé."
+
+#: blocks/block-carousel/templates/block-carousel-content.php:5
+msgid "Read "
+msgstr "Lire "
+
+#: blocks/block-carousel/templates/block-carousel-content.php:35
+msgid "Read more"
+msgstr "Lire la suite"
+
+#: blocks/block-carousel/templates/block-carousel-content.php:35
+msgid "of "
+msgstr "de "
+
+#: blocks/block-carousel/templates/block-carousel-template.php:16
+msgid "Add content here"
+msgstr "Ajouter du contenu ici"
 
 #: blocks/block-counter/block-counter-fields.php:8
 msgid "Counter Block"
@@ -221,10 +319,6 @@ msgstr "En boucle"
 msgid "Muted"
 msgstr "En sourdine"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:181
-msgid "Autoplay"
-msgstr "Lecture automatique"
-
 #: blocks/block-pagebanner/block-pagebanner-fields.php:243
 msgid "Slides duration"
 msgstr "Durée des slides"
@@ -284,9 +378,6 @@ msgstr "https://anybodesign.com/"
 #~ msgid "AD ACF Blocks"
 #~ msgstr "AD ACF Blocks"
 
-#~ msgid "Read more"
-#~ msgstr "Lire la suite"
-
 #~ msgid "AD ACF Block 08: Advanced List"
 #~ msgstr "AD ACF Block 08: Liste avancée"
 
@@ -298,21 +389,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "None"
 #~ msgstr "Aucun"
-
-#~ msgid "H2"
-#~ msgstr "H2"
-
-#~ msgid "H3"
-#~ msgstr "H3"
-
-#~ msgid "H4"
-#~ msgstr "H4"
-
-#~ msgid "H5"
-#~ msgstr "H5"
-
-#~ msgid "H6"
-#~ msgstr "H6"
 
 #~ msgid "Reverse order"
 #~ msgstr "Ordre inverse"
@@ -470,9 +546,6 @@ msgstr "https://anybodesign.com/"
 #~ msgid "Content gallery"
 #~ msgstr "Galerie de contenus"
 
-#~ msgid "Display"
-#~ msgstr "Affichage"
-
 #~ msgid "Contact sheet"
 #~ msgstr "Planche contact"
 
@@ -553,9 +626,6 @@ msgstr "https://anybodesign.com/"
 #~ msgid "Open a new tab"
 #~ msgstr "Ouvre un nouvel onglet"
 
-#~ msgid "Read "
-#~ msgstr "Lire "
-
 #~ msgid "Read More"
 #~ msgstr "En savoir plus"
 
@@ -609,14 +679,8 @@ msgstr "https://anybodesign.com/"
 #~ msgid "Excerpt"
 #~ msgstr "Extrait"
 
-#~ msgid "Full content"
-#~ msgstr "Contenu intégral"
-
 #~ msgid "Posts title level"
 #~ msgstr "Niveau de titre des publications"
-
-#~ msgid "Carousel mode"
-#~ msgstr "Mode carrousel"
 
 #~ msgid "Only on mobile"
 #~ msgstr "Seulement sur mobile"
@@ -644,9 +708,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "Add a link"
 #~ msgstr "Ajouter un lien"
-
-#~ msgid "Posts"
-#~ msgstr "Publications"
 
 #~ msgid "Insert one or many posts or custom posts."
 #~ msgstr ""
@@ -870,9 +931,6 @@ msgstr "https://anybodesign.com/"
 #~ msgid "on&nbsp;"
 #~ msgstr "le&nbsp;"
 
-#~ msgid "H1"
-#~ msgstr "H1"
-
 #~ msgid "h2 title"
 #~ msgstr "Titre h2"
 
@@ -918,9 +976,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "AD Blocks"
 #~ msgstr "AD Blocks"
-
-#~ msgid "of "
-#~ msgstr "de "
 
 #~ msgid "AD ACF Block 04 : Call to action"
 #~ msgstr "AD ACF Block 04 : Appel à l’action"
