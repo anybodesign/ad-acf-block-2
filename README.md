@@ -21,6 +21,9 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 1.2 - 2023-11-08
+* Carousel block
+
 ### 1.1 - 2023-11-02
 * Counter block
 
