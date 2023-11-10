@@ -52,10 +52,10 @@
 				<img src="<?php echo ADB2__PLUGIN_URL; ?>assets/previews/carousel-preview.png" alt="" class="adblock-preview">
 			<?php } else { ?>			
 			
-			<section class="<?php echo esc_attr($className); ?>" <?php echo $anchor; ?>>
+			<section class="<?php echo esc_attr($className); ?>" <?php echo esc_attr($anchor); ?>>
 				<div class="acf-block-container">
 					
-					<div class="the-ad-carousel <?php echo $elems; ?>" id="<?php echo $slider_id; ?>">
+					<div class="the-ad-carousel  type-<?php echo esc_attr($type); ?> <?php echo esc_attr($elems); ?>" id="<?php echo $slider_id; ?>">
 						<?php if ( $the_posts && $type == 'posts' ) : ?>
 							
 							<?php 

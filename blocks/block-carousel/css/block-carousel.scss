@@ -20,20 +20,7 @@
 	
 	.slick-slide {
 		padding-right: 1rem;
-	}
-	
-	.wp-admin & {
-		
-		& .block-editor-inner-blocks .block-editor-block-list__layout {
-			display: flex;
-			flex-wrap: wrap;
-			
-			div {
-				width: 32%;
-				padding-right: 1rem;
-			}
-		}
-	}
+	}	
 }
 
 // Posts
@@ -132,3 +119,109 @@
 
 	}
 }
+
+// Admin view 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 
+.wp-admin {
+	
+	.the-ad-carousel {
+		
+		&.type-posts,
+		& .block-editor-inner-blocks > .block-editor-block-list__layout {
+			display: flex;
+			flex-wrap: wrap;
+			
+			& .acf-carousel-post-item,
+			& > .wp-block {
+				display: none; // Hide slides
+				padding-right: .75rem;
+			}
+		}
+		
+		&.type-posts.one .acf-carousel-post-item,
+		&.one .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+			width: 100%;
+			
+			&:first-child {
+				display: block;
+			}
+		}
+		
+		&.type-posts.two .acf-carousel-post-item,
+		&.two .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+			width: 48%;
+			
+			&:nth-child(1),
+			&:nth-child(2) {
+				display: block;
+			}
+		}
+		
+		&.type-posts.three .acf-carousel-post-item,
+		&.three .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+			width: 31%;
+			
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				display: block;
+			}
+		}
+		
+		&.type-posts.four .acf-carousel-post-item,
+		&.four .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+			width: 23%;
+			
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4) {
+				display: block;
+			}
+		}
+		
+		&.type-posts.five .acf-carousel-post-item,
+		&.five .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+			width: 18%;
+			
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5) {
+				display: block;
+			}
+		}
+		
+		&.type-posts.six .acf-carousel-post-item,
+		&.six .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+			width: 14.6667%;
+			
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6) {
+				display: block;
+			}
+		}
+	}
+	
+	.has-child-selected .the-ad-carousel {
+		
+		&.type-posts,
+		& .block-editor-inner-blocks > .block-editor-block-list__layout {
+			
+			& .acf-carousel-post-item,
+			& > .wp-block {
+				display: block; // Show slides
+			}
+		}
+	} 
+	
+}
+	
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Admin view
