@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2023-11-10 09:22+0100\n"
-"PO-Revision-Date: 2023-11-10 09:22+0100\n"
+"POT-Creation-Date: 2023-11-10 11:02+0100\n"
+"PO-Revision-Date: 2023-11-10 11:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -32,6 +32,18 @@ msgid ""
 msgstr ""
 "Il est recommandé de désactiver la version précédente d'AD ACF Blocks pour "
 "éviter tout conflit."
+
+#: ad-acf-blocks-2.php:118
+#: blocks/block-carousel/templates/block-carousel-content.php:35
+#: blocks/block-posts/templates/block-posts-content.php:83
+msgid "Read more"
+msgstr "Lire la suite"
+
+#: ad-acf-blocks-2.php:118
+#: blocks/block-carousel/templates/block-carousel-content.php:35
+#: blocks/block-posts/templates/block-posts-content.php:83
+msgid "of "
+msgstr "de "
 
 #. Plugin Name of the plugin/theme
 #: ad-acf-blocks-2.php:143
@@ -141,26 +153,32 @@ msgid "Visible elements"
 msgstr "Éléments visibles"
 
 #: blocks/block-carousel/block-carousel-fields.php:25
+#: blocks/block-posts/block-posts-fields.php:25
 msgid "1"
 msgstr "1"
 
 #: blocks/block-carousel/block-carousel-fields.php:26
+#: blocks/block-posts/block-posts-fields.php:26
 msgid "2"
 msgstr "2"
 
 #: blocks/block-carousel/block-carousel-fields.php:27
+#: blocks/block-posts/block-posts-fields.php:27
 msgid "3"
 msgstr "3"
 
 #: blocks/block-carousel/block-carousel-fields.php:28
+#: blocks/block-posts/block-posts-fields.php:28
 msgid "4"
 msgstr "4"
 
 #: blocks/block-carousel/block-carousel-fields.php:29
+#: blocks/block-posts/block-posts-fields.php:29
 msgid "5"
 msgstr "5"
 
 #: blocks/block-carousel/block-carousel-fields.php:30
+#: blocks/block-posts/block-posts-fields.php:30
 msgid "6"
 msgstr "6"
 
@@ -202,6 +220,7 @@ msgid "Display dots"
 msgstr "Afficher les points"
 
 #: blocks/block-carousel/block-carousel-fields.php:166
+#: blocks/block-posts/block-posts.php:14
 msgid "Posts"
 msgstr "Publications"
 
@@ -214,16 +233,9 @@ msgid "Add a carousel made of posts or custom content."
 msgstr "Ajoutez un carrousel composé d'articles ou de contenu personnalisé."
 
 #: blocks/block-carousel/templates/block-carousel-content.php:5
+#: blocks/block-posts/templates/block-posts-content.php:20
 msgid "Read "
 msgstr "Lire "
-
-#: blocks/block-carousel/templates/block-carousel-content.php:35
-msgid "Read more"
-msgstr "Lire la suite"
-
-#: blocks/block-carousel/templates/block-carousel-content.php:35
-msgid "of "
-msgstr "de "
 
 #: blocks/block-carousel/templates/block-carousel-template.php:16
 msgid "Add content here"
@@ -418,6 +430,150 @@ msgstr "Arrêter la lecture vidéo"
 msgid "Play video"
 msgstr "Lire la vidéo"
 
+#: blocks/block-posts/block-posts-fields.php:8
+msgid "Posts Block"
+msgstr "Bloc publications"
+
+#: blocks/block-posts/block-posts-fields.php:12
+msgid "Columns"
+msgstr "Colonnes"
+
+#: blocks/block-posts/block-posts-fields.php:39
+msgid "Mode"
+msgstr "Mode"
+
+#: blocks/block-posts/block-posts-fields.php:51
+msgid "Manual"
+msgstr "Manuel"
+
+#: blocks/block-posts/block-posts-fields.php:52
+msgid "Automatic"
+msgstr "Automatique"
+
+#: blocks/block-posts/block-posts-fields.php:61
+msgid "Number of posts to show"
+msgstr "Nombre de publications à afficher"
+
+#: blocks/block-posts/block-posts-fields.php:64
+msgid "Leave blank to show all posts"
+msgstr "Laisser vide pour afficher toutes les publications"
+
+#: blocks/block-posts/block-posts-fields.php:90
+msgid "Post type"
+msgstr "Type de publication"
+
+#: blocks/block-posts/block-posts-fields.php:93
+msgid ""
+"<em>post</em> for Posts, <em>page</em> for Pages or <em>your_cpt_slug</em> "
+"for any custom post type."
+msgstr ""
+"<em>post</em> pour les articles, <em>page</em> pour les pages ou "
+"<em>votre_slug_de_cpt</em> pour n’importe quel type de publication "
+"personnalisé."
+
+#: blocks/block-posts/block-posts-fields.php:117
+msgid "Select one or many publications"
+msgstr "Sélectionner une ou plusieurs publications"
+
+#: blocks/block-posts/block-posts-fields.php:151
+msgid "Display featured image"
+msgstr "Afficher l'image mise en avant"
+
+#: blocks/block-posts/block-posts-fields.php:170
+msgid "Content to show"
+msgstr "Contenu à afficher"
+
+#: blocks/block-posts/block-posts-fields.php:182
+msgid "Excerpt"
+msgstr "Extrait"
+
+#: blocks/block-posts/block-posts-fields.php:183
+msgid "Full content"
+msgstr "Contenu complet"
+
+#: blocks/block-posts/block-posts-fields.php:192
+msgid "Posts title level"
+msgstr "Niveau de titre des publications"
+
+#: blocks/block-posts/block-posts-fields.php:204
+msgid "H2"
+msgstr "H2"
+
+#: blocks/block-posts/block-posts-fields.php:205
+msgid "H3"
+msgstr "H3"
+
+#: blocks/block-posts/block-posts-fields.php:206
+msgid "H4"
+msgstr "H4"
+
+#: blocks/block-posts/block-posts-fields.php:207
+msgid "H5"
+msgstr "H5"
+
+#: blocks/block-posts/block-posts-fields.php:208
+msgid "H6"
+msgstr "H6"
+
+#: blocks/block-posts/block-posts-fields.php:209
+msgid "None"
+msgstr "Aucun"
+
+#: blocks/block-posts/block-posts-fields.php:221
+msgid "Display post metas"
+msgstr "Afficher les metas de l'article"
+
+#: blocks/block-posts/block-posts-fields.php:240
+msgid "Additional metas"
+msgstr "Métas supplémentaires"
+
+#: blocks/block-posts/block-posts-fields.php:260
+msgid "Author"
+msgstr "Auteur"
+
+#: blocks/block-posts/block-posts-fields.php:261
+msgid "Category"
+msgstr "Catégorie"
+
+#: blocks/block-posts/block-posts-fields.php:273
+msgid "Carousel mode"
+msgstr "Mode carrousel"
+
+#: blocks/block-posts/block-posts-fields.php:292
+msgid "Only on mobile"
+msgstr "Seulement sur mobile"
+
+#: blocks/block-posts/block-posts.php:15
+msgid "Insert one or many posts or custom posts."
+msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
+
+#: blocks/block-posts/templates/block-posts-content.php:57
+msgid "Posted on&nbsp;"
+msgstr "Publié le&nbsp;"
+
+#: blocks/block-posts/templates/block-posts-content.php:61
+msgid "by&nbsp;"
+msgstr "par&nbsp;"
+
+#: blocks/block-posts/templates/block-posts-content.php:66
+msgid "in&nbsp;"
+msgstr "dans&nbsp;"
+
+#: blocks/block-posts/templates/block-posts-template.php:114
+#: blocks/block-posts/templates/block-posts-template.php:222
+msgid "Next Pannel"
+msgstr "Panneau suivant"
+
+#: blocks/block-posts/templates/block-posts-template.php:115
+#: blocks/block-posts/templates/block-posts-template.php:223
+msgid "Previous Pannel"
+msgstr "Panneau précédent"
+
+#: blocks/block-posts/templates/block-posts-template.php:166
+#: blocks/block-posts/templates/block-posts-template.php:264
+msgid "Pannel"
+msgstr "Panneau"
+
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"
 msgstr "Une collection de blocs réalisés avec ACF pour WordPress"
@@ -441,9 +597,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "Choose the title level for the list items"
 #~ msgstr "Choisissez le niveau de titre pour les éléments de liste"
-
-#~ msgid "None"
-#~ msgstr "Aucun"
 
 #~ msgid "Reverse order"
 #~ msgstr "Ordre inverse"
@@ -657,47 +810,6 @@ msgstr "https://anybodesign.com/"
 #~ msgid "Introduction"
 #~ msgstr "Introduction"
 
-#~ msgid "Mode"
-#~ msgstr "Mode"
-
-#~ msgid "Manual"
-#~ msgstr "Manuel"
-
-#~ msgid "Automatic"
-#~ msgstr "Automatique"
-
-#~ msgid "Number of posts to show"
-#~ msgstr "Nombre de publications à afficher"
-
-#~ msgid "Leave blank to show all posts"
-#~ msgstr "Laisser vide pour afficher toutes les publications"
-
-#~ msgid "Post type"
-#~ msgstr "Type de publication"
-
-#~ msgid ""
-#~ "<em>post</em> for Posts, <em>page</em> for Pages or <em>your_cpt_slug</"
-#~ "em> for any custom post type."
-#~ msgstr ""
-#~ "<em>post</em> pour les articles, <em>page</em> pour les pages ou "
-#~ "<em>votre_slug_de_cpt</em> pour n’importe quel type de publication "
-#~ "personnalisé."
-
-#~ msgid "Select one or many publications"
-#~ msgstr "Sélectionner une ou plusieurs publications"
-
-#~ msgid "Content to show"
-#~ msgstr "Contenu à afficher"
-
-#~ msgid "Excerpt"
-#~ msgstr "Extrait"
-
-#~ msgid "Posts title level"
-#~ msgstr "Niveau de titre des publications"
-
-#~ msgid "Only on mobile"
-#~ msgstr "Seulement sur mobile"
-
 #~ msgid "Small breakpoint"
 #~ msgstr "Petit point de rupture"
 
@@ -707,42 +819,8 @@ msgstr "https://anybodesign.com/"
 #~ msgid "Large breakpoint"
 #~ msgstr "Grand point de rupture"
 
-#~ msgid "Display post metas"
-#~ msgstr "Afficher les metas de l'article"
-
-#~ msgid "Additional metas"
-#~ msgstr "Métas supplémentaires"
-
-#~ msgid "Author"
-#~ msgstr "Auteur"
-
-#~ msgid "Category"
-#~ msgstr "Catégorie"
-
 #~ msgid "Add a link"
 #~ msgstr "Ajouter un lien"
-
-#~ msgid "Insert one or many posts or custom posts."
-#~ msgstr ""
-#~ "Insérez une ou plusieurs publications ou publications personnalisées."
-
-#~ msgid "Posted on&nbsp;"
-#~ msgstr "Publié le&nbsp;"
-
-#~ msgid "by&nbsp;"
-#~ msgstr "par&nbsp;"
-
-#~ msgid "in&nbsp;"
-#~ msgstr "dans&nbsp;"
-
-#~ msgid "Next Pannel"
-#~ msgstr "Panneau suivant"
-
-#~ msgid "Previous Pannel"
-#~ msgstr "Panneau précédent"
-
-#~ msgid "Pannel"
-#~ msgstr "Panneau"
 
 #~ msgid "AD ACF Block 07: Testimonial"
 #~ msgstr "AD ACF Bloc 07: Témoignage"
@@ -1001,9 +1079,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "Button text color"
 #~ msgstr "Couleur du texte du bouton"
-
-#~ msgid "Display featured image"
-#~ msgstr "Afficher l'image mise en avant"
 
 #~ msgid "Slider option"
 #~ msgstr "Option carousel"
