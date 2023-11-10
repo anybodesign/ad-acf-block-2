@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2023-11-08 10:10+0100\n"
-"PO-Revision-Date: 2023-11-08 10:10+0100\n"
+"POT-Creation-Date: 2023-11-10 09:22+0100\n"
+"PO-Revision-Date: 2023-11-10 09:22+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -277,6 +277,61 @@ msgstr "Compteur"
 msgid "Add an animated counter, key numbers."
 msgstr "Ajouter un compteur animé, des chiffres clés."
 
+#: blocks/block-files/block-files-fields.php:8
+msgid "List Of Files Block"
+msgstr "Bloc liste de fichiers"
+
+#: blocks/block-files/block-files-fields.php:12
+msgid "Add files"
+msgstr "Ajouter des fichiers"
+
+#: blocks/block-files/block-files-fields.php:27
+msgid "Add a file"
+msgstr "Ajouter un fichier"
+
+#: blocks/block-files/block-files-fields.php:31
+msgid "File"
+msgstr "Fichier"
+
+#: blocks/block-files/block-files-fields.php:34
+msgid "Allowed file type: PDF, ZIP, DOC, JPEG, PNG, MP3 and MP4"
+msgstr "Type de fichier autorisé: PDF, ZIP, DOC, JPEG, PNG, MP3 et MP4"
+
+#: blocks/block-files/block-files-fields.php:50
+msgid "Custom title"
+msgstr "Titre personnalisé"
+
+#: blocks/block-files/block-files-fields.php:71
+msgid "Display file type icon"
+msgstr "Afficher l’icône de type de fichier"
+
+#: blocks/block-files/block-files-fields.php:90
+msgid "Use custom theme icons"
+msgstr "Utiliser des icônes personnalisées du thème"
+
+#: blocks/block-files/block-files-fields.php:93
+msgid ""
+"Icons path in the theme must be: <em>/img/icons/files/</em><br>\n"
+"\t\tFile names: <em>archive.svg, audio.svg, picture.svg, text.svg, video."
+"svg, blank.svg</em>"
+msgstr ""
+"Le chemin des icônes dans le thème doit être : <em>/img/icons/files/</"
+"em><br>\n"
+"Noms des fichiers : <em>archive.svg, audio.svg, image.svg, texte.svg, video."
+"svg, blank.svg</em>"
+
+#: blocks/block-files/block-files.php:14
+msgid "List Of Files"
+msgstr "Liste de fichiers"
+
+#: blocks/block-files/block-files.php:15
+msgid "Add a downloadable file list."
+msgstr "Ajouter une liste de fichiers téléchargeables."
+
+#: blocks/block-files/templates/block-files-template.php:52
+msgid "Download "
+msgstr "Télécharger "
+
 #: blocks/block-pagebanner/block-pagebanner-fields.php:9
 msgid "Page banner"
 msgstr "Bannière de page"
@@ -489,50 +544,8 @@ msgstr "https://anybodesign.com/"
 #~ msgid "AD ACF Block 11: File list"
 #~ msgstr "Bloc AD ACF 11 : Liste de fichiers"
 
-#~ msgid "Add files"
-#~ msgstr "Ajouter des fichiers"
-
-#~ msgid "Add a file"
-#~ msgstr "Ajouter un fichier"
-
-#~ msgid "File"
-#~ msgstr "Fichier"
-
-#~ msgid "Allowed file type: PDF, ZIP, DOC, JPEG, PNG, MP3 and MP4"
-#~ msgstr "Type de fichier autorisé: PDF, ZIP, DOC, JPEG, PNG, MP3 et MP4"
-
-#~ msgid "Custom title"
-#~ msgstr "Titre personnalisé"
-
-#~ msgid "Display file type icon"
-#~ msgstr "Afficher l’icône de type de fichier"
-
-#~ msgid "Use custom theme icons"
-#~ msgstr "Utiliser des icônes personnalisées du thème"
-
-#, fuzzy
-#~| msgid ""
-#~| "Icons path in the theme must be: <em>/img/icons/files/</em><br>\n"
-#~| "File names: <em>archive.svg, audio.svg, picture.svg, text.svg, video."
-#~| "svg, blank.svg</em>"
-#~ msgid ""
-#~ "Icons path in the theme must be: <em>/img/icons/files/</em><br>\n"
-#~ "File names: <em>archive.svg, audio.svg, picture.svg, text.svg,\tvideo."
-#~ "svg</em>"
-#~ msgstr ""
-#~ "Le chemin des icônes dans le thème doit être : <em>/img/icons/files/</"
-#~ "em><br>\n"
-#~ "Noms des fichiers : <em>archive.svg, audio.svg, image.svg, texte.svg, "
-#~ "video.svg, blank.svg</em>"
-
 #~ msgid "File list"
 #~ msgstr "Liste de fichiers"
-
-#~ msgid "Add an downloadable file list."
-#~ msgstr "Ajoutez une liste de fichiers téléchargeables."
-
-#~ msgid "Download "
-#~ msgstr "Télécharger "
 
 #~ msgid "AD ACF Block 03: Gallery"
 #~ msgstr "AD ACF Block 03 : Galerie"
