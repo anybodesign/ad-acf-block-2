@@ -21,6 +21,11 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 1.4 - 2023-11-10
+* Posts block
+* Slick theme css
+* CSS fix
+
 ### 1.3 - 2023-11-10
 * List of files block
 * Carousel block admin view

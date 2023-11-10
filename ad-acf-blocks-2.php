@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADB2__PLUGIN_VERSION', '1.1' );
+define( 'ADB2__PLUGIN_VERSION', '1.3' );
 define( 'ADB2__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADB2__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADB2__BASENAME', plugin_basename( __FILE__ ) );
@@ -106,18 +106,18 @@ function adblocks2_adblocks_plugin_row($plugin_file, $plugin_data, $status) {
 // Custom excerpt
 // https://gist.github.com/samjbmason/4050714
 
-// function adblocks2_get_excerpt($count, $post_id){
-//   $permalink = get_permalink($post_id);
-//   $title = get_the_title($post_id);
-//   $excerpt = get_post($post_id);
-//   $excerpt = $excerpt->post_content;
-//   $excerpt = strip_tags($excerpt);
-//   $excerpt = substr($excerpt, 0, $count);
-//   $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-// 
-//   $excerpt = '<p>'.$excerpt.'... <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks2').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks2').$title.'</span></a></p>';
-//   return $excerpt;
-// }
+function adblocks2_get_excerpt($count, $post_id){
+  $permalink = get_permalink($post_id);
+  $title = get_the_title($post_id);
+  $excerpt = get_post($post_id);
+  $excerpt = $excerpt->post_content;
+  $excerpt = strip_tags($excerpt);
+  $excerpt = substr($excerpt, 0, $count);
+  $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+
+  $excerpt = '<p>'.$excerpt.'... <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks2').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks2').$title.'</span></a></p>';
+  return $excerpt;
+}
 
 
 //
