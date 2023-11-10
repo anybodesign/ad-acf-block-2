@@ -1,0 +1,100 @@
+// Posts Block
+// -
+// + + + + + + + + + + 
+
+@import '../../../assets/css/vars.scss';
+
+
+.acf-block--posts {
+	
+	.acf-block-container {}
+
+	// Carousel in admin
+	
+	.wp-admin & {
+		.acf-block-post-slider {
+			display: flex;
+			overflow: hidden;
+			padding: $grid-padding !important;
+		}
+		.slick-dots, .slick-arrow {
+			display: none !important;
+		}
+	}		
+}
+
+[class*=acf-block-post-content--] {
+	margin-left: -$grid-padding;
+	margin-right: -$grid-padding;
+		
+	@include rwd(tiny) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.acf-block-post-item {
+	margin: $grid-padding;
+	
+	@include rwd(tiny) {
+		width: calc(50% - #{$grid-padding}*2);
+		
+		.acf-block-post-content--1col & {
+			width: 100%;
+		}
+	}
+	@include rwd(small) {
+		width: calc(33.3333% - #{$grid-padding}*2);
+
+		.acf-block-post-content--1col & {
+			display: flex;
+			flex-wrap: wrap;
+			
+			.acf-block-post-figure {
+				width: 30%;
+				padding-right: $grid-padding*2;
+			}
+			.acf-block-post-content {
+				width: 70%;	
+			}
+		}		
+		.acf-block-post-content--2cols & {
+			width: calc(50% - #{$grid-padding}*2);
+		}
+	}
+	@include rwd(medium) {
+		width: calc(25% - #{$grid-padding}*2);
+		
+		.acf-block-post-content--1col & {
+			
+			.acf-block-post-figure {
+				width: 50%;
+			}
+			.acf-block-post-content {
+				width: 50%;	
+			}
+		}
+		
+		.acf-block-post-content--3cols & {
+			width: calc(33.3333% - #{$grid-padding}*2);
+		}				
+	}
+	@include rwd(large) {
+		.acf-block-post-content--5cols & {
+			width: calc(20% - #{$grid-padding}*2);
+		}
+		.acf-block-post-content--6cols & {
+			width: calc(16.6667% - #{$grid-padding}*2);
+		}		
+	}	
+}
+
+.acf-block-post-figure {
+
+	img {
+		max-width: none;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 3/2;
+		object-fit: cover;
+	}
+}
