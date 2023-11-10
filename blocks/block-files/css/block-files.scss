@@ -1,0 +1,70 @@
+// Files Block
+// -
+// + + + + + + + + + + 
+
+@import '../../../assets/css/vars.scss';
+
+.acf-block--files {
+	
+	.acf-block-container {}
+	
+}
+
+.acf-block-file-items {
+	padding: 0;
+	list-style: none;
+}
+.file-item {
+	display: block;
+	border-bottom: #000 1px solid;
+	
+	a {
+		display: flex;
+		padding: 1rem 0;
+		align-items: center;
+		text-decoration: none;
+		
+		.file-infos,
+		.file-item-icon {
+			transition: .2s ease-in-out;
+		}
+		
+		&:hover,
+		&:focus {
+			background-color: rgba(0, 0, 0, 0.05);
+			
+			.file-infos {
+				transform: translateX(-.25rem);
+			}
+			.file-item-icon {
+				transform: translateX(-.5rem);
+			}
+		}
+	}
+}
+
+.file-item-icon {
+	display: block;
+	width: 2rem;
+	height: auto;
+	margin-right: 1rem;
+}
+.file-infos {
+	span {
+		line-height: 1.1;
+	}
+}
+.file-item-name {
+	font-weight: bold;
+	font-size: 115%;
+}
+.file-item-type-size {
+	font-style: oblique;
+	font-size: 85%;
+}
+.file-item-type {
+	text-transform: uppercase;
+}
+.file-item-desc {
+	display: block;
+}
