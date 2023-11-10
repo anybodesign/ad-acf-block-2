@@ -21,6 +21,10 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 1.3 - 2023-11-10
+* List of files block
+* Carousel block admin view
+
 ### 1.2 - 2023-11-08
 * Carousel block
 
