@@ -23,6 +23,7 @@
 		padding: 1rem 0;
 		align-items: center;
 		text-decoration: none;
+		transition: .2s ease-in-out;
 		
 		.file-infos,
 		.file-item-icon {
@@ -37,7 +38,12 @@
 				transform: translateX(-.25rem);
 			}
 			.file-item-icon {
-				transform: translateX(-.5rem);
+				padding-left: 1rem;
+				
+				.has-icons & {
+					transform: translateX(-.5rem);
+					padding-left: 0;
+				}
 			}
 		}
 	}
