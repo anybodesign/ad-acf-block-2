@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AD ACF Blocks 2
  * Description: A collection of blocks made with ACF for WordPress 
- * Version: 1.3
+ * Version: 1.4
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Text Domain: adblocks2
@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADB2__PLUGIN_VERSION', '1.3' );
+define( 'ADB2__PLUGIN_VERSION', '1.4' );
 define( 'ADB2__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADB2__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADB2__BASENAME', plugin_basename( __FILE__ ) );
@@ -118,6 +118,16 @@ function adblocks2_get_excerpt($count, $post_id){
   $excerpt = '<p>'.$excerpt.'... <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks2').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks2').$title.'</span></a></p>';
   return $excerpt;
 }
+
+// Native blocks styles
+
+register_block_style(
+  'core/gallery',
+    array(
+      'name'	=> 'inside',
+      'label'	=> esc_attr__( 'Caption inside', 'adblocks2' ),
+    )
+);
 
 
 //
