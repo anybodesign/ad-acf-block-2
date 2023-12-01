@@ -226,7 +226,7 @@ function adblocks2_posts_fields() {
 					'required' => 0,
 					'conditional_logic' => 0,
 					'wrapper' => array(
-						'width' => '50',
+						'width' => '40',
 						'class' => '',
 						'id' => '',
 					),
@@ -253,7 +253,7 @@ function adblocks2_posts_fields() {
 						),
 					),
 					'wrapper' => array(
-						'width' => '50',
+						'width' => '30',
 						'class' => '',
 						'id' => '',
 					),
@@ -268,6 +268,39 @@ function adblocks2_posts_fields() {
 					'toggle' => 0,
 					'return_format' => 'value',
 					'save_custom' => 0,
+				),
+				array(
+					'key' => 'field_6569ef696c6bd',
+					'label' => __( 'Custom taxonomy', 'adblocks2' ),
+					'name' => 'your_tax',
+					'aria-label' => '',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_5e454fa2b2b02',
+								'operator' => '==',
+								'value' => '1',
+							),
+							array(
+								'field' => 'field_600031416d176',
+								'operator' => '==',
+								'value' => 'cat',
+							),
+						),
+					),
+					'wrapper' => array(
+						'width' => '30',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'maxlength' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
 				),
 				array(
 					'key' => 'field_600aa97b3e178',

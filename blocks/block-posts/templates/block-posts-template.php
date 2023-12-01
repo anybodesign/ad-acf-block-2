@@ -9,6 +9,7 @@
 	$show = get_field('content_show');
 	$metas = get_field('metas');
 	$your_metas = get_field('your_metas');
+	$your_tax = get_field('your_tax');
 	
 	$slider = get_field('slider');
 	$mob = get_field('slider_mobile');
@@ -47,6 +48,7 @@
 							foreach( $content as $c ) : 
 								
 								$cat = get_the_category($c->ID);
+								$tax = get_the_terms($c->ID, $your_tax);
 								$cpt = get_post_type($c->ID);
 								
 								include ADB2__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
@@ -76,6 +78,7 @@
 								foreach ($autocontent as $c) :
 									
 									$cat = get_the_category($c->ID);
+									$tax = get_the_terms($c->ID, $your_tax);
 									$cpt = get_post_type($c->ID);
 									
 									include ADB2S__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';

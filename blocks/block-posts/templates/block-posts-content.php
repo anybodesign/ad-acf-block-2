@@ -61,7 +61,14 @@
 											<span><?php _e( 'by&nbsp;', 'adblocks2' ); ?></span><span><?php echo get_the_author(); ?></span>
 										</span>
 										<?php } ?>
-										<?php if( $your_metas && in_array('cat', $your_metas) && $cpt == 'post' ) { ?>
+										<?php if( $your_tax && $cpt != 'post' ) { ?>
+										<span class="meta-category">
+											<span><?php _e( 'in&nbsp;', 'adblocks2' ); ?></span><?php 
+												foreach ( $tax as $t ) { 
+													echo '<span class="tax-'.$your_tax.'">'.__($t->name).'</span> '; 
+												} ?>
+										</span>
+										<?php } else if( $your_metas && in_array('cat', $your_metas) && $cpt == 'post' ) { ?>
 										<span class="meta-category">
 											<span><?php _e( 'in&nbsp;', 'adblocks2' ); ?></span><span><?php echo '<a href="'.esc_url( get_category_link( $cat[0]->term_id) ).'">' . esc_html( $cat[0]->name) . '</a>'; ?></span>
 										</span>
