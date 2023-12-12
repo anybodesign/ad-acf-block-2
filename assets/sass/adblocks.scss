@@ -4,7 +4,7 @@
 
 // Vars
 
-@import 'vars.scss';
+@import '_vars.scss';
 
 // Common
 
@@ -19,6 +19,12 @@
 	.acf-block-container {
 		width: 100%;
 	}	
+}
+
+// Native Blocks
+
+.wp-block-gallery {
+	
 }
 
 // Fancybox

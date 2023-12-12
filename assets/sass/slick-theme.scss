@@ -1,4 +1,4 @@
-@import 'vars.scss';
+@import '_vars.scss';
 
 // Slick
 
@@ -38,6 +38,7 @@
 }
 
 .slick-dots {
+	position: relative;
 	width: 100%;
 	margin: 0;
 	padding: 1rem 0; 
