@@ -85,6 +85,7 @@
 								arrows: <?php echo $arr; ?>,
 								dots: <?php echo $do; ?>,
 								pauseOnHover: true,
+								//variableWidth: true,
 								nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Panneau suivant"> › </button>',
 								prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Panneau précédent"> ‹ </button>',
 								mobileFirst: true,
