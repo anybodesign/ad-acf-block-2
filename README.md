@@ -21,6 +21,12 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 1.5 - 2023-12-12
+* Counter block sign field
+* Posts Block taxonomy field in admin
+* Posts Block display terms
+* FR fix
+
 ### 1.4 - 2023-11-10
 * Posts block
 * Slick theme css

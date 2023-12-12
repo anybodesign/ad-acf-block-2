@@ -1,12 +1,12 @@
 {
 	"name": "AD ACF Blocks 2",
-	"version": "1.4",
+	"version": "1.5",
 	"download_url": "https://lab.anybodesign.com/plugins/ad-acf-blocks-2/ad-acf-blocks-2.zip",
 
 	"homepage": "https://github.com/anybodesign/ad-acf-blocks-2",
 	"requires": "5.8",
 	"tested": "6.4.1",
-	"last_updated": "2023-11-02",
+	"last_updated": "2023-12-12",
 
 	"author": "Thomas Villain",
 	"author_homepage": "https://anybodesign.com",
