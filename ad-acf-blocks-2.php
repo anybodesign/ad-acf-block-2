@@ -119,7 +119,7 @@ function adblocks2_get_excerpt($count, $post_id){
   return $excerpt;
 }
 
-// Native blocks styles
+// Block styles
 
 // register_block_style(
 //   'core/gallery',
@@ -128,21 +128,20 @@ function adblocks2_get_excerpt($count, $post_id){
 //       'label'	=> esc_attr__( 'Caption inside', 'adblocks2' ),
 //     )
 // );
-// register_block_style(
-//   'core/gallery',
-//     array(
-//       'name'	=> 'contact',
-//       'label'	=> esc_attr__( 'Contact Sheet', 'adblocks2' ),
-//     )
-// );
-// register_block_style(
-//   'core/gallery',
-//     array(
-//       'name'	=> 'grid',
-//       'label'	=> esc_attr__( 'Grid', 'adblocks2' ),
-//     )
-// );
-
+register_block_style(
+  'acf/gallery-2',
+    array(
+      'name'	=> 'masonry',
+      'label'	=> esc_attr__( 'Masonry', 'adblocks2' ),
+    )
+);
+register_block_style(
+  'acf/gallery-2',
+    array(
+      'name'	=> 'grid',
+      'label'	=> esc_attr__( 'Grid', 'adblocks2' ),
+    )
+);
 
 //
 // ACF Blocks
