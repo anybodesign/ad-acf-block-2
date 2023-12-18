@@ -21,6 +21,28 @@
 	}	
 }
 
+// Patterns
+
+.adb2-cta {
+	padding: 1rem;
+}
+
+.adb2-card {
+	padding-bottom: 1rem;
+	
+	& > * {
+		padding: 0 1rem;
+	}
+	.wp-block-image {
+		padding: 0;
+		max-width: 20rem;
+		margin: 0 auto;
+	}
+	.wp-block-heading {
+		margin-top: 0;
+	}
+}
+
 
 // Fancybox
 
