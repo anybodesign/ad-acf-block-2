@@ -20,8 +20,11 @@
 								<a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks2'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
 								<?php } ?>
 					            <?php 
-						            if ( has_post_thumbnail( $c->ID ) ) { 
+						            if ( has_post_thumbnail( $c->ID ) && $style != 'gallery' ) { 
 					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-medium-hd');
+									}
+									else if ( has_post_thumbnail( $c->ID ) && $style == 'gallery' ) {
+										echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd');
 									}
 									else if ( file_exists( $path1 ) ) {
 					            		echo '<img src="' . $fallback1. '" alt="">';  
@@ -76,7 +79,8 @@
 									</div>
 									<?php } ?>									
 								</header>
-
+								
+								<?php if ( $style != 'gallery' ) { ?>
 								<div class="acf-block-post-excerpt">
 									<?php 
 										if ($show == 'excerpt') {
@@ -98,6 +102,7 @@
 										}	
 									?>
 								</div>
+								<?php } ?>
 									
 							</div>
 					        

@@ -89,12 +89,62 @@
 }
 
 .acf-block-post-figure {
-
+	
+	a {
+		display: block;
+	}
 	img {
+		display: block;
 		max-width: none;
 		width: 100%;
 		height: auto;
 		aspect-ratio: 3/2;
 		object-fit: cover;
+		
+		.style-gallery & {
+			aspect-ratio: 1/1;
+		}
 	}
+}
+
+// Gallery style 
+
+.style-gallery {
+	
+	.acf-block-post-item {
+		position: relative;
+		
+		.acf-block-post-header {
+			
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				box-sizing: border-box;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				padding: 1rem;
+				background: rgba(0, 0, 0, 0.8);
+				color: #fff;
+				font-size: 1.6rem;
+				transition: opacity .3s ease-in-out;
+				opacity: 0;
+				
+				&:hover,
+				&:focus {
+					opacity: 1;
+				}
+			}
+			
+			.acf-block-post-title {
+				margin: 0;
+				text-align: center;
+			}
+		}
+		
+	}
+	
 }

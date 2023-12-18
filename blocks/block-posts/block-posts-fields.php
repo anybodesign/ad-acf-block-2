@@ -148,10 +148,10 @@ function adblocks2_posts_fields() {
 					'return_format' => 'object',
 				),
 				array(
-					'key' => 'field_61de89a0e5046',
-					'label' => __('Display featured image', 'adblocks2'),
-					'name' => 'display_featured',
-					'type' => 'true_false',
+					'key' => 'field_601a7c66d1337',
+					'label' => __('Style', 'adblocks2'),
+					'name' => 'style',
+					'type' => 'button_group',
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
@@ -160,11 +160,14 @@ function adblocks2_posts_fields() {
 						'class' => '',
 						'id' => '',
 					),
-					'message' => '',
-					'default_value' => 1,
-					'ui' => 1,
-					'ui_on_text' => '',
-					'ui_off_text' => '',
+					'choices' => array(
+						'classic' => __('Classic', 'adblocks2'),
+						'gallery' => __('Gallery', 'adblocks2'),
+					),
+					'allow_null' => 0,
+					'default_value' => 'classic',
+					'layout' => 'horizontal',
+					'return_format' => 'value',
 				),
 				array(
 					'key' => 'field_5dfa2c4cc8bb0',
@@ -173,7 +176,15 @@ function adblocks2_posts_fields() {
 					'type' => 'button_group',
 					'instructions' => '',
 					'required' => 0,
-					'conditional_logic' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_601a7c66d1337',
+								'operator' => '!=',
+								'value' => 'gallery',
+							),
+						),
+					),
 					'wrapper' => array(
 						'width' => '33',
 						'class' => '',
@@ -224,7 +235,15 @@ function adblocks2_posts_fields() {
 					'type' => 'true_false',
 					'instructions' => '',
 					'required' => 0,
-					'conditional_logic' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_601a7c66d1337',
+								'operator' => '!=',
+								'value' => 'gallery',
+							),
+						),
+					),
 					'wrapper' => array(
 						'width' => '40',
 						'class' => '',

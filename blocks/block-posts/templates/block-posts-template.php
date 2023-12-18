@@ -3,6 +3,7 @@
 	$cols = get_field('columns');
 	
 	$mode = get_field('mode');
+	$style = get_field('style');
 	
 	$content = get_field('posts_select');
 	$h = get_field('title_level');
@@ -36,9 +37,9 @@
 					
 					<?php if( ( $content && $mode != 'auto' ) || ( $mode == 'auto' ) ) : ?>
 					<?php if( $slider ) { ?>
-					<div class="acf-block-post-content--<?php echo $cols; ?> acf-block-post-slider" id="<?php echo esc_attr($id); ?>">
+					<div class="acf-block-post-content--<?php echo $cols; echo ' style-'.$style; ?> acf-block-post-slider" id="<?php echo esc_attr($id); ?>">
 					<?php } else { ?>
-					<div class="acf-block-post-content--<?php echo $cols; ?>">
+					<div class="acf-block-post-content--<?php echo $cols; echo ' style-'.$style; ?>">
 					<?php } ?>
 						
 						<?php 
