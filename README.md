@@ -21,6 +21,11 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 1.7 - 2023-12-18
+* CTA Block Pattern
+* Card Block Pattern
+* Gallery style for Posts Block
+
 ### 1.6 - 2023-12-13
 * Gallery block
 
