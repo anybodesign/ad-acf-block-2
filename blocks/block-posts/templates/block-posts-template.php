@@ -82,7 +82,7 @@
 									$tax = get_the_terms($c->ID, $your_tax);
 									$cpt = get_post_type($c->ID);
 									
-									include ADB2S__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
+									include ADB2__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
 									
 								endforeach;
 								wp_reset_postdata();
