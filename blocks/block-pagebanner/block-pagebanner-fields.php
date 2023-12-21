@@ -400,22 +400,14 @@ acf_add_local_field_group(array(
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
-			'conditional_logic' => array(
-				array(
-					array(
-						'field' => 'field_600a918a30788',
-						'operator' => '==',
-						'value' => '1',
-					),
-				),
-			),
+			'conditional_logic' => 0,
 			'wrapper' => array(
 				'width' => '30',
 				'class' => '',
 				'id' => '',
 			),
 			'default_value' => '',
-			'placeholder' => 'Scroll Down',
+			'placeholder' => __('Scroll Down', 'adblocks2'),
 			'prepend' => '',
 			'append' => '',
 			'maxlength' => '',

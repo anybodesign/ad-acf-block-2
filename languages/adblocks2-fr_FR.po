@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2023-12-18 14:21+0100\n"
-"PO-Revision-Date: 2023-12-18 14:21+0100\n"
+"POT-Creation-Date: 2023-12-21 13:46+0100\n"
+"PO-Revision-Date: 2023-12-21 13:46+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ad-acf-blocks-2.php:118 ad-acf-blocks-2/ad-acf-blocks-2.php:118
 #: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-content.php:35
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:90
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:94
 #: blocks/block-carousel/templates/block-carousel-content.php:35
 #: blocks/block-posts/templates/block-posts-content.php:94
 msgid "Read more"
@@ -43,30 +43,30 @@ msgstr "Lire la suite"
 
 #: ad-acf-blocks-2.php:118 ad-acf-blocks-2/ad-acf-blocks-2.php:118
 #: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-content.php:35
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:90
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:94
 #: blocks/block-carousel/templates/block-carousel-content.php:35
 #: blocks/block-posts/templates/block-posts-content.php:94
 msgid "of "
 msgstr "de "
 
-#: ad-acf-blocks-2.php:130
+#: ad-acf-blocks-2.php:130 ad-acf-blocks-2/ad-acf-blocks-2.php:130
 msgid "Call to action"
 msgstr "Call to action"
 
-#: ad-acf-blocks-2.php:155
+#: ad-acf-blocks-2.php:155 ad-acf-blocks-2/ad-acf-blocks-2.php:155
 msgid "Card"
 msgstr "Carte"
 
-#: ad-acf-blocks-2.php:203 ad-acf-blocks-2/ad-acf-blocks-2.php:135
+#: ad-acf-blocks-2.php:203 ad-acf-blocks-2/ad-acf-blocks-2.php:203
 msgid "Masonry"
 msgstr "Masonry"
 
-#: ad-acf-blocks-2.php:210 ad-acf-blocks-2/ad-acf-blocks-2.php:142
+#: ad-acf-blocks-2.php:210 ad-acf-blocks-2/ad-acf-blocks-2.php:210
 msgid "Grid"
 msgstr "﻿Grille"
 
 #. Plugin Name of the plugin/theme
-#: ad-acf-blocks-2.php:234 ad-acf-blocks-2/ad-acf-blocks-2.php:166
+#: ad-acf-blocks-2.php:234 ad-acf-blocks-2/ad-acf-blocks-2.php:234
 msgid "AD ACF Blocks 2"
 msgstr "AD ACF Blocks 2"
 
@@ -521,6 +521,7 @@ msgid "Revealed on mouse over and focus"
 msgstr "Révélée au survol de la souris et au focus"
 
 #: ad-acf-blocks-2/blocks/block-gallery/block-gallery.php:14
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:165
 #: blocks/block-gallery/block-gallery.php:14
 #: blocks/block-posts/block-posts-fields.php:165
 msgid "Gallery"
@@ -631,17 +632,17 @@ msgid "Add a page banner at the beginning of your page."
 msgstr "Ajoutez une bannière au début de votre page."
 
 #: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:59
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:59
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:55
 msgid "Add some text here"
 msgstr "Ajouter du texte ici"
 
 #: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:77
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:77
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:73
 msgid "Stop video playback"
 msgstr "Arrêter la lecture vidéo"
 
 #: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:80
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:80
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:76
 msgid "Play video"
 msgstr "Lire la vidéo"
 
@@ -701,90 +702,96 @@ msgid "Select one or many publications"
 msgstr "Sélectionner une ou plusieurs publications"
 
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:152
-msgid "Display featured image"
-msgstr "Afficher l'image mise en avant"
+#: blocks/block-posts/block-posts-fields.php:152
+msgid "Style"
+msgstr "Style"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:171
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:164
+#: blocks/block-posts/block-posts-fields.php:164
+msgid "Classic"
+msgstr "Classique"
+
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:174
 #: blocks/block-posts/block-posts-fields.php:174
 msgid "Content to show"
 msgstr "Contenu à afficher"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:183
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:194
 #: blocks/block-posts/block-posts-fields.php:194
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:184
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:195
 #: blocks/block-posts/block-posts-fields.php:195
 msgid "Full content"
 msgstr "Contenu complet"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:193
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:204
 #: blocks/block-posts/block-posts-fields.php:204
 msgid "Posts title level"
 msgstr "Niveau de titre des publications"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:205
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:216
 #: blocks/block-posts/block-posts-fields.php:216
 msgid "H2"
 msgstr "H2"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:206
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:217
 #: blocks/block-posts/block-posts-fields.php:217
 msgid "H3"
 msgstr "H3"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:207
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:218
 #: blocks/block-posts/block-posts-fields.php:218
 msgid "H4"
 msgstr "H4"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:208
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:219
 #: blocks/block-posts/block-posts-fields.php:219
 msgid "H5"
 msgstr "H5"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:209
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:220
 #: blocks/block-posts/block-posts-fields.php:220
 msgid "H6"
 msgstr "H6"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:210
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:221
 #: blocks/block-posts/block-posts-fields.php:221
 msgid "None"
 msgstr "Aucun"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:222
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:233
 #: blocks/block-posts/block-posts-fields.php:233
 msgid "Display post metas"
 msgstr "Afficher les metas de l'article"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:241
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:260
 #: blocks/block-posts/block-posts-fields.php:260
 msgid "Additional metas"
 msgstr "Métas supplémentaires"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:261
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:280
 #: blocks/block-posts/block-posts-fields.php:280
 msgid "Author"
 msgstr "Auteur"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:262
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:281
 #: blocks/block-posts/block-posts-fields.php:281
 msgid "Category"
 msgstr "Catégorie"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:274
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:293
 #: blocks/block-posts/block-posts-fields.php:293
 msgid "Custom taxonomy"
 msgstr "Taxonomie personnalisée"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:307
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:326
 #: blocks/block-posts/block-posts-fields.php:326
 msgid "Carousel mode"
 msgstr "Mode carrousel"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:326
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:345
 #: blocks/block-posts/block-posts-fields.php:345
 msgid "Only on mobile"
 msgstr "Seulement sur mobile"
@@ -794,51 +801,48 @@ msgstr "Seulement sur mobile"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:57
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:60
 #: blocks/block-posts/templates/block-posts-content.php:60
 msgid "Posted on&nbsp;"
 msgstr "Publié le&nbsp;"
 
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:61
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:64
 #: blocks/block-posts/templates/block-posts-content.php:64
 msgid "by&nbsp;"
 msgstr "par&nbsp;"
 
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:66
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:73
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:69
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:76
 #: blocks/block-posts/templates/block-posts-content.php:69
 #: blocks/block-posts/templates/block-posts-content.php:76
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:117
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:225
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:118
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:226
 #: blocks/block-posts/templates/block-posts-template.php:118
 #: blocks/block-posts/templates/block-posts-template.php:226
 msgid "Next Pannel"
 msgstr "Panneau suivant"
 
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:118
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:226
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:119
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:227
 #: blocks/block-posts/templates/block-posts-template.php:119
 #: blocks/block-posts/templates/block-posts-template.php:227
 msgid "Previous Pannel"
 msgstr "Panneau précédent"
 
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:169
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:267
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:170
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:268
 #: blocks/block-posts/templates/block-posts-template.php:170
 #: blocks/block-posts/templates/block-posts-template.php:268
 msgid "Pannel"
 msgstr "Panneau"
 
-#: blocks/block-posts/block-posts-fields.php:152
-msgid "Style"
-msgstr "Style"
-
-#: blocks/block-posts/block-posts-fields.php:164
-msgid "Classic"
-msgstr "Classique"
+#: blocks/block-pagebanner/block-pagebanner-fields.php:410
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:135
+msgid "Scroll Down"
+msgstr "Défiler vers le bas"
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"
@@ -851,6 +855,9 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "Display featured image"
+#~ msgstr "Afficher l'image mise en avant"
 
 #~ msgid "Caption inside"
 #~ msgstr "Légende à l'intérieur"
@@ -1257,9 +1264,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "If you wish to add an external link to this picture."
 #~ msgstr "Si vous souhaitez ajouter un lien externe à cette image."
-
-#~ msgid "Scroll Down"
-#~ msgstr "Défiler vers le bas"
 
 #~ msgid "on&nbsp;"
 #~ msgstr "le&nbsp;"
