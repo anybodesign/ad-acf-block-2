@@ -21,6 +21,12 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 1.7.2 - 2023-12-21
+* Page banner Block Fix (scroll button)
+
+### 1.7.1 - 2023-12-19
+* Posts Block Fix
+
 ### 1.7 - 2023-12-18
 * CTA Block Pattern
 * Card Block Pattern
