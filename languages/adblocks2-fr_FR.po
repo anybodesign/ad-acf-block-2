@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2023-12-21 13:46+0100\n"
-"PO-Revision-Date: 2023-12-21 13:46+0100\n"
+"POT-Creation-Date: 2024-01-12 14:08+0100\n"
+"PO-Revision-Date: 2024-01-12 14:08+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -49,72 +49,68 @@ msgstr "Lire la suite"
 msgid "of "
 msgstr "de "
 
-#: ad-acf-blocks-2.php:130 ad-acf-blocks-2/ad-acf-blocks-2.php:130
+#: ad-acf-blocks-2.php:131
+msgid "AD ACF Blocks Patterns"
+msgstr "AD ACF Blocks 2"
+
+#: ad-acf-blocks-2.php:137 ad-acf-blocks-2/ad-acf-blocks-2.php:130
 msgid "Call to action"
 msgstr "Call to action"
 
-#: ad-acf-blocks-2.php:155 ad-acf-blocks-2/ad-acf-blocks-2.php:155
+#: ad-acf-blocks-2.php:162 ad-acf-blocks-2/ad-acf-blocks-2.php:155
 msgid "Card"
 msgstr "Carte"
 
-#: ad-acf-blocks-2.php:203 ad-acf-blocks-2/ad-acf-blocks-2.php:203
+#: ad-acf-blocks-2.php:210 ad-acf-blocks-2/ad-acf-blocks-2.php:203
 msgid "Masonry"
 msgstr "Masonry"
 
-#: ad-acf-blocks-2.php:210 ad-acf-blocks-2/ad-acf-blocks-2.php:210
+#: ad-acf-blocks-2.php:217 ad-acf-blocks-2/ad-acf-blocks-2.php:210
 msgid "Grid"
 msgstr "﻿Grille"
 
 #. Plugin Name of the plugin/theme
-#: ad-acf-blocks-2.php:234 ad-acf-blocks-2/ad-acf-blocks-2.php:234
+#: ad-acf-blocks-2.php:241 ad-acf-blocks-2/ad-acf-blocks-2.php:234
 msgid "AD ACF Blocks 2"
 msgstr "AD ACF Blocks 2"
 
 #: ad-acf-blocks-2/assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:56
-#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:56
 msgid "View details"
 msgstr "Voir les détails"
 
 #: ad-acf-blocks-2/assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:79
-#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:79
 #, php-format
 msgid "More information about %s"
 msgstr "Plus d'informations sur %s"
 
 #: ad-acf-blocks-2/assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:130
-#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:130
 msgid "Check for updates"
 msgstr "Vérifier les mises à jour"
 
 #: ad-acf-blocks-2/assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:217
-#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:217
 #, php-format
 msgctxt "the plugin title"
 msgid "The %s plugin is up to date."
 msgstr "L’extension %s est à jour."
 
 #: ad-acf-blocks-2/assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:219
-#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:219
 #, php-format
 msgctxt "the plugin title"
 msgid "A new version of the %s plugin is available."
 msgstr "Une nouvelle version de l'extension %s est disponible."
 
 #: ad-acf-blocks-2/assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:221
-#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:221
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
 msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
 
 #: ad-acf-blocks-2/assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:227
-#: assets/plugin-update-checker-5.0/Puc/v5p0/Plugin/Ui.php:227
 #, php-format
 msgid "Unknown update checker status \"%s\""
 msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
 
 #: ad-acf-blocks-2/assets/plugin-update-checker-5.0/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
-#: assets/plugin-update-checker-5.0/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
 msgid "There is no changelog available."
 msgstr "Il n’y a aucun historique des mises à jour disponible."
 
@@ -621,6 +617,13 @@ msgstr "Afficher le libellé du bouton"
 msgid "Custom button label"
 msgstr "Libellé personnalisé"
 
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:410
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:134
+#: blocks/block-pagebanner/block-pagebanner-fields.php:410
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:134
+msgid "Scroll Down"
+msgstr "Défiler vers le bas"
+
 #: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner.php:14
 #: blocks/block-pagebanner/block-pagebanner.php:14
 msgid "Page Banner"
@@ -631,18 +634,18 @@ msgstr "Bannière de page"
 msgid "Add a page banner at the beginning of your page."
 msgstr "Ajoutez une bannière au début de votre page."
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:59
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:55
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:54
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:54
 msgid "Add some text here"
 msgstr "Ajouter du texte ici"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:77
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:73
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:72
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:72
 msgid "Stop video playback"
 msgstr "Arrêter la lecture vidéo"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:80
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:76
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:75
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:75
 msgid "Play video"
 msgstr "Lire la vidéo"
 
@@ -838,11 +841,6 @@ msgstr "Panneau précédent"
 #: blocks/block-posts/templates/block-posts-template.php:268
 msgid "Pannel"
 msgstr "Panneau"
-
-#: blocks/block-pagebanner/block-pagebanner-fields.php:410
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:135
-msgid "Scroll Down"
-msgstr "Défiler vers le bas"
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"
