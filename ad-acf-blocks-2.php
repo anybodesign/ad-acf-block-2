@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AD ACF Blocks 2
  * Description: A collection of blocks made with ACF for WordPress 
- * Version: 1.7.2
+ * Version: 1.8
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Text Domain: adblocks2
@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADB2__PLUGIN_VERSION', '1.7.2' );
+define( 'ADB2__PLUGIN_VERSION', '1.8' );
 define( 'ADB2__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADB2__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADB2__BASENAME', plugin_basename( __FILE__ ) );
@@ -120,9 +120,16 @@ function adblocks2_get_excerpt($count, $post_id){
 }
 
 
-// Block Patterns 
+// Block Patterns
+
+ 
 
 function adb2_register_blocks_patterns() {
+    
+    register_block_pattern_category(
+        'adblocks2_patterns',
+        array( 'label' => __( 'AD ACF Blocks Patterns', 'adblocks2' ) )
+    );
   
     register_block_pattern(
     'cta',
@@ -144,7 +151,7 @@ function adb2_register_blocks_patterns() {
             <!-- /wp:buttons --></div>
             <!-- /wp:column --></div>
             <!-- /wp:columns -->',
-            'categories'    => array( 'featured' ),
+            'categories'    => array( 'adblocks2_patterns' ),
             'keywords'      => array( 'cta', 'call to action' ),
         )
     );
@@ -179,7 +186,7 @@ function adb2_register_blocks_patterns() {
             <p class="has-text-align-center"><a href="#">Link</a></p>
             <!-- /wp:paragraph --></div>
             <!-- /wp:group -->',
-            'categories'    => array( 'featured' ),
+            'categories'    => array( 'adblocks2_patterns' ),
             'keywords'      => array( 'card', 'carte' ),
         )
     );
@@ -288,19 +295,4 @@ function adblocks2_admin_css() {
 		'screen' 
 	);
 }
-add_action( 'admin_init', 'adblocks2_admin_css' ); 
-
-
-//
-// Auto-Updater
-//
-// ////////////////
-
-
-require 'assets/plugin-update-checker-5.0/plugin-update-checker.php';
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
-$myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://lab.anybodesign.com/plugins/ad-acf-blocks-2/ad-acf-blocks-2.json',
-	__FILE__,
-	'ad-acf-blocks-2'
-);
+add_action( 'admin_init', 'adblocks2_admin_css' );
