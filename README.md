@@ -21,6 +21,10 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 1.8 - 2024-01-12
+* Removed auto updater (PUC)
+* Patterns Category
+
 ### 1.7.2 - 2023-12-21
 * Page banner Block Fix (scroll button)
 
