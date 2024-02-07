@@ -21,6 +21,11 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 1.9 - 2024-02-07
+* Featured image option for Posts block
+* Fallback image priority (plugin, theme, post)
+* Text domain fix
+
 ### 1.8 - 2024-01-12
 * Removed auto updater (PUC)
 * Patterns Category
