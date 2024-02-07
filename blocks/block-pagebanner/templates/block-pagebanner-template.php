@@ -69,10 +69,10 @@
 						<source type="video/mp4" src="<?php echo $video; ?>">
 					</video>
 					<button id="banner_stop"<?php if ( ! $auto ) { echo ' style="display:none"'; } ?>>
-						<img src="<?php echo ADB2__PLUGIN_URL .'/blocks/block-pagebanner/assets/stop.svg'; ?>" class="banner-btn" alt="<?php esc_html_e('Stop video playback', 'adblocks'); ?>">
+						<img src="<?php echo ADB2__PLUGIN_URL .'/blocks/block-pagebanner/assets/stop.svg'; ?>" class="banner-btn" alt="<?php esc_html_e('Stop video playback', 'adblocks2'); ?>">
 					</button>
 					<button id="banner_play"<?php if ( ! $auto ) { echo ' style="display:block"'; } ?>>
-						<img src="<?php echo ADB2__PLUGIN_URL .'/blocks/block-pagebanner/assets/play.svg'; ?>" class="banner-btn" alt="<?php esc_html_e('Play video', 'adblocks'); ?>">
+						<img src="<?php echo ADB2__PLUGIN_URL .'/blocks/block-pagebanner/assets/play.svg'; ?>" class="banner-btn" alt="<?php esc_html_e('Play video', 'adblocks2'); ?>">
 					</button>
 					
 					<?php } else if ( $type == 'slideshow' && $slideshow ) { ?>

@@ -49,7 +49,7 @@
 							//echo var_dump($file);
 				        ?>
 				        <li class="file-item">					        
-							<a href="<?php echo esc_url($url); ?>" title="<?php esc_attr_e('Download '.$title.'', 'adblocks'); ?>" download="<?php echo esc_attr($title); ?>">
+							<a href="<?php echo esc_url($url); ?>" title="<?php esc_attr_e('Download '.$title.'', 'adblocks2'); ?>" download="<?php echo esc_attr($title); ?>">
 								<?php if ($icons != false || $custom == true) { ?>
 								<div class="file-icon">
 									<?php if ($custom != true) { ?>

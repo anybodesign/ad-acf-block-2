@@ -53,7 +53,7 @@
 							?>
 							
 							<?php if ($enlarge) : ?>
-							<a href="<?php echo esc_url( $image['url'] ); ?>" title="<?php esc_attr_e('Enlarge picture', 'adblocks'); ?>" data-fancybox="gallery-<?php echo $i; ?>">
+							<a href="<?php echo esc_url( $image['url'] ); ?>" title="<?php esc_attr_e('Enlarge picture', 'adblocks2'); ?>" data-fancybox="gallery-<?php echo $i; ?>">
 							<?php endif; ?>	
 							   
 							<figure class="acf-block-gallery-figure"<?php if ( $image['caption'] ) { echo ' role="group"'; } ?>>

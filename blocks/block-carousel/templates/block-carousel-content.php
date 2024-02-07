@@ -32,7 +32,7 @@
 							$permalink = get_permalink( $p->ID );
 							$title = get_the_title( $p->ID );
 							
-							echo '<p>'.$manual_excerpt.' <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks2').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks').$title.'</span></a></p>';							
+							echo '<p>'.$manual_excerpt.' <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks2').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks2').$title.'</span></a></p>';							
 						?>
 					</div>
 				</div>
