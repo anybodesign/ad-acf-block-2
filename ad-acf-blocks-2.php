@@ -296,3 +296,18 @@ function adblocks2_admin_css() {
 	);
 }
 add_action( 'admin_init', 'adblocks2_admin_css' );
+
+
+//
+// Auto-Updater
+//
+// ////////////////
+
+
+require 'assets/plugin-update-checker-5.0/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+  'https://lab.anybodesign.com/plugins/ad-acf-blocks-2/ad-acf-blocks-2.json',
+  __FILE__,
+  'ad-acf-blocks-2'
+);
