@@ -26,15 +26,16 @@
 									else if ( has_post_thumbnail( $c->ID ) && $style == 'gallery' ) {
 										echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd');
 									}
+									else if ( ! has_post_thumbnail( $c->ID ) ) {
+										echo '<img src="' . ADB2__PLUGIN_URL .'assets/fallback.jpg" alt="">'; 
+									}
 									else if ( file_exists( $path1 ) ) {
 					            		echo '<img src="' . $fallback1. '" alt="">';  
 									}
 									else if ( file_exists( $path2 ) ) {
 					            		echo '<img src="' . $fallback2. '" alt="">';  
 									}
-									else {
-										echo '<img src="' . ADB2__PLUGIN_URL .'assets/fallback.jpg" alt="">'; 
-						        	}
+									
 						        ?>
 								<?php if ( $show != 'content' ) { ?>
 						        </a>
