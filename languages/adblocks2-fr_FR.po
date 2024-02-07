@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2024-02-02 10:41+0100\n"
-"PO-Revision-Date: 2024-02-02 10:41+0100\n"
+"POT-Creation-Date: 2024-02-07 10:06+0100\n"
+"PO-Revision-Date: 2024-02-07 10:06+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -37,7 +37,7 @@ msgstr ""
 #: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-content.php:35
 #: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:94
 #: blocks/block-carousel/templates/block-carousel-content.php:35
-#: blocks/block-posts/templates/block-posts-content.php:94
+#: blocks/block-posts/templates/block-posts-content.php:96
 msgid "Read more"
 msgstr "Lire la suite"
 
@@ -45,7 +45,7 @@ msgstr "Lire la suite"
 #: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-content.php:35
 #: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:94
 #: blocks/block-carousel/templates/block-carousel-content.php:35
-#: blocks/block-posts/templates/block-posts-content.php:94
+#: blocks/block-posts/templates/block-posts-content.php:96
 msgid "of "
 msgstr "de "
 
@@ -273,7 +273,7 @@ msgstr "Ajoutez un carrousel composé d'articles ou de contenu personnalisé."
 #: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-content.php:5
 #: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:20
 #: blocks/block-carousel/templates/block-carousel-content.php:5
-#: blocks/block-posts/templates/block-posts-content.php:20
+#: blocks/block-posts/templates/block-posts-content.php:21
 msgid "Read "
 msgstr "Lire "
 
@@ -725,37 +725,37 @@ msgid "None"
 msgstr "Aucun"
 
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:233
-#: blocks/block-posts/block-posts-fields.php:233
+#: blocks/block-posts/block-posts-fields.php:252
 msgid "Display post metas"
 msgstr "Afficher les metas de l'article"
 
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:260
-#: blocks/block-posts/block-posts-fields.php:260
+#: blocks/block-posts/block-posts-fields.php:279
 msgid "Additional metas"
 msgstr "Métas supplémentaires"
 
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:280
-#: blocks/block-posts/block-posts-fields.php:280
+#: blocks/block-posts/block-posts-fields.php:299
 msgid "Author"
 msgstr "Auteur"
 
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:281
-#: blocks/block-posts/block-posts-fields.php:281
+#: blocks/block-posts/block-posts-fields.php:300
 msgid "Category"
 msgstr "Catégorie"
 
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:293
-#: blocks/block-posts/block-posts-fields.php:293
+#: blocks/block-posts/block-posts-fields.php:312
 msgid "Custom taxonomy"
 msgstr "Taxonomie personnalisée"
 
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:326
-#: blocks/block-posts/block-posts-fields.php:326
+#: blocks/block-posts/block-posts-fields.php:345
 msgid "Carousel mode"
 msgstr "Mode carrousel"
 
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:345
-#: blocks/block-posts/block-posts-fields.php:345
+#: blocks/block-posts/block-posts-fields.php:364
 msgid "Only on mobile"
 msgstr "Seulement sur mobile"
 
@@ -765,19 +765,19 @@ msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
 #: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:60
-#: blocks/block-posts/templates/block-posts-content.php:60
+#: blocks/block-posts/templates/block-posts-content.php:62
 msgid "Posted on&nbsp;"
 msgstr "Publié le&nbsp;"
 
 #: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:64
-#: blocks/block-posts/templates/block-posts-content.php:64
+#: blocks/block-posts/templates/block-posts-content.php:66
 msgid "by&nbsp;"
 msgstr "par&nbsp;"
 
 #: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:69
 #: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-content.php:76
-#: blocks/block-posts/templates/block-posts-content.php:69
-#: blocks/block-posts/templates/block-posts-content.php:76
+#: blocks/block-posts/templates/block-posts-content.php:71
+#: blocks/block-posts/templates/block-posts-content.php:78
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
@@ -801,6 +801,10 @@ msgstr "Panneau précédent"
 #: blocks/block-posts/templates/block-posts-template.php:268
 msgid "Pannel"
 msgstr "Panneau"
+
+#: blocks/block-posts/block-posts-fields.php:233
+msgid "Display featured image"
+msgstr "Afficher l'image mise en avant"
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"
@@ -846,9 +850,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "There is no changelog available."
 #~ msgstr "Il n’y a aucun historique des mises à jour disponible."
-
-#~ msgid "Display featured image"
-#~ msgstr "Afficher l'image mise en avant"
 
 #~ msgid "Caption inside"
 #~ msgstr "Légende à l'intérieur"
