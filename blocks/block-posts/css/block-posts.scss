@@ -47,14 +47,14 @@
 
 		.acf-block-post-content--1col & {
 			display: flex;
-			flex-wrap: wrap;
+			flex-wrap: nowrap;
 			
 			.acf-block-post-figure {
-				width: 30%;
+				max-width: 30%;
 				padding-right: $grid-padding*2;
 			}
 			.acf-block-post-content {
-				width: 70%;	
+				flex: 1 0 auto;	
 			}
 		}		
 		.acf-block-post-content--2cols & {

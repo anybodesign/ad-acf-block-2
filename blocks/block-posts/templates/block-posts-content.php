@@ -10,8 +10,9 @@
 	$path2 = $location. 'fallback.jpg';
 	$fallback1 = get_template_directory_uri(). '/img/fallback.png';
 	$fallback2 = get_template_directory_uri(). '/img/fallback.jpg';
+	
+	$featured = get_field('featured');
 ?>
-
 						<div class="acf-block-post-item <?php echo $cpt.'-block'; ?>">
 					        
 						<?php if ( !isset( $featured ) || $featured == true ) { ?>

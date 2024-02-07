@@ -229,6 +229,25 @@ function adblocks2_posts_fields() {
 					'placeholder' => '',
 				),
 				array(
+					'key' => 'field_display_featured_img',
+					'label' => __('Display featured image', 'adblocks2'),
+					'name' => 'featured',
+					'type' => 'true_false',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '50',
+						'class' => '',
+						'id' => '',
+					),
+					'message' => '',
+					'default_value' => 1,
+					'ui' => 1,
+					'ui_on_text' => '',
+					'ui_off_text' => '',
+				),
+				array(
 					'key' => 'field_5e454fa2b2b02',
 					'label' => __('Display post metas', 'adblocks2'),
 					'name' => 'metas',
@@ -245,7 +264,7 @@ function adblocks2_posts_fields() {
 						),
 					),
 					'wrapper' => array(
-						'width' => '40',
+						'width' => '50',
 						'class' => '',
 						'id' => '',
 					),
@@ -272,7 +291,7 @@ function adblocks2_posts_fields() {
 						),
 					),
 					'wrapper' => array(
-						'width' => '30',
+						'width' => '50',
 						'class' => '',
 						'id' => '',
 					),
@@ -311,7 +330,7 @@ function adblocks2_posts_fields() {
 						),
 					),
 					'wrapper' => array(
-						'width' => '30',
+						'width' => '50',
 						'class' => '',
 						'id' => '',
 					),
