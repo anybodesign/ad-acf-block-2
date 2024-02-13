@@ -122,7 +122,6 @@ function adblocks2_get_excerpt($count, $post_id){
 
 // Block Patterns
 
- 
 
 function adb2_register_blocks_patterns() {
     
@@ -296,6 +295,60 @@ function adblocks2_admin_css() {
 	);
 }
 add_action( 'admin_init', 'adblocks2_admin_css' );
+
+
+// Populate Posts Blocks CPT field
+
+function acf_load_cpt_choices( $field ) {
+    
+    // Reset choices
+    $field['choices'] = array();
+    
+    // Get post types
+    $args = array(
+        'public' => true,
+    );
+    $post_types = get_post_types( $args, 'objects' );
+    
+    foreach ( $post_types as $cpt ):
+        $value = $cpt->name;
+        $label = $cpt->labels->singular_name;
+        
+        $field[ 'choices' ][ $value ] = $label;
+    endforeach;
+    
+    // Return the field
+    return $field;
+    
+}
+add_filter('acf/load_field/name=auto_type', 'acf_load_cpt_choices');
+
+
+// Populate Posts Blocks Tax field
+
+function acf_load_tax_choices( $field ) {
+    
+    // Reset choices
+    $field['choices'] = array();
+    
+    // Get post types
+    $args = array(
+        'public' => true,
+    );
+    $the_taxs = get_taxonomies( $args, 'objects' );
+    
+    foreach ( $the_taxs as $tax ):
+        $value = $tax->name;
+        $label = $tax->labels->singular_name;
+        
+        $field[ 'choices' ][ $value ] = $label;
+    endforeach;
+    
+    // Return the field
+    return $field;
+    
+}
+add_filter('acf/load_field/name=your_tax', 'acf_load_tax_choices');
 
 
 //
