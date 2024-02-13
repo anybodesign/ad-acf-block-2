@@ -49,12 +49,17 @@
 	}
 }
 
+.file-item-picture,
 .file-item-icon {
 	display: block;
 	width: 2rem;
 	height: auto;
 	margin-right: 1rem;
 }
+.file-item-picture {
+	width: 4rem;
+}
+
 .file-infos {
 	span {
 		line-height: 1.1;

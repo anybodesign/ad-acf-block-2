@@ -15,9 +15,9 @@
 	$icons = get_field('files_icons');
 	$custom = get_field('custom_icons');
 	
+	$img_size = get_field('size');
 
 ?>
-
 			<?php // Block preview
 				if( !empty( $block['data']['__is_preview'] ) ) { ?>
 			    <img src="<?php echo ADB2__PLUGIN_URL; ?>assets/previews/files-preview.png" alt="" class="adblock-preview">
@@ -41,6 +41,8 @@
 							$desc = $file['description'];
 							
 							$customtitle = get_sub_field('title');
+							$img = get_sub_field('thumb');
+							
 							
 							$filesize = $file['filesize'];
 							$size_mo = $filesize / 1000000;
@@ -50,7 +52,11 @@
 				        ?>
 				        <li class="file-item">					        
 							<a href="<?php echo esc_url($url); ?>" title="<?php esc_attr_e('Download '.$title.'', 'adblocks2'); ?>" download="<?php echo esc_attr($title); ?>">
-								<?php if ($icons != false || $custom == true) { ?>
+								<?php if ($img) { ?>
+								<div class="file-picture">	
+									<img class="file-item-picture" src="<?php echo $img['sizes'][$img_size]; ?>" alt="">
+								</div>
+								<?php } else if ($icons != false || $custom == true) { ?>
 								<div class="file-icon">
 									<?php if ($custom != true) { ?>
 									<img class="file-item-icon" src="<?php echo esc_url($icon); ?>" alt="">
