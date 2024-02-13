@@ -21,6 +21,10 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.0 - 2024-02-13
+* Posts block: Populate select fields with CPT and taxonomies
+* Files block: Thumbnail option
+
 ### 1.9.1 - 2024-02-07
 * PUC v5
 
