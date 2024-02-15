@@ -175,7 +175,7 @@ function adblocks2_posts_fields() {
 				),
 				array(
 					'key' => 'field_5dfa2c4cc8bb0',
-					'label' => __('Content to show', 'adblocks2'),
+					'label' => __('Content to show below the title', 'adblocks2'),
 					'name' => 'content_show',
 					'type' => 'button_group',
 					'instructions' => '',
@@ -197,6 +197,7 @@ function adblocks2_posts_fields() {
 					'choices' => array(
 						'excerpt' => __('Excerpt', 'adblocks2'),
 						'content' => __('Full content', 'adblocks2'),
+						'none' => __('None', 'adblocks2'),
 					),
 					'allow_null' => 0,
 					'default_value' => 'excerpt',

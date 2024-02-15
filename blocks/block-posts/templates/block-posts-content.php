@@ -82,7 +82,7 @@
 									<?php } ?>									
 								</header>
 								
-								<?php if ( $style != 'gallery' ) { ?>
+								<?php if ( $style != 'gallery' || $show != 'none' ) { ?>
 								<div class="acf-block-post-excerpt">
 									<?php 
 										if ($show == 'excerpt') {
