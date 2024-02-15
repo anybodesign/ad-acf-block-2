@@ -21,6 +21,12 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.1 - 2024-02-15
+* Posts block: No excerpt option
+* Gallery block: Slider option
+* Carousel block: Fade option
+* Class fix (adblockers)
+
 ### 2.0 - 2024-02-13
 * Posts block: Populate select fields with CPT and taxonomies
 * Files block: Thumbnail option
