@@ -10,7 +10,7 @@
 	}
 }
 
-.the-ad-carousel {
+.the-adb-carousel {
 	position: relative;
 	padding: 0 2rem;
 	
@@ -45,7 +45,7 @@
  
 .wp-admin {
 	
-	.the-ad-carousel {
+	.the-adb-carousel {
 		
 		&.type-posts,
 		& .block-editor-inner-blocks > .block-editor-block-list__layout {
@@ -129,7 +129,7 @@
 		}
 	}
 	
-	.has-child-selected .the-ad-carousel {
+	.has-child-selected .the-adb-carousel {
 		
 		&.type-posts,
 		& .block-editor-inner-blocks > .block-editor-block-list__layout {
