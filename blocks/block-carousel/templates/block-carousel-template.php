@@ -21,6 +21,7 @@
 	$type = get_field('type');
 	
 	$auto = get_field('autoplay');
+	$fade = get_field('fade');
 	$speed = get_field('speed');
 	$autospeed = get_field('autospeed');
 	$arrows = get_field('arrows');
@@ -44,7 +45,7 @@
 	if ($dots) { $do = 'true'; } else { $do = 'false'; }
 	
 	$i = rand();
-	$slider_id = 'ad_carousel_'.$i;
+	$slider_id = 'adb_carousel_'.$i;
 ?>
 
 			<?php // Block preview
@@ -55,7 +56,7 @@
 			<section class="<?php echo esc_attr($className); ?>" <?php echo esc_attr($anchor); ?>>
 				<div class="acf-block-container">
 					
-					<div class="the-ad-carousel  type-<?php echo esc_attr($type); ?> <?php echo esc_attr($elems); ?>" id="<?php echo $slider_id; ?>">
+					<div class="the-adb-carousel  type-<?php echo esc_attr($type); ?> <?php echo esc_attr($elems); ?>" id="<?php echo $slider_id; ?>">
 						<?php if ( $the_posts && $type == 'posts' ) : ?>
 							
 							<?php 
@@ -85,6 +86,9 @@
 								arrows: <?php echo $arr; ?>,
 								dots: <?php echo $do; ?>,
 								pauseOnHover: true,
+								<?php if ($fade) {
+									echo 'fade: true,';
+								} ?>
 								//variableWidth: true,
 								nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Panneau suivant"> › </button>',
 								prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Panneau précédent"> ‹ </button>',
