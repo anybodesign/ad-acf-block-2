@@ -8,6 +8,108 @@
 	.acf-block-container {
 		
 	}
+	
+	// Slider
+	
+	.the-adb-carousel {
+		
+		.slick-track {
+			display: flex;
+			align-items: stretch;
+			
+			.slick-slide {
+				height: auto;
+				display: flex;
+				
+				a, img,
+				.acf-block-gallery-figure {
+					height: 100%;
+				}
+				a {
+					height: 100%;
+				}
+				img {
+					object-fit: cover;
+				}
+			}
+		}
+		
+		
+		.wp-admin & {
+			.acf-block-gallery-item {
+				display: none;
+			}
+			
+			&.is-col-1 {
+				.acf-block-gallery-item:first-child {
+					display: block;
+				}
+			}
+			&.is-col-2 {
+				.acf-block-gallery-item:nth-child(1),
+				.acf-block-gallery-item:nth-child(2) {
+					display: block;
+				}
+			}
+			&.is-col-3 {
+				.acf-block-gallery-item:nth-child(1),
+				.acf-block-gallery-item:nth-child(2),
+				.acf-block-gallery-item:nth-child(3) {
+					display: block;
+				}
+			}
+			&.is-col-4 {
+				.acf-block-gallery-item:nth-child(1),
+				.acf-block-gallery-item:nth-child(2),
+				.acf-block-gallery-item:nth-child(3),
+				.acf-block-gallery-item:nth-child(4) {
+					display: block;
+				}
+			}
+			&.is-col-5 {
+				.acf-block-gallery-item:nth-child(1),
+				.acf-block-gallery-item:nth-child(2),
+				.acf-block-gallery-item:nth-child(3),
+				.acf-block-gallery-item:nth-child(4),
+				.acf-block-gallery-item:nth-child(5) {
+					display: block;
+				}
+			}
+			&.is-col-6 {
+				.acf-block-gallery-item:nth-child(1),
+				.acf-block-gallery-item:nth-child(2),
+				.acf-block-gallery-item:nth-child(3),
+				.acf-block-gallery-item:nth-child(4),
+				.acf-block-gallery-item:nth-child(5),
+				.acf-block-gallery-item:nth-child(6) {
+					display: block;
+				}
+			}
+			&.is-col-7 {
+				.acf-block-gallery-item:nth-child(1),
+				.acf-block-gallery-item:nth-child(2),
+				.acf-block-gallery-item:nth-child(3),
+				.acf-block-gallery-item:nth-child(4),
+				.acf-block-gallery-item:nth-child(5),
+				.acf-block-gallery-item:nth-child(6),
+				.acf-block-gallery-item:nth-child(7) {
+					display: block;
+				}
+			}
+			&.is-col-8 {
+				.acf-block-gallery-item:nth-child(1),
+				.acf-block-gallery-item:nth-child(2),
+				.acf-block-gallery-item:nth-child(3),
+				.acf-block-gallery-item:nth-child(4),
+				.acf-block-gallery-item:nth-child(5),
+				.acf-block-gallery-item:nth-child(6),
+				.acf-block-gallery-item:nth-child(7),
+				.acf-block-gallery-item:nth-child(8) {
+					display: block;
+				}
+			}
+		}
+	}
 }
 
 .acf-gallery-container {
@@ -244,10 +346,11 @@
 	.acf-block-gallery-caption-title {
 		color: #fff;
 	}
-		
+	
 	// Hidden
 	
 	.is-caption-hidden & {
+		margin: 0;
 		height: 100%;
 		background: rgba(0, 0, 0, 0.8);
 		display: flex;

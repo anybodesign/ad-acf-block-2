@@ -72,6 +72,34 @@ function adb2_gallery_assets() {
 		null, 
 		true
 	);
+	wp_register_style( 
+		'adb2-slick-css', 
+		ADB2__PLUGIN_URL . 'assets/css/slick.css', 
+		array(), 
+		null, 
+		'screen'
+	);
+	wp_register_style( 
+		'adb2-slick-theme', 
+		ADB2__PLUGIN_URL . 'assets/css/slick-theme.css', 
+		array(), 
+		null, 
+		'screen'
+	);
+	wp_register_script( 
+		'adb2-slick', 
+		ADB2__PLUGIN_URL . 'assets/js/slick.min.js',
+		array('jquery'), 
+		null, 
+		true
+	);
+	wp_register_script( 
+		'adb2-slick-init', 
+		ADB2__PLUGIN_URL . 'assets/js/slick-init.js',
+		array('adb2-slick'), 
+		null, 
+		true
+	);
 	
 	wp_enqueue_style( 'adb2-block-gallery-css' );		
    
