@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2024-02-13 11:40+0100\n"
-"PO-Revision-Date: 2024-02-13 11:40+0100\n"
+"POT-Creation-Date: 2024-02-15 21:48+0100\n"
+"PO-Revision-Date: 2024-02-15 21:48+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -49,28 +49,28 @@ msgstr "Lire la suite"
 msgid "of "
 msgstr "de "
 
-#: ad-acf-blocks-2.php:130 ad-acf-blocks-2/ad-acf-blocks-2.php:131
+#: ad-acf-blocks-2.php:130 ad-acf-blocks-2/ad-acf-blocks-2.php:130
 msgid "AD ACF Blocks Patterns"
 msgstr "AD ACF Blocks 2"
 
-#: ad-acf-blocks-2.php:136 ad-acf-blocks-2/ad-acf-blocks-2.php:137
+#: ad-acf-blocks-2.php:136 ad-acf-blocks-2/ad-acf-blocks-2.php:136
 msgid "Call to action"
 msgstr "Call to action"
 
-#: ad-acf-blocks-2.php:161 ad-acf-blocks-2/ad-acf-blocks-2.php:162
+#: ad-acf-blocks-2.php:161 ad-acf-blocks-2/ad-acf-blocks-2.php:161
 msgid "Card"
 msgstr "Carte"
 
-#: ad-acf-blocks-2.php:209 ad-acf-blocks-2/ad-acf-blocks-2.php:210
+#: ad-acf-blocks-2.php:209 ad-acf-blocks-2/ad-acf-blocks-2.php:209
 msgid "Masonry"
 msgstr "Masonry"
 
-#: ad-acf-blocks-2.php:216 ad-acf-blocks-2/ad-acf-blocks-2.php:217
+#: ad-acf-blocks-2.php:216 ad-acf-blocks-2/ad-acf-blocks-2.php:216
 msgid "Grid"
 msgstr "﻿Grille"
 
 #. Plugin Name of the plugin/theme
-#: ad-acf-blocks-2.php:240 ad-acf-blocks-2/ad-acf-blocks-2.php:241
+#: ad-acf-blocks-2.php:240 ad-acf-blocks-2/ad-acf-blocks-2.php:240
 msgid "AD ACF Blocks 2"
 msgstr "AD ACF Blocks 2"
 
@@ -172,9 +172,11 @@ msgstr ""
 "tête collant."
 
 #: ad-acf-blocks-2/blocks/block-anchor/block-anchor-fields.php:79
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:104
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:124
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:148
 #: blocks/block-anchor/block-anchor-fields.php:79
-#: blocks/block-carousel/block-carousel-fields.php:104
+#: blocks/block-carousel/block-carousel-fields.php:124
+#: blocks/block-gallery/block-gallery-fields.php:148
 msgid "Speed"
 msgstr "Vitesse"
 
@@ -270,40 +272,59 @@ msgid "Exisiting posts"
 msgstr "Publications existantes"
 
 #: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:62
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:181
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:62
 #: blocks/block-carousel/block-carousel-fields.php:62
+#: blocks/block-gallery/block-gallery-fields.php:62
+msgid "Fade or Slide"
+msgstr "Fondu ou Slide"
+
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:82
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:90
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:181
+#: blocks/block-carousel/block-carousel-fields.php:82
+#: blocks/block-gallery/block-gallery-fields.php:90
 #: blocks/block-pagebanner/block-pagebanner-fields.php:181
 msgid "Autoplay"
 msgstr "Lecture automatique"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:82
-#: blocks/block-carousel/block-carousel-fields.php:82
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:102
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:118
+#: blocks/block-carousel/block-carousel-fields.php:102
+#: blocks/block-gallery/block-gallery-fields.php:118
 msgid "Slide duration"
 msgstr "Durée des slides"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:86
-#: blocks/block-carousel/block-carousel-fields.php:86
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:106
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:122
+#: blocks/block-carousel/block-carousel-fields.php:106
+#: blocks/block-gallery/block-gallery-fields.php:122
 msgid "Slide duration in Autoplay mode"
 msgstr "Durée des slides en mode lecture automatique"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:108
-#: blocks/block-carousel/block-carousel-fields.php:108
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:128
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:152
+#: blocks/block-carousel/block-carousel-fields.php:128
+#: blocks/block-gallery/block-gallery-fields.php:152
 msgid "Transition speed between two slides"
 msgstr "Durée de la transition entre deux slides"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:126
-#: blocks/block-carousel/block-carousel-fields.php:126
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:146
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:178
+#: blocks/block-carousel/block-carousel-fields.php:146
+#: blocks/block-gallery/block-gallery-fields.php:178
 msgid "Display arrows"
 msgstr "Afficher les flèches"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:146
-#: blocks/block-carousel/block-carousel-fields.php:146
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:166
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:206
+#: blocks/block-carousel/block-carousel-fields.php:166
+#: blocks/block-gallery/block-gallery-fields.php:206
 msgid "Display dots"
 msgstr "Afficher les points"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:166
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:186
 #: ad-acf-blocks-2/blocks/block-posts/block-posts.php:14
-#: blocks/block-carousel/block-carousel-fields.php:166
+#: blocks/block-carousel/block-carousel-fields.php:186
 #: blocks/block-posts/block-posts.php:14
 msgid "Posts"
 msgstr "Publications"
@@ -427,17 +448,29 @@ msgstr "Type de fichier autorisé: PDF, ZIP, DOC, JPEG, PNG, MP3 et MP4"
 msgid "Custom title"
 msgstr "Titre personnalisé"
 
-#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:71
+#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:69
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:276
+#: blocks/block-files/block-files-fields.php:69
+#: blocks/block-gallery/block-gallery-fields.php:276
+msgid "Thumbnail"
+msgstr "Vignette"
+
+#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:104
 #: blocks/block-files/block-files-fields.php:104
 msgid "Display file type icon"
 msgstr "Afficher l’icône de type de fichier"
 
-#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:90
+#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:107
+#: blocks/block-files/block-files-fields.php:107
+msgid "Disabled if a picture is set in the file list"
+msgstr "Désactivé si une image est définie dans la liste des fichiers"
+
+#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:131
 #: blocks/block-files/block-files-fields.php:131
 msgid "Use custom theme icons"
 msgstr "Utiliser des icônes personnalisées du thème"
 
-#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:93
+#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:134
 #: blocks/block-files/block-files-fields.php:134
 msgid ""
 "Icons path in the theme must be: <em>/img/icons/files/</em><br>\n"
@@ -449,6 +482,21 @@ msgstr ""
 "Noms des fichiers : <em>archive.svg, audio.svg, picture.svg, text.svg, video."
 "svg, blank.svg</em>"
 
+#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:159
+#: blocks/block-files/block-files-fields.php:159
+msgid "Use Thumbnails instead of Icons"
+msgstr "Utiliser des vignettes au lieu d’icônes"
+
+#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:179
+#: blocks/block-files/block-files-fields.php:179
+msgid "Thumbnail size"
+msgstr "Taille de la vignette"
+
+#: ad-acf-blocks-2/blocks/block-files/block-files-fields.php:183
+#: blocks/block-files/block-files-fields.php:183
+msgid "thumbnail, medium, large, full or custom size"
+msgstr "thumbnail, medium, large, full ou taille personnalisée"
+
 #: ad-acf-blocks-2/blocks/block-files/block-files.php:14
 #: blocks/block-files/block-files.php:14
 msgid "List Of Files"
@@ -459,7 +507,7 @@ msgstr "Liste de fichiers"
 msgid "Add a downloadable file list."
 msgstr "Ajouter une liste de fichiers téléchargeables."
 
-#: ad-acf-blocks-2/blocks/block-files/templates/block-files-template.php:52
+#: ad-acf-blocks-2/blocks/block-files/templates/block-files-template.php:54
 #: blocks/block-files/templates/block-files-template.php:54
 msgid "Download "
 msgstr "Télécharger "
@@ -481,52 +529,51 @@ msgstr "8"
 
 #: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:41
 #: blocks/block-gallery/block-gallery-fields.php:41
+msgid "Slider"
+msgstr "Slider"
+
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:235
+#: blocks/block-gallery/block-gallery-fields.php:235
 msgid "Pictures"
 msgstr "Images"
 
-#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:69
-#: blocks/block-gallery/block-gallery-fields.php:69
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:263
+#: blocks/block-gallery/block-gallery-fields.php:263
 msgid "Picture size"
 msgstr "Taille de l'image"
 
-#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:82
-#: blocks/block-files/block-files-fields.php:69
-#: blocks/block-gallery/block-gallery-fields.php:82
-msgid "Thumbnail"
-msgstr "Vignette"
-
-#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:83
-#: blocks/block-gallery/block-gallery-fields.php:83
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:277
+#: blocks/block-gallery/block-gallery-fields.php:277
 msgid "Medium"
 msgstr "Moyenne"
 
-#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:84
-#: blocks/block-gallery/block-gallery-fields.php:84
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:278
+#: blocks/block-gallery/block-gallery-fields.php:278
 msgid "Large"
 msgstr "Grande"
 
-#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:96
-#: blocks/block-gallery/block-gallery-fields.php:96
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:290
+#: blocks/block-gallery/block-gallery-fields.php:290
 msgid "Enlarge pictures"
 msgstr "Agrandir les images"
 
-#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:100
-#: blocks/block-gallery/block-gallery-fields.php:100
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:294
+#: blocks/block-gallery/block-gallery-fields.php:294
 msgid "Enlarge with Fancybox"
 msgstr "Agrandir avec Fancybox"
 
-#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:116
-#: blocks/block-gallery/block-gallery-fields.php:116
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:310
+#: blocks/block-gallery/block-gallery-fields.php:310
 msgid "Hidden caption"
 msgstr "Légende cachée"
 
-#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:120
-#: blocks/block-gallery/block-gallery-fields.php:120
+#: ad-acf-blocks-2/blocks/block-gallery/block-gallery-fields.php:314
+#: blocks/block-gallery/block-gallery-fields.php:314
 msgid "Revealed on mouse over and focus"
 msgstr "Révélée au survol de la souris et au focus"
 
 #: ad-acf-blocks-2/blocks/block-gallery/block-gallery.php:14
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:165
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:169
 #: blocks/block-gallery/block-gallery.php:14
 #: blocks/block-posts/block-posts-fields.php:169
 msgid "Gallery"
@@ -537,8 +584,8 @@ msgstr "Galerie"
 msgid "Add a gallery"
 msgstr "Ajouter une galerie"
 
-#: ad-acf-blocks-2/blocks/block-gallery/templates/block-gallery-template.php:56
-#: blocks/block-gallery/templates/block-gallery-template.php:56
+#: ad-acf-blocks-2/blocks/block-gallery/templates/block-gallery-template.php:88
+#: blocks/block-gallery/templates/block-gallery-template.php:88
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
@@ -698,117 +745,110 @@ msgstr "Laisser vide pour afficher toutes les publications"
 msgid "Post type"
 msgstr "Type de publication"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:93
-msgid ""
-"<em>post</em> for Posts, <em>page</em> for Pages or <em>your_cpt_slug</em> "
-"for any custom post type."
-msgstr ""
-"<em>post</em> pour les articles, <em>page</em> pour les pages ou "
-"<em>votre_slug_de_cpt</em> pour n’importe quel type de publication "
-"personnalisé."
-
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:117
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:121
 #: blocks/block-posts/block-posts-fields.php:121
 msgid "Select one or many publications"
 msgstr "Sélectionner une ou plusieurs publications"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:152
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:156
 #: blocks/block-posts/block-posts-fields.php:156
 msgid "Style"
 msgstr "Style"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:164
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:168
 #: blocks/block-posts/block-posts-fields.php:168
 msgid "Classic"
 msgstr "Classique"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:174
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:178
 #: blocks/block-posts/block-posts-fields.php:178
-msgid "Content to show"
-msgstr "Contenu à afficher"
+msgid "Content to show below the title"
+msgstr "Contenu à afficher sous le titre"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:194
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:198
 #: blocks/block-posts/block-posts-fields.php:198
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:195
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:199
 #: blocks/block-posts/block-posts-fields.php:199
 msgid "Full content"
 msgstr "Contenu complet"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:204
-#: blocks/block-posts/block-posts-fields.php:208
-msgid "Posts title level"
-msgstr "Niveau de titre des publications"
-
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:216
-#: blocks/block-posts/block-posts-fields.php:220
-msgid "H2"
-msgstr "H2"
-
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:217
-#: blocks/block-posts/block-posts-fields.php:221
-msgid "H3"
-msgstr "H3"
-
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:218
-#: blocks/block-posts/block-posts-fields.php:222
-msgid "H4"
-msgstr "H4"
-
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:219
-#: blocks/block-posts/block-posts-fields.php:223
-msgid "H5"
-msgstr "H5"
-
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:220
-#: blocks/block-posts/block-posts-fields.php:224
-msgid "H6"
-msgstr "H6"
-
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:221
-#: blocks/block-posts/block-posts-fields.php:225
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:200
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:226
+#: blocks/block-posts/block-posts-fields.php:200
+#: blocks/block-posts/block-posts-fields.php:226
 msgid "None"
 msgstr "Aucun"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:233
-#: blocks/block-posts/block-posts-fields.php:237
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:209
+#: blocks/block-posts/block-posts-fields.php:209
+msgid "Posts title level"
+msgstr "Niveau de titre des publications"
+
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:221
+#: blocks/block-posts/block-posts-fields.php:221
+msgid "H2"
+msgstr "H2"
+
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:222
+#: blocks/block-posts/block-posts-fields.php:222
+msgid "H3"
+msgstr "H3"
+
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:223
+#: blocks/block-posts/block-posts-fields.php:223
+msgid "H4"
+msgstr "H4"
+
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:224
+#: blocks/block-posts/block-posts-fields.php:224
+msgid "H5"
+msgstr "H5"
+
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:225
+#: blocks/block-posts/block-posts-fields.php:225
+msgid "H6"
+msgstr "H6"
+
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:238
+#: blocks/block-posts/block-posts-fields.php:238
 msgid "Display featured image"
 msgstr "Afficher l'image mise en avant"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:252
-#: blocks/block-posts/block-posts-fields.php:256
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:257
+#: blocks/block-posts/block-posts-fields.php:257
 msgid "Display post metas"
 msgstr "Afficher les metas de l'article"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:279
-#: blocks/block-posts/block-posts-fields.php:283
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:284
+#: blocks/block-posts/block-posts-fields.php:284
 msgid "Additional metas"
 msgstr "Métas supplémentaires"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:299
-#: blocks/block-posts/block-posts-fields.php:303
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:304
+#: blocks/block-posts/block-posts-fields.php:304
 msgid "Author"
 msgstr "Auteur"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:300
-#: blocks/block-posts/block-posts-fields.php:304
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:305
+#: blocks/block-posts/block-posts-fields.php:305
 msgid "Category"
 msgstr "Catégorie"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:312
-#: blocks/block-posts/block-posts-fields.php:316
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:317
+#: blocks/block-posts/block-posts-fields.php:317
 msgid "Custom taxonomy"
 msgstr "Taxonomie personnalisée"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:345
-#: blocks/block-posts/block-posts-fields.php:353
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:354
+#: blocks/block-posts/block-posts-fields.php:354
 msgid "Carousel mode"
 msgstr "Mode carrousel"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:364
-#: blocks/block-posts/block-posts-fields.php:372
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:373
+#: blocks/block-posts/block-posts-fields.php:373
 msgid "Only on mobile"
 msgstr "Seulement sur mobile"
 
@@ -855,22 +895,6 @@ msgstr "Panneau précédent"
 msgid "Pannel"
 msgstr "Panneau"
 
-#: blocks/block-files/block-files-fields.php:107
-msgid "Disabled if a picture is set in the file list"
-msgstr "Désactivé si une image est définie dans la liste des fichiers"
-
-#: blocks/block-files/block-files-fields.php:159
-msgid "Use Thumbnails instead of Icons"
-msgstr "Utiliser des vignettes au lieu d’icônes"
-
-#: blocks/block-files/block-files-fields.php:179
-msgid "Thumbnail size"
-msgstr "Taille de la vignette"
-
-#: blocks/block-files/block-files-fields.php:183
-msgid "thumbnail, medium, large, full or custom size"
-msgstr "thumbnail, medium, large, full ou taille personnalisée"
-
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"
 msgstr "Une collection de blocs réalisés avec ACF pour WordPress"
@@ -882,6 +906,14 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid ""
+#~ "<em>post</em> for Posts, <em>page</em> for Pages or <em>your_cpt_slug</"
+#~ "em> for any custom post type."
+#~ msgstr ""
+#~ "<em>post</em> pour les articles, <em>page</em> pour les pages ou "
+#~ "<em>votre_slug_de_cpt</em> pour n’importe quel type de publication "
+#~ "personnalisé."
 
 #~ msgid "Caption inside"
 #~ msgstr "Légende à l'intérieur"
