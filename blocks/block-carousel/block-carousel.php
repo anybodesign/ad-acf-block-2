@@ -51,13 +51,6 @@ function adb2_carousel_assets() {
 		null, 
 		'screen'
 	);
-    wp_register_script( 
-    	'adb2-block-carousel-js', 
-    	ADB2__PLUGIN_URL . 'blocks/block-carousel/js/block-carousel.js',
-    	array('jquery'), 
-    	null, 
-    	true
-    );
 	wp_register_style( 
 		'adb2-slick-css', 
 		ADB2__PLUGIN_URL . 'assets/css/slick.css', 
@@ -79,12 +72,19 @@ function adb2_carousel_assets() {
 		null, 
 		true
 	);
+	wp_register_script( 
+		'adb2-slick-init', 
+		ADB2__PLUGIN_URL . 'assets/js/slick-init.js',
+		array('adb2-slick'), 
+		null, 
+		true
+	);
 	
 	if ( ! is_admin() ) {
 		wp_enqueue_style( 'adb2-slick-css' );
 		wp_enqueue_style( 'adb2-slick-theme' );
 		wp_enqueue_script( 'adb2-slick' );
-		wp_enqueue_script( 'adb2-block-carousel-js' );
+		wp_enqueue_script( 'adb2-slick-init' );
 	}
 
 	wp_enqueue_style( 'adb2-block-carousel-css' );
