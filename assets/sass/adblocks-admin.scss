@@ -15,4 +15,21 @@ innerblocks,
 	}
 }
 
+// Switch
+
+.acf-true-false {
+	
+	input[id*='_fade'] + .acf-switch {
+		background: rgb(118, 53, 21);
+		
+		&.-on {
+			background: rgb(0, 83, 110);
+		}
+		.acf-switch-on,
+		.acf-switch-off {
+			color: #fff;
+		}
+	}
+}
+
 @import 'adblocks.scss';

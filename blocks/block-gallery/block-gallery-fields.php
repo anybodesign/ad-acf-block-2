@@ -81,8 +81,8 @@ function adblocks2_gallery_fields() {
 					),
 					'message' => '',
 					'default_value' => 0,
-					'ui_on_text' => 'Fade',
-					'ui_off_text' => 'Slide',
+					'ui_on_text' => __('Fade', 'adblocks2'),
+					'ui_off_text' => __('Slide', 'adblocks2'),
 					'ui' => 1,
 				),
 				array(
