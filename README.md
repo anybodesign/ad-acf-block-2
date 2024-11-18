@@ -21,6 +21,12 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.2 - 2024-11-18
+* Gallery block admin: Fade or Slide button CSS
+* Gallery/Carousel img width
+* i18n: missing strings
+* i18n: load text domain fix
+
 ### 2.1 - 2024-02-15
 * Posts block: No excerpt option
 * Gallery block: Slider option
