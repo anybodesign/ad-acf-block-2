@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADB2__PLUGIN_VERSION', '2.1' );
+define( 'ADB2__PLUGIN_VERSION', '2.2' );
 define( 'ADB2__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADB2__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADB2__BASENAME', plugin_basename( __FILE__ ) );
@@ -41,7 +41,11 @@ define( 'ADB2__BASENAME', plugin_basename( __FILE__ ) );
 
 // i18n
 
-load_plugin_textdomain( 'adblocks2', false, basename( dirname( __FILE__ ) ) . '/languages/' );
+function adblocks2_init_lang() {
+  
+  load_plugin_textdomain( 'adblocks2', false, basename( dirname( __FILE__ ) ) . '/languages/' );
+}
+add_action( 'init', 'adblocks2_init_lang' );
 
 
 // Image size
