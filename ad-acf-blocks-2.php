@@ -298,7 +298,7 @@ function acf_load_tax_choices( $field ) {
     
 }
 add_filter('acf/load_field/name=your_tax', 'acf_load_tax_choices');
-
+//add_filter('acf/load_field/name=auto_tax', 'acf_load_tax_choices');
 
 // Image size
 
