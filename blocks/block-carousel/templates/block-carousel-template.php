@@ -17,8 +17,10 @@
 		)),
 	);
 	
-	$elems = get_field('elems');
+	
 	$type = get_field('type');
+	$elems = get_field('elems');
+	$scroll = get_field('slides_scroll');
 	
 	$auto = get_field('autoplay');
 	$fade = get_field('fade');
@@ -35,6 +37,14 @@
 	if ($elems == 'four') { $slide = 4; }
 	if ($elems == 'five') { $slide = 5; }
 	if ($elems == 'six') { $slide = 6; }
+	
+	if ($scroll == null) { $slide_scroll = $slide; } // Default
+	if ($scroll == 'one') { $slide_scroll = 1; }
+	if ($scroll == 'two') { $slide_scroll = 2; }
+	if ($scroll == 'three') { $slide_scroll = 3; }
+	if ($scroll == 'four') { $slide_scroll = 4; }
+	if ($scroll == 'five') { $slide_scroll = 5; }
+	if ($scroll == 'six') { $slide_scroll = 6; }
 	
 	if ($auto == true) {
 		$autoplay = 'true';
@@ -90,8 +100,8 @@
 									echo 'fade: true,';
 								} ?>
 								//variableWidth: true,
-								nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Panneau suivant"> › </button>',
-								prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Panneau précédent"> ‹ </button>',
+								nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="<?php echo esc_html_e('Next panel','adblocks2'); ?>"> › </button>',
+								prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="<?php echo esc_html_e('Previous panel','adblocks2'); ?>"> ‹ </button>',
 								mobileFirst: true,
 								responsive: [
 									{
@@ -105,7 +115,7 @@
 								  	breakpoint: 960,
 								  	settings: {
 										slidesToShow: <?php if ($elems != 'one') { echo $slide; } else { echo '1'; } ?>,
-										slidesToScroll: <?php if ($elems != 'one') { echo $slide; } else { echo '1'; } ?>
+										slidesToScroll: <?php if ($elems != 'one') { echo $slide_scroll; } else { echo '1'; } ?>
 								  	}
 									},
 								]
