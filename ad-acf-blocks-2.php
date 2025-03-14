@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AD ACF Blocks 2
  * Description: A collection of blocks made with ACF for WordPress 
- * Version: 2.2
+ * Version: 2.3
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Text Domain: adblocks2
@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADB2__PLUGIN_VERSION', '2.2' );
+define( 'ADB2__PLUGIN_VERSION', '2.3' );
 define( 'ADB2__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADB2__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADB2__BASENAME', plugin_basename( __FILE__ ) );

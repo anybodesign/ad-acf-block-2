@@ -21,6 +21,11 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.3 - 2025-03-14
+* Posts block CSS fix and Fields UI update
+* Carousel block: slides to scroll option
+* i18n: load text domain fix
+
 ### 2.2 - 2024-11-18
 * Gallery block admin: Fade or Slide button CSS
 * Gallery/Carousel img width
