@@ -17,30 +17,44 @@
 					        
 						<?php if ( !isset( $featured ) || $featured == true ) { ?>
 					        <div class="acf-block-post-figure">
-						        <?php if ( $show != 'content' ) { ?>
-								<a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks2'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
-								<?php } ?>
-					            <?php 
-						            if ( has_post_thumbnail( $c->ID ) && $style != 'gallery' ) { 
-					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-medium-hd');
-									}
-									else if ( has_post_thumbnail( $c->ID ) && $style == 'gallery' ) {
-										echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd');
-									}
-									else if ( ! has_post_thumbnail( $c->ID ) ) {
-										echo '<img src="' . ADB2__PLUGIN_URL .'assets/fallback.jpg" alt="">'; 
-									}
-									else if ( file_exists( $path1 ) ) {
-					            		echo '<img src="' . $fallback1. '" alt="">';  
-									}
-									else if ( file_exists( $path2 ) ) {
-					            		echo '<img src="' . $fallback2. '" alt="">';  
-									}
+								
+								<?php if ($cpt == 'attachment') :
+									$src = wp_get_attachment_url( $c->ID );
+									$meta = wp_get_attachment_metadata( $c->ID );
+									$alt = $meta['alt'];
+								?>
 									
-						        ?>
-								<?php if ( $show != 'content' ) { ?>
-						        </a>
-								<?php } ?>
+									<img src="<?php echo esc_url($src); ?>" alt="<?php echo esc_attr($alt); ?>">
+								
+								<?php elseif ($cpt != 'attachment') : ?>
+								
+									<?php if ( $show != 'content' ) { ?>
+									<a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks2'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
+									<?php } ?>
+									<?php 
+										if ( has_post_thumbnail( $c->ID ) && $style != 'gallery' ) { 
+											echo get_the_post_thumbnail( $c->ID, 'adblocks-medium-hd');
+										}
+										else if ( has_post_thumbnail( $c->ID ) && $style == 'gallery' ) {
+											echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd');
+										}
+										else if ( ! has_post_thumbnail( $c->ID ) ) {
+											echo '<img src="' . ADB2__PLUGIN_URL .'assets/fallback.jpg" alt="">'; 
+										}
+										else if ( file_exists( $path1 ) ) {
+											echo '<img src="' . $fallback1. '" alt="">';  
+										}
+										else if ( file_exists( $path2 ) ) {
+											echo '<img src="' . $fallback2. '" alt="">';  
+										}
+										
+									?>
+									<?php if ( $show != 'content' ) { ?>
+									</a>
+									<?php } ?>
+									
+								<?php endif; ?>
+								
 						    </div>	
 						<?php } ?>
 						    
