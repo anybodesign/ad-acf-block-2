@@ -21,6 +21,10 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.4 - 2025-05-23
+* Posts block: Handle attachment post type
+* Posts block: Order & Orderby option 
+
 ### 2.3 - 2025-03-14
 * Posts block CSS fix and Fields UI update
 * Carousel block: slides to scroll option
