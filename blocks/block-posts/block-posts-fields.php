@@ -184,6 +184,67 @@ function adblocks2_posts_fields() {
 					'return_format' => 'object',
 				),
 				array(
+					'key' => 'field_ad_orderby',
+					'label' => __('Order by', 'adblocks2'),
+					'name' => 'order_by',
+					'type' => 'button_group',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_601a7c66d4be8',
+								'operator' => '==',
+								'value' => 'auto',
+							),
+						),
+					),
+					'wrapper' => array(
+						'width' => '50',
+						'class' => '',
+						'id' => '',
+					),
+					'choices' => array(
+						'title' => __('Title', 'adblocks2'),
+						'date' => __('Date', 'adblocks2'),
+						'rand' => __('Random', 'adblocks2'),
+					),
+					'allow_null' => 0,
+					'default_value' => 'title',
+					'layout' => 'horizontal',
+					'return_format' => 'value',
+				),
+				array(
+					'key' => 'field_ad_order',
+					'label' => __('Order', 'adblocks2'),
+					'name' => 'order',
+					'type' => 'button_group',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_601a7c66d4be8',
+								'operator' => '==',
+								'value' => 'auto',
+							),
+						),
+					),
+					'wrapper' => array(
+						'width' => '50',
+						'class' => '',
+						'id' => '',
+					),
+					'choices' => array(
+						'DESC' => __('Descendant', 'adblocks2'),
+						'ASC' => __('Ascendant', 'adblocks2'),
+					),
+					'allow_null' => 0,
+					'default_value' => 'DESC',
+					'layout' => 'horizontal',
+					'return_format' => 'value',
+				),
+				array(
 					'key' => 'field_601a7c66d1337',
 					'label' => __('Style', 'adblocks2'),
 					'name' => 'style',

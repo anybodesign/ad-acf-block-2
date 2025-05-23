@@ -62,6 +62,8 @@
 								
 								$num = get_field('auto_nb');
 								$type = get_field('auto_type');
+								$orderby = get_field('order_by');
+								$order = get_field('order');
 								
 								if ($num) {
 									$number = $num;
@@ -72,7 +74,8 @@
 								$args = array(
 									'numberposts' 	=> $number,
 									'post_type' 	=> $type,
-									'order'			=> 'DESC'
+									'orderby'		=> $orderby,
+									'order'			=> $order
 								);
 								$autocontent = get_posts($args);
 								
