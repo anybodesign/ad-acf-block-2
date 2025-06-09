@@ -27,12 +27,17 @@
 					</header>
 					
 					<div class="acf-block-post-excerpt">
-						<?php 
+						<?php
+							$my_excerpt = $p->post_excerpt; 
 							$manual_excerpt = get_the_excerpt( $p->ID );
 							$permalink = get_permalink( $p->ID );
 							$title = get_the_title( $p->ID );
 							
-							echo '<p>'.$manual_excerpt.' <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks2').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks2').$title.'</span></a></p>';							
+							if ( $my_excerpt != '' ) {												
+								echo '<p>'.$manual_excerpt.' <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks2').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks2').$title.'</span></a></p>';
+							} else {
+								echo adblocks2_get_excerpt(125, $p->ID);
+							}			
 						?>
 					</div>
 				</div>
