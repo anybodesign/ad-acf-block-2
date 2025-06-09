@@ -21,6 +21,9 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.5 - 2025-06-09
+* Carousel block: Excerpt fix
+
 ### 2.4 - 2025-05-23
 * Posts block: Handle attachment post type
 * Posts block: Order & Orderby option 
