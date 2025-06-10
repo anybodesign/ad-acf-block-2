@@ -38,6 +38,9 @@ define( 'ADB2__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADB2__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADB2__BASENAME', plugin_basename( __FILE__ ) );
 
+define( 'ADB2_TEMPLATE', get_template_directory_uri( __FILE__ ) );
+define( 'ADB2_TEMPLATE_PATH', get_template_directory( __FILE__ ) );
+
 
 // i18n
 
