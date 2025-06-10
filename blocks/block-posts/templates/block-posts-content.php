@@ -14,7 +14,7 @@
 	$featured = get_field('featured');
 ?>
 						<div class="acf-block-post-item <?php echo $cpt.'-block'; ?>">
-					        
+							
 						<?php if ( !isset( $featured ) || $featured == true ) { ?>
 					        <div class="acf-block-post-figure">
 								
@@ -38,14 +38,14 @@
 										else if ( has_post_thumbnail( $c->ID ) && $style == 'gallery' ) {
 											echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd');
 										}
-										else if ( ! has_post_thumbnail( $c->ID ) ) {
-											echo '<img src="' . ADB2__PLUGIN_URL .'assets/fallback.jpg" alt="">'; 
-										}
-										else if ( file_exists( $path1 ) ) {
+										else if ( ! has_post_thumbnail( $c->ID ) && file_exists( $path1 ) ) {
 											echo '<img src="' . $fallback1. '" alt="">';  
 										}
-										else if ( file_exists( $path2 ) ) {
+										else if ( ! has_post_thumbnail( $c->ID ) && file_exists( $path2 ) ) {
 											echo '<img src="' . $fallback2. '" alt="">';  
+										}
+										else if ( ! has_post_thumbnail( $c->ID ) ) {
+											echo '<img src="' . ADB2__PLUGIN_URL .'assets/fallback.jpg" alt="">'; 
 										}
 										
 									?>
