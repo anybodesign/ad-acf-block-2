@@ -34,6 +34,15 @@
 	
 	$tpl_path = $loc . 'block-posts-content.php';
 	$tpl = ADB2_TEMPLATE_PATH . '/template-parts/block-posts-content.php';
+	
+	$loc_child = ADB2_CHILD_TEMPLATE . '/template-parts/';
+	$loc_child = str_replace("http://", "", $loc_child);
+	$loc_child = str_replace("https://", "", $loc_child);
+	$loc_child = str_replace($_SERVER['HTTP_HOST'], "", $loc_child);
+	$loc_child = $_SERVER['DOCUMENT_ROOT'].$loc_child;
+	
+	$tpl_path_child = $loc_child . 'block-posts-content.php';
+	$tpl_child = ADB2_CHILD_TEMPLATE_PATH . '/template-parts/block-posts-content.php';
 ?>
 
 			<?php // Block preview
@@ -63,6 +72,8 @@
 								
 								if ( file_exists( $tpl_path ) ) {
 									include $tpl;  
+								} elseif ( file_exists( $tpl_path_child ) ) {
+									include $tpl_child;
 								} else {
 									include ADB2__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
 								}
@@ -101,6 +112,8 @@
 									
 									if ( file_exists( $tpl_path ) ) {
 										include $tpl;  
+									} elseif ( file_exists( $tpl_path_child ) ) {
+										include $tpl_child;
 									} else {
 										include ADB2__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
 									}
