@@ -24,7 +24,16 @@
 	}
 	
 	//global $id;
-	$id = 'slider-' . $block['id'];						
+	$id = 'slider-' . $block['id'];
+	
+	$loc = ADB2_TEMPLATE . '/template-parts/';
+	$loc = str_replace("http://", "", $loc);
+	$loc = str_replace("https://", "", $loc);
+	$loc = str_replace($_SERVER['HTTP_HOST'], "", $loc);
+	$loc = $_SERVER['DOCUMENT_ROOT'].$loc;
+	
+	$tpl_path = $loc . 'block-posts-content.php';
+	$tpl = ADB2_TEMPLATE_PATH . '/template-parts/block-posts-content.php';
 ?>
 
 			<?php // Block preview
@@ -52,7 +61,12 @@
 								$tax = get_the_terms($c->ID, $your_tax);
 								$cpt = get_post_type($c->ID);
 								
-								include ADB2__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
+								if ( file_exists( $tpl_path ) ) {
+									include $tpl;  
+								} else {
+									include ADB2__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
+								}
+								
 							endforeach;
 							}
 							
@@ -85,7 +99,11 @@
 									$tax = get_the_terms($c->ID, $your_tax);
 									$cpt = get_post_type($c->ID);
 									
-									include ADB2__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
+									if ( file_exists( $tpl_path ) ) {
+										include $tpl;  
+									} else {
+										include ADB2__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
+									}
 									
 								endforeach;
 								wp_reset_postdata();
