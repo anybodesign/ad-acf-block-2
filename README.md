@@ -21,6 +21,9 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.6.1 - 2025-06-10
+* Posts content template override - child theme support
+
 ### 2.6 - 2025-06-10
 * Posts Fallback fix
 * Posts content template override
