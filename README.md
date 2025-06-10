@@ -21,6 +21,10 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.6 - 2025-06-10
+* Posts Fallback fix
+* Posts content template override
+
 ### 2.5 - 2025-06-09
 * Carousel block: Excerpt fix
 
