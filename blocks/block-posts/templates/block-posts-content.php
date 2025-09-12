@@ -11,6 +11,17 @@
 	$fallback1 = get_template_directory_uri(). '/img/fallback.png';
 	$fallback2 = get_template_directory_uri(). '/img/fallback.jpg';
 	
+	$location_child = get_stylesheet_directory_uri(). '/img/';
+	$location_child = str_replace("http://", "", $location_child);
+	$location_child = str_replace("https://", "", $location_child);
+	$location_child = str_replace($_SERVER['HTTP_HOST'], "", $location_child);
+	$location_child = $_SERVER['DOCUMENT_ROOT'].$location_child;
+	
+	$path3 = $location_child. 'fallback.png';
+	$path4 = $location_child. 'fallback.jpg';
+	$fallback3 = get_stylesheet_directory_uri(). '/img/fallback.png';
+	$fallback4 = get_stylesheet_directory_uri(). '/img/fallback.jpg';
+	
 	$featured = get_field('featured');
 ?>
 						<div class="acf-block-post-item <?php echo $cpt.'-block'; ?>">
@@ -37,6 +48,12 @@
 										}
 										else if ( has_post_thumbnail( $c->ID ) && $style == 'gallery' ) {
 											echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd');
+										}
+										else if ( ! has_post_thumbnail( $c->ID ) && file_exists( $path3 ) ) {
+											echo '<img src="' . $fallback3. '" alt="">';  
+										}
+										else if ( ! has_post_thumbnail( $c->ID ) && file_exists( $path4 ) ) {
+											echo '<img src="' . $fallback4. '" alt="">';  
 										}
 										else if ( ! has_post_thumbnail( $c->ID ) && file_exists( $path1 ) ) {
 											echo '<img src="' . $fallback1. '" alt="">';  
