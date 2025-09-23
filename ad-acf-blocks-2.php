@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AD ACF Blocks 2
  * Description: A collection of blocks made with ACF for WordPress 
- * Version: 2.6.2
+ * Version: 2.6.3
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Text Domain: adblocks2
@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADB2__PLUGIN_VERSION', '2.6.2' );
+define( 'ADB2__PLUGIN_VERSION', '2.6.3' );
 define( 'ADB2__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADB2__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADB2__BASENAME', plugin_basename( __FILE__ ) );
@@ -159,94 +159,96 @@ function adblocks2_block_categories( $block_categories, $block_editor_context ) 
 
 // Block Patterns
 
-function adb2_register_blocks_stuff() {
-    
-    // Category
-    
-    register_block_pattern_category(
-        'adblocks2_patterns',
-        array( 'label' => __( 'AD ACF Blocks Patterns', 'adblocks2' ) )
-    );
-    
-    // Patterns 
-    
-    register_block_pattern(
-    'cta',
-        array(
-            'title'       => __( 'Call to action', 'adblocks2' ),
-            //'description' => _x( 'Yolo', 'adblocks2' ),
-            'content'     => '<!-- wp:columns {"verticalAlignment":null,"backgroundColor":"white"} -->
-            <div class="adb2-cta wp-block-columns has-white-background-color has-background"><!-- wp:column {"verticalAlignment":"top","width":"66.66%"} -->
-            <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:66.66%"><!-- wp:paragraph -->
-            <p>Lemon drops liquorice cotton candy gummies cotton candy cookie. Macaroon chocolate cake danish shortbread danish cake.</p>
-            <!-- /wp:paragraph --></div>
-            <!-- /wp:column -->
-            
-            <!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
-            <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
-            <div class="wp-block-buttons"><!-- wp:button -->
-            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">A call to action</a></div>
-            <!-- /wp:button --></div>
-            <!-- /wp:buttons --></div>
-            <!-- /wp:column --></div>
-            <!-- /wp:columns -->',
-            'categories'    => array( 'adblocks2_patterns' ),
-            'keywords'      => array( 'cta', 'call to action' ),
-        )
-    );
-    
-    register_block_pattern(
-    'card',
-        array(
-            'title'       => __( 'Card', 'adblocks2' ),
-            //'description' => _x( 'Yolo', 'adblocks2' ),
-            'content'     => '<!-- wp:group {"backgroundColor":"white","layout":{"type":"constrained"}} -->
-            <div class="adb2-card wp-block-group has-white-background-color has-background"><!-- wp:image {"id":27,"sizeSlug":"large","linkDestination":"none"} -->
-            <figure class="wp-block-image size-large"><img src="/wp-content/plugins/ad-acf-blocks-2/assets/fallback.jpg" alt="" class="wp-image-27"/></figure>
-            <!-- /wp:image -->
-            
-            <!-- wp:heading {"textAlign":"center"} -->
-            <h2 class="wp-block-heading has-text-align-center">Card Title</h2>
-            <!-- /wp:heading -->
-            
-            <!-- wp:paragraph {"align":"center"} -->
-            <p class="has-text-align-center">Card subtitle</p>
-            <!-- /wp:paragraph -->
-            
-            <!-- wp:separator -->
-            <hr class="wp-block-separator has-alpha-channel-opacity"/>
-            <!-- /wp:separator -->
-            
-            <!-- wp:paragraph {"align":"center"} -->
-            <p class="has-text-align-center">Cupcake ipsum dolor sit amet carrot cake. Pie icing danish chocolate cake sweet roll macaroon carrot cake chocolate cake cookie. Gingerbread oat cake I love chocolate cake cookie dessert.</p>
-            <!-- /wp:paragraph -->
-            
-            <!-- wp:paragraph {"align":"center"} -->
-            <p class="has-text-align-center"><a href="#">Link</a></p>
-            <!-- /wp:paragraph --></div>
-            <!-- /wp:group -->',
-            'categories'    => array( 'adblocks2_patterns' ),
-            'keywords'      => array( 'card', 'carte' ),
-        )
-    );
-    
-    // Block styles
-    
-    register_block_style(
-      'acf/gallery-2',
-        array(
-          'name'	=> 'masonry',
-          'label'	=> esc_attr__( 'Masonry', 'adblocks2' ),
-        )
-    );
-    
-    register_block_style(
-      'acf/gallery-2',
-        array(
-          'name'	=> 'grid',
-          'label'	=> esc_attr__( 'Grid', 'adblocks2' ),
-        )
-    );
+if ( !function_exists('adb2_register_blocks_stuff') ) {
+  function adb2_register_blocks_stuff() {
+      
+      // Category
+      
+      register_block_pattern_category(
+          'adblocks2_patterns',
+          array( 'label' => __( 'AD ACF Blocks Patterns', 'adblocks2' ) )
+      );
+      
+      // Patterns 
+      
+      register_block_pattern(
+      'cta',
+          array(
+              'title'       => __( 'Call to action', 'adblocks2' ),
+              //'description' => _x( 'Yolo', 'adblocks2' ),
+              'content'     => '<!-- wp:columns {"verticalAlignment":null,"backgroundColor":"white"} -->
+              <div class="adb2-cta wp-block-columns has-white-background-color has-background"><!-- wp:column {"verticalAlignment":"top","width":"66.66%"} -->
+              <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:66.66%"><!-- wp:paragraph -->
+              <p>Lemon drops liquorice cotton candy gummies cotton candy cookie. Macaroon chocolate cake danish shortbread danish cake.</p>
+              <!-- /wp:paragraph --></div>
+              <!-- /wp:column -->
+              
+              <!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
+              <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
+              <div class="wp-block-buttons"><!-- wp:button -->
+              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">A call to action</a></div>
+              <!-- /wp:button --></div>
+              <!-- /wp:buttons --></div>
+              <!-- /wp:column --></div>
+              <!-- /wp:columns -->',
+              'categories'    => array( 'adblocks2_patterns' ),
+              'keywords'      => array( 'cta', 'call to action' ),
+          )
+      );
+      
+      register_block_pattern(
+      'card',
+          array(
+              'title'       => __( 'Card', 'adblocks2' ),
+              //'description' => _x( 'Yolo', 'adblocks2' ),
+              'content'     => '<!-- wp:group {"backgroundColor":"white","layout":{"type":"constrained"}} -->
+              <div class="adb2-card wp-block-group has-white-background-color has-background"><!-- wp:image {"id":27,"sizeSlug":"large","linkDestination":"none"} -->
+              <figure class="wp-block-image size-large"><img src="/wp-content/plugins/ad-acf-blocks-2/assets/fallback.jpg" alt="" class="wp-image-27"/></figure>
+              <!-- /wp:image -->
+              
+              <!-- wp:heading {"textAlign":"center"} -->
+              <h2 class="wp-block-heading has-text-align-center">Card Title</h2>
+              <!-- /wp:heading -->
+              
+              <!-- wp:paragraph {"align":"center"} -->
+              <p class="has-text-align-center">Card subtitle</p>
+              <!-- /wp:paragraph -->
+              
+              <!-- wp:separator -->
+              <hr class="wp-block-separator has-alpha-channel-opacity"/>
+              <!-- /wp:separator -->
+              
+              <!-- wp:paragraph {"align":"center"} -->
+              <p class="has-text-align-center">Cupcake ipsum dolor sit amet carrot cake. Pie icing danish chocolate cake sweet roll macaroon carrot cake chocolate cake cookie. Gingerbread oat cake I love chocolate cake cookie dessert.</p>
+              <!-- /wp:paragraph -->
+              
+              <!-- wp:paragraph {"align":"center"} -->
+              <p class="has-text-align-center"><a href="#">Link</a></p>
+              <!-- /wp:paragraph --></div>
+              <!-- /wp:group -->',
+              'categories'    => array( 'adblocks2_patterns' ),
+              'keywords'      => array( 'card', 'carte' ),
+          )
+      );
+      
+      // Block styles
+      
+      register_block_style(
+        'acf/gallery-2',
+          array(
+            'name'	=> 'masonry',
+            'label'	=> esc_attr__( 'Masonry', 'adblocks2' ),
+          )
+      );
+      
+      register_block_style(
+        'acf/gallery-2',
+          array(
+            'name'	=> 'grid',
+            'label'	=> esc_attr__( 'Grid', 'adblocks2' ),
+          )
+      );
+  }
 }
 add_action( 'init', 'adb2_register_blocks_stuff' );
 
@@ -303,7 +305,6 @@ function acf_load_tax_choices( $field ) {
     
 }
 add_filter('acf/load_field/name=your_tax', 'acf_load_tax_choices');
-//add_filter('acf/load_field/name=auto_tax', 'acf_load_tax_choices');
 
 // Image size
 
@@ -315,19 +316,20 @@ add_image_size( 'adblocks-large-hd', 2000, 2000, false );
 // Custom excerpt
 // https://gist.github.com/samjbmason/4050714
 
-function adblocks2_get_excerpt($count, $post_id){
-    $permalink = get_permalink($post_id);
-    $title = get_the_title($post_id);
-    $excerpt = get_post($post_id);
-    $excerpt = $excerpt->post_content;
-    $excerpt = strip_tags($excerpt);
-    $excerpt = substr($excerpt, 0, $count);
-    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-    
-    $excerpt = '<p>'.$excerpt.'... <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks2').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks2').$title.'</span></a></p>';
-    return $excerpt;
+if ( !function_exists('adblocks2_get_excerpt') ) {
+  function adblocks2_get_excerpt($count, $post_id){
+      $permalink = get_permalink($post_id);
+      $title = get_the_title($post_id);
+      $excerpt = get_post($post_id);
+      $excerpt = $excerpt->post_content;
+      $excerpt = strip_tags($excerpt);
+      $excerpt = substr($excerpt, 0, $count);
+      $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+      
+      $excerpt = '<p>'.$excerpt.'... <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks2').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks2').$title.'</span></a></p>';
+      return $excerpt;
+  }
 }
-
 
 //
 // CSS
