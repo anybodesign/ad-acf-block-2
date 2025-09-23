@@ -21,6 +21,9 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.6.3 - 2025-09-23
+* Conditionnal functions
+
 ### 2.6.2 - 2025-09-12
 * Fallback image override in child theme
 * Version fix
