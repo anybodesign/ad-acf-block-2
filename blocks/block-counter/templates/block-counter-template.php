@@ -38,7 +38,8 @@
 							<span class="counter-item--number">
 								<span class="title-data numscroller" data-min="1" data-max="<?php echo $num; ?>" data-delay="5" data-increment="<?php echo $inc; ?>">
 									<?php echo $num; ?>
-								</span><?php if ($sign) { echo $sign; } ?>
+								</span>
+								<?php if ($sign) { echo '<span class="counter-sign">'.$sign.'</span>'; } ?>
 							</span>
 							<?php } ?>
 							
