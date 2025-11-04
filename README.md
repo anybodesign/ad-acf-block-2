@@ -21,6 +21,9 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.7 - 2025-11-04
+* Counter block prefix
+
 ### 2.6.4 - 2025-10-13
 * Counter block CSS/HTML
 
