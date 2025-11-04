@@ -26,7 +26,8 @@
 					
 					<div class="acf-block-counter-container <?php echo $cols; ?>">
 						<?php while( have_rows('counters') ): the_row(); 
-								
+							
+							$pre = get_sub_field('prefix');	
 							$num = get_sub_field('number');
 							$sign = get_sub_field('sign');
 							$inc = get_sub_field('increment');
@@ -36,6 +37,7 @@
 						<div class="counter-item">
 							<?php if ( $num ) { ?>
 							<span class="counter-item--number">
+								<?php if ($pre) { echo '<span class="counter-prefix">'.$pre.'</span>'; } ?>
 								<span class="title-data numscroller" data-min="1" data-max="<?php echo $num; ?>" data-delay="5" data-increment="<?php echo $inc; ?>">
 									<?php echo $num; ?>
 								</span>

@@ -54,6 +54,27 @@ function adblocks2_counter_fields() {
 					'rows_per_page' => 20,
 					'sub_fields' => array(
 						array(
+							'key' => 'field_6577919c6f777',
+							'label' => __( 'Prefix', 'adblocks2' ),
+							'name' => 'prefix',
+							'aria-label' => '',
+							'type' => 'text',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '10',
+								'class' => '',
+								'id' => '',
+							),
+							'default_value' => '',
+							'maxlength' => '',
+							'placeholder' => '',
+							'prepend' => '',
+							'append' => '',
+							'parent_repeater' => 'field_654385a982bbc',
+						),
+						array(
 							'key' => 'field_654385cf82bbd',
 							'label' => __('Number', 'adblocks2'),
 							'name' => 'number',
@@ -86,7 +107,7 @@ function adblocks2_counter_fields() {
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
-								'width' => '20',
+								'width' => '10',
 								'class' => '',
 								'id' => '',
 							),
@@ -107,7 +128,7 @@ function adblocks2_counter_fields() {
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
-								'width' => '20',
+								'width' => '15',
 								'class' => '',
 								'id' => '',
 							),
@@ -130,7 +151,7 @@ function adblocks2_counter_fields() {
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
-								'width' => '40',
+								'width' => '45',
 								'class' => '',
 								'id' => '',
 							),
