@@ -1,89 +1,118 @@
 /**
-* jQuery scroroller Plugin 1.0
-*
-* http://www.tinywall.net/
-* 
-* Developers: Arun David, Boobalan
-* Copyright (c) 2014 
-*/
-(function($){
-	$(window).on("load",function(){
-		$(document).scrollzipInit();
-		$(document).rollerInit();
+ * jQuery NumScroller Plugin (modernized)
+ * 
+ * http://www.tinywall.net/
+ * Developers: Arun David, Boobalan
+ * Copyright (c) 2014 
+ * 
+ * - Espaces entre milliers 
+ * - Compatible jQuery 3+
+ */
+
+(function ($) {
+  $(window).on("load", function () {
+	$(document).scrollzipInit();
+	$(document).rollerInit();
+  });
+
+  $(window).on("load scroll resize", function () {
+	$(".numscroller").scrollzip({
+	  showFunction: function () {
+		numberRoller($(this).attr("data-slno"));
+	  },
+	  wholeVisible: false,
 	});
-	$(window).on("load scroll resize", function(){
-		$('.numscroller').scrollzip({
-			showFunction    :   function() {
-									numberRoller($(this).attr('data-slno'));
-								},
-			wholeVisible    :     false,
-		});
+  });
+
+  $.fn.scrollzipInit = function () {
+	if (!$("#scrollzipPoint").length) {
+	  $("body").prepend('<div id="scrollzipPoint" style="position:fixed;top:0;left:0;width:0;height:0;"></div>');
+	}
+  };
+
+  $.fn.rollerInit = function () {
+	$(".numscroller").each(function (i) {
+	  const index = i + 1;
+	  $(this).attr("data-slno", index);
+	  $(this).addClass("roller-title-number-" + index);
 	});
-	$.fn.scrollzipInit=function(){
-		$('body').prepend("<div style='position:fixed;top:0px;left:0px;width:0;height:0;' id='scrollzipPoint'></div>" );
-	};
-	$.fn.rollerInit=function(){
-		var i=0;
-		$('.numscroller').each(function() {
-			i++;
-		   $(this).attr('data-slno',i); 
-		   $(this).addClass("roller-title-number-"+i);
-		});        
-	};
-	$.fn.scrollzip = function(options){
-		var settings = $.extend({
-			showFunction    : null,
-			hideFunction    : null,
-			showShift       : 0,
-			wholeVisible    : false,
-			hideShift       : 0,
-		}, options);
-		return this.each(function(i,obj){
-			$(this).addClass('scrollzip');
-			if ( $.isFunction( settings.showFunction ) ){
-				if(
-					!$(this).hasClass('isShown')&&
-					($(window).outerHeight()+$('#scrollzipPoint').offset().top-settings.showShift)>($(this).offset().top+((settings.wholeVisible)?$(this).outerHeight():0))&&
-					($('#scrollzipPoint').offset().top+((settings.wholeVisible)?$(this).outerHeight():0))<($(this).outerHeight()+$(this).offset().top-settings.showShift)
-				){
-					$(this).addClass('isShown');
-					settings.showFunction.call( this );
-				}
-			}
-			if ( $.isFunction( settings.hideFunction ) ){
-				if(
-					$(this).hasClass('isShown')&&
-					(($(window).outerHeight()+$('#scrollzipPoint').offset().top-settings.hideShift)<($(this).offset().top+((settings.wholeVisible)?$(this).outerHeight():0))||
-					($('#scrollzipPoint').offset().top+((settings.wholeVisible)?$(this).outerHeight():0))>($(this).outerHeight()+$(this).offset().top-settings.hideShift))
-				){
-					$(this).removeClass('isShown');
-					settings.hideFunction.call( this );
-				}
-			}
-			return this;
-		});
-	};
-	function numberRoller(slno){
-			var min=$('.roller-title-number-'+slno).attr('data-min');
-			var max=$('.roller-title-number-'+slno).attr('data-max');
-			var timediff=$('.roller-title-number-'+slno).attr('data-delay');
-			var increment=$('.roller-title-number-'+slno).attr('data-increment');
-			var numdiff=max-min;
-			var timeout=(timediff*1000)/numdiff;
-			//if(numinc<10){
-				//increment=Math.floor((timediff*1000)/10);
-			//}//alert(increment);
-			numberRoll(slno,min,max,increment,timeout);
-			
+  };
+
+  $.fn.scrollzip = function (options) {
+	const settings = $.extend(
+	  {
+		showFunction: null,
+		hideFunction: null,
+		showShift: 0,
+		wholeVisible: false,
+		hideShift: 0,
+	  },
+	  options
+	);
+
+	return this.each(function () {
+	  const $el = $(this);
+	  $el.addClass("scrollzip");
+
+	  const winHeight = $(window).outerHeight();
+	  const scrollTop = $("#scrollzipPoint").offset().top;
+
+	  const elementTop = $el.offset().top;
+	  const elementHeight = $el.outerHeight();
+
+	  // Check show
+	  if (
+		$.isFunction(settings.showFunction) &&
+		!$el.hasClass("isShown") &&
+		(winHeight + scrollTop - settings.showShift) > (elementTop + (settings.wholeVisible ? elementHeight : 0)) &&
+		(scrollTop + (settings.wholeVisible ? elementHeight : 0)) < (elementHeight + elementTop - settings.showShift)
+	  ) {
+		$el.addClass("isShown");
+		settings.showFunction.call(this);
+	  }
+
+	  // Check hide
+	  if (
+		$.isFunction(settings.hideFunction) &&
+		$el.hasClass("isShown") &&
+		((winHeight + scrollTop - settings.hideShift) < (elementTop + (settings.wholeVisible ? elementHeight : 0)) ||
+		  (scrollTop + (settings.wholeVisible ? elementHeight : 0)) > (elementHeight + elementTop - settings.hideShift))
+	  ) {
+		$el.removeClass("isShown");
+		settings.hideFunction.call(this);
+	  }
+	});
+  };
+
+  function numberRoller(slno) {
+	const $el = $(".roller-title-number-" + slno);
+	const min = parseInt($el.attr("data-min"), 10);
+	const max = parseInt($el.attr("data-max"), 10);
+	const delay = parseFloat($el.attr("data-delay"));
+	const increment = parseInt($el.attr("data-increment"), 10);
+
+	const diff = max - min;
+	const timeout = (delay * 1000) / diff;
+
+	numberRoll(slno, min, max, increment, timeout);
+  }
+
+  function numberRoll(slno, current, max, increment, timeout) {
+	const $el = $(".roller-title-number-" + slno);
+
+	if (current <= max) {
+	  $el.html(formatNumberWithSpans(current));
+	  setTimeout(() => {
+		numberRoll(slno, current + increment, max, increment, timeout);
+	  }, timeout);
+	} else {
+	  $el.html(formatNumberWithSpans(max));
 	}
-	function numberRoll(slno,min,max,increment,timeout){//alert(slno+"="+min+"="+max+"="+increment+"="+timeout);
-		if(min<=max){
-			$('.roller-title-number-'+slno).html(String(min).replace(/(.)(?=(\d{3})+$)/g,'$1 '));
-			min=parseInt(min)+parseInt(increment);
-			setTimeout(function(){numberRoll(eval(slno),eval(min),eval(max),eval(increment),eval(timeout))},timeout);
-		} else {
-			
-			$('.roller-title-number-'+slno).html(String(max).replace(/(.)(?=(\d{3})+$)/g,'$1 '));
-		}
-	}
+  }
+
+  // Formate un nombre avec des espaces entre les milliers
+  function formatNumberWithSpans(num) {
+	return String(num).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ');
+  }
+
 })(jQuery);
