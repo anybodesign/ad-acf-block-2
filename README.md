@@ -21,6 +21,10 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.8 - 2025-12-08
+* Page banner: mobile picture option
+* Counter block JS separator option
+
 ### 2.7.1 - 2025-11-05
 * Counter block JS modernized
 
