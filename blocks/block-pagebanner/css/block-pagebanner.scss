@@ -15,6 +15,7 @@
 // Img & Video
 
 .banner-bg,
+.banner-bg-mobile,
 .banner-video,
 .banner-slideshow,
 .banner-slideshow .slick-track,
@@ -41,6 +42,26 @@
 		
 		&:first-child {
 			display: block;
+		}
+	}
+}
+
+// Mobile
+
+.has-mobile-picture {
+	.banner-bg {
+		display: none;
+	}
+	.banner-bg-mobile {
+		display: block;
+	}
+	
+	@include rwd(medium) {
+		.banner-bg {
+			display: block;
+		}
+		.banner-bg-mobile {
+			display: none;
 		}
 	}
 }

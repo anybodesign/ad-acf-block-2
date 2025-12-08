@@ -3,6 +3,7 @@
 	$type = get_field('bg_type');
 	
 	$bg = get_field('bg_img');
+	$bg_mob = get_field('bg_img_mob');
 	$video = get_field('bg_video');
 	$poster = get_field('poster');
 	$loop = get_field('loop');
@@ -48,6 +49,9 @@
 	}
 	if( !empty($block['align']) ) {
 		$className .= ' align' . $block['align'];
+	}
+	if ($bg_mob) {
+		$className .= ' has-mobile-picture';
 	}
 	$placeholder = array(
 		array( 'core/paragraph', array(
@@ -116,7 +120,10 @@
 					<?php } ?>
 					
 					<?php } else { 
-						echo '<img src="'.$bg.'" class="banner-bg" alt="">';	
+						echo '<img src="'.$bg.'" class="banner-bg" alt="">';
+						if ($bg_mob) {
+						echo '<img src="'.$bg_mob.'" class="banner-bg-mobile" alt="">';	
+						}	
 					} ?>
 					
 					

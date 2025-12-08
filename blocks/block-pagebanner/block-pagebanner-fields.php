@@ -64,6 +64,38 @@ acf_add_local_field_group(array(
 			'mime_types' => '',
 		),
 		array(
+			'key' => 'field_5f7730a9484d5_mob',
+			'label' => __('Background image (mobile)', 'adblocks2'),
+			'name' => 'bg_img_mob',
+			'type' => 'image',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5f7732687c2dd',
+						'operator' => '==',
+						'value' => 'image',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'url',
+			'preview_size' => 'medium',
+			'library' => 'all',
+			'min_width' => '',
+			'min_height' => '',
+			'min_size' => '',
+			'max_width' => '',
+			'max_height' => '',
+			'max_size' => '',
+			'mime_types' => '',
+		),
+		array(
 			'key' => 'field_5f7732bd7c2de',
 			'label' => __('Background video', 'adblocks2'),
 			'name' => 'bg_video',
