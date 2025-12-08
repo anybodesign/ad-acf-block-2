@@ -1,12 +1,8 @@
 /**
- * jQuery NumScroller Plugin (modernized)
- * 
- * http://www.tinywall.net/
- * Developers: Arun David, Boobalan
- * Copyright (c) 2014 
- * 
- * - Espaces entre milliers 
- * - Compatible jQuery 3+
+ * jQuery NumScroller Plugin (modernized + customizable separator)
+ *
+ * - Ajout : data-separator (permet de choisir le séparateur ou le style)
+ * - Exemple : <div class="numscroller" data-min="0" data-max="1000" data-delay="2" data-increment="10" data-separator="dot"></div>
  */
 
 (function ($) {
@@ -52,31 +48,26 @@
 
 	return this.each(function () {
 	  const $el = $(this);
-	  $el.addClass("scrollzip");
-
 	  const winHeight = $(window).outerHeight();
 	  const scrollTop = $("#scrollzipPoint").offset().top;
-
 	  const elementTop = $el.offset().top;
 	  const elementHeight = $el.outerHeight();
 
-	  // Check show
 	  if (
 		$.isFunction(settings.showFunction) &&
 		!$el.hasClass("isShown") &&
-		(winHeight + scrollTop - settings.showShift) > (elementTop + (settings.wholeVisible ? elementHeight : 0)) &&
-		(scrollTop + (settings.wholeVisible ? elementHeight : 0)) < (elementHeight + elementTop - settings.showShift)
+		winHeight + scrollTop - settings.showShift > elementTop + (settings.wholeVisible ? elementHeight : 0) &&
+		scrollTop + (settings.wholeVisible ? elementHeight : 0) < elementHeight + elementTop - settings.showShift
 	  ) {
 		$el.addClass("isShown");
 		settings.showFunction.call(this);
 	  }
 
-	  // Check hide
 	  if (
 		$.isFunction(settings.hideFunction) &&
 		$el.hasClass("isShown") &&
-		((winHeight + scrollTop - settings.hideShift) < (elementTop + (settings.wholeVisible ? elementHeight : 0)) ||
-		  (scrollTop + (settings.wholeVisible ? elementHeight : 0)) > (elementHeight + elementTop - settings.hideShift))
+		(winHeight + scrollTop - settings.hideShift < elementTop + (settings.wholeVisible ? elementHeight : 0) ||
+		  scrollTop + (settings.wholeVisible ? elementHeight : 0) > elementHeight + elementTop - settings.hideShift)
 	  ) {
 		$el.removeClass("isShown");
 		settings.hideFunction.call(this);
@@ -90,29 +81,50 @@
 	const max = parseInt($el.attr("data-max"), 10);
 	const delay = parseFloat($el.attr("data-delay"));
 	const increment = parseInt($el.attr("data-increment"), 10);
+	const separator = $el.attr("data-separator") || "space"; // par défaut : espace stylable
 
 	const diff = max - min;
 	const timeout = (delay * 1000) / diff;
 
-	numberRoll(slno, min, max, increment, timeout);
+	numberRoll(slno, min, max, increment, timeout, separator);
   }
 
-  function numberRoll(slno, current, max, increment, timeout) {
+  function numberRoll(slno, current, max, increment, timeout, separator) {
 	const $el = $(".roller-title-number-" + slno);
 
 	if (current <= max) {
-	  $el.html(formatNumberWithSpans(current));
+	  $el.html(formatNumber(current, separator));
 	  setTimeout(() => {
-		numberRoll(slno, current + increment, max, increment, timeout);
+		numberRoll(slno, current + increment, max, increment, timeout, separator);
 	  }, timeout);
 	} else {
-	  $el.html(formatNumberWithSpans(max));
+	  $el.html(formatNumber(max, separator));
 	}
   }
 
-  // Formate un nombre avec des espaces entre les milliers
-  function formatNumberWithSpans(num) {
-	return String(num).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ');
-  }
+  // Formatage stylable avec choix du séparateur
+  function formatNumber(num, separator) {
+	let sepHTML = "";
 
+	switch (separator) {
+	  case "dot":
+		sepHTML = '<span class="thousand-sep dot">.</span>';
+		break;
+	  case "comma":
+		sepHTML = '<span class="thousand-sep comma">,</span>';
+		break;
+	  case "thinspace":
+		sepHTML = '<span class="thousand-sep thinspace">&thinsp;</span>';
+		break;
+	  case "span":
+      sepHTML = '<span class="thousand-sep"></span>';
+	  break;
+	  case "space":
+	  	sepHTML = ' '; // espace par défaut
+	  default:
+		return String(num); // pas de séparation
+	}
+
+	return String(num).replace(/(\d)(?=(\d{3})+(?!\d))/g, `$1${sepHTML}`);
+  }
 })(jQuery);
