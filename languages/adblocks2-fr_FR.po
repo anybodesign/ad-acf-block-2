@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2025-11-04 16:04+0100\n"
-"PO-Revision-Date: 2025-11-04 16:04+0100\n"
+"POT-Creation-Date: 2025-12-08 18:00+0100\n"
+"PO-Revision-Date: 2025-12-08 18:00+0100\n"
 "Last-Translator: Thomas <atelier@anybodesign.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -307,18 +307,22 @@ msgid "Add a counter"
 msgstr "Ajouter un compteur"
 
 #: ad-acf-blocks-2/blocks/block-counter/block-counter-fields.php:58
+msgid "Prefix"
+msgstr "Préfixe"
+
+#: ad-acf-blocks-2/blocks/block-counter/block-counter-fields.php:79
 msgid "Number"
 msgstr "Nombre"
 
-#: ad-acf-blocks-2/blocks/block-counter/block-counter-fields.php:81
+#: ad-acf-blocks-2/blocks/block-counter/block-counter-fields.php:102
 msgid "Sign"
 msgstr "Signe"
 
-#: ad-acf-blocks-2/blocks/block-counter/block-counter-fields.php:102
+#: ad-acf-blocks-2/blocks/block-counter/block-counter-fields.php:123
 msgid "Increment"
 msgstr "Incrément"
 
-#: ad-acf-blocks-2/blocks/block-counter/block-counter-fields.php:125
+#: ad-acf-blocks-2/blocks/block-counter/block-counter-fields.php:146
 msgid "Legend"
 msgstr "Légende"
 
@@ -735,9 +739,9 @@ msgstr "Panneau précédent"
 msgid "Pannel"
 msgstr "Panneau"
 
-#: blocks/block-counter/block-counter-fields.php:58
-msgid "Prefix"
-msgstr "Préfixe"
+#: blocks/block-pagebanner/block-pagebanner-fields.php:68
+msgid "Background image (mobile)"
+msgstr "Image d'arrière-plan (mobile)"
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"
