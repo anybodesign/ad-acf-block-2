@@ -21,6 +21,11 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 2.9 - 2026-02-06
+* Posts Blok: specific term loop
+* Posts Blok: columns CSS fix
+* Slider Block: Infinite loop option
+
 ### 2.8 - 2025-12-08
 * Page banner: mobile picture option
 * Counter block JS separator option
