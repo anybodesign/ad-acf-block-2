@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2026-02-06 11:50+0100\n"
-"PO-Revision-Date: 2026-02-06 11:51+0100\n"
+"POT-Creation-Date: 2026-02-06 23:34+0100\n"
+"PO-Revision-Date: 2026-02-06 23:34+0100\n"
 "Last-Translator: Thomas <atelier@anybodesign.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -741,6 +741,10 @@ msgstr "Panneau précédent"
 #: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:302
 msgid "Pannel"
 msgstr "Panneau"
+
+#: blocks/block-carousel/block-carousel-fields.php:153
+msgid "Infinite (loop)"
+msgstr "Infini (boucle)"
 
 #: blocks/block-posts/block-posts-fields.php:121
 msgid "Specific term"

@@ -23,6 +23,8 @@
 	$scroll = get_field('slides_scroll');
 	
 	$auto = get_field('autoplay');
+	$infinite = get_field('infinite');
+	
 	$fade = get_field('fade');
 	$speed = get_field('speed');
 	$autospeed = get_field('autospeed');
@@ -50,6 +52,11 @@
 		$autoplay = 'true';
 	} else {
 		$autoplay = 'false';
+	}
+	if ($infinite == true) {
+		$loop = 'true';
+	} else {
+		$loop = 'false';
 	}
 	if ($arrows) { $arr = 'true'; } else { $arr = 'false'; }
 	if ($dots) { $do = 'true'; } else { $do = 'false'; }
@@ -99,7 +106,7 @@
 								<?php if ($fade) {
 									echo 'fade: true,';
 								} ?>
-								//variableWidth: true,
+								infinite: <?php echo $loop; ?>,
 								nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="<?php echo esc_html_e('Next panel','adblocks2'); ?>"> › </button>',
 								prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="<?php echo esc_html_e('Previous panel','adblocks2'); ?>"> ‹ </button>',
 								mobileFirst: true,
