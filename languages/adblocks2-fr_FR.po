@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2025-12-08 18:00+0100\n"
-"PO-Revision-Date: 2025-12-08 18:00+0100\n"
+"POT-Creation-Date: 2026-02-06 11:50+0100\n"
+"PO-Revision-Date: 2026-02-06 11:51+0100\n"
 "Last-Translator: Thomas <atelier@anybodesign.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -57,11 +57,15 @@ msgstr "Masonry"
 msgid "Grid"
 msgstr "﻿Grille"
 
-#: ad-acf-blocks-2.php:329 ad-acf-blocks-2/ad-acf-blocks-2.php:329
+#: ad-acf-blocks-2.php:316
+msgid "None"
+msgstr "Aucun"
+
+#: ad-acf-blocks-2.php:366 ad-acf-blocks-2/ad-acf-blocks-2.php:329
 msgid "Read more"
 msgstr "Lire la suite"
 
-#: ad-acf-blocks-2.php:329 ad-acf-blocks-2/ad-acf-blocks-2.php:329
+#: ad-acf-blocks-2.php:366 ad-acf-blocks-2/ad-acf-blocks-2.php:329
 msgid "of "
 msgstr "de "
 
@@ -488,7 +492,7 @@ msgid "MP4 Video"
 msgstr "Vidéo MP4"
 
 #: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:27
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:208
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:240
 msgid "Slideshow"
 msgstr "Diaporama"
 
@@ -497,48 +501,52 @@ msgid "Background image"
 msgstr "Image d’arrière-plan"
 
 #: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:68
+msgid "Background image (mobile)"
+msgstr "Image d'arrière-plan (mobile)"
+
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:100
 msgid "Background video"
 msgstr "Vidéo d'arrière-plan"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:95
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:127
 msgid "Video poster"
 msgstr "Affiche vidéo"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:127
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:301
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:159
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:333
 msgid "Loop"
 msgstr "En boucle"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:154
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:186
 msgid "Muted"
 msgstr "En sourdine"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:243
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:275
 msgid "Slides duration"
 msgstr "Durée des slides"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:272
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:304
 msgid "Slideshow speed"
 msgstr "Vitesse du diaporama"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:328
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:360
 msgid "Add a scroll button"
 msgstr "Ajouter un bouton de défilement"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:347
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:379
 msgid "Custom scroll button image"
 msgstr "Image personnalisée du bouton de défilement"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:379
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:411
 msgid "Show button label"
 msgstr "Afficher le libellé du bouton"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:398
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:430
 msgid "Custom button label"
 msgstr "Libellé personnalisé"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:410
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:134
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:442
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:141
 msgid "Scroll Down"
 msgstr "Défiler vers le bas"
 
@@ -550,15 +558,15 @@ msgstr "Bannière de page"
 msgid "Add a page banner at the beginning of your page."
 msgstr "Ajoutez une bannière au début de votre page."
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:54
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:58
 msgid "Add some text here"
 msgstr "Ajouter du texte ici"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:72
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:76
 msgid "Stop video playback"
 msgstr "Arrêter la lecture vidéo"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:75
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:79
 msgid "Play video"
 msgstr "Lire la vidéo"
 
@@ -670,11 +678,6 @@ msgstr "Extrait"
 msgid "Full content"
 msgstr "Contenu complet"
 
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:410
-#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:437
-msgid "None"
-msgstr "Aucun"
-
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:420
 msgid "Posts title level"
 msgstr "Niveau de titre des publications"
@@ -739,9 +742,9 @@ msgstr "Panneau précédent"
 msgid "Pannel"
 msgstr "Panneau"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:68
-msgid "Background image (mobile)"
-msgstr "Image d'arrière-plan (mobile)"
+#: blocks/block-posts/block-posts-fields.php:121
+msgid "Specific term"
+msgstr "Terme spécifique"
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"

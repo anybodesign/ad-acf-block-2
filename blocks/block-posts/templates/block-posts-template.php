@@ -87,6 +87,7 @@
 								
 								$num = get_field('auto_nb');
 								$type = get_field('auto_type');
+								$term = get_field('auto_tax');
 								$orderby = get_field('order_by');
 								$order = get_field('order');
 								
@@ -102,6 +103,23 @@
 									'orderby'		=> $orderby,
 									'order'			=> $order
 								);
+								
+								if (!empty($term)) {
+									
+									
+									$the_term = get_term($term);
+									
+									if (!is_wp_error($the_term)) {
+										$args['tax_query'] = array(
+											array(
+												'taxonomy' => $the_term->taxonomy,
+												'field'    => 'term_id',
+												'terms'    => $the_term->term_id,
+											),
+										);
+									}
+								}
+								
 								$autocontent = get_posts($args);
 								
 								foreach ($autocontent as $c) :

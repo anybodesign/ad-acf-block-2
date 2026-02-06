@@ -306,6 +306,43 @@ function acf_load_tax_choices( $field ) {
 }
 add_filter('acf/load_field/name=your_tax', 'acf_load_tax_choices');
 
+
+// Populate Posts Blocks Term field
+
+function acf_load_all_terms_grouped($field) {
+
+    // Option globale
+    $field['choices'] = [
+        '' => __('None', 'adblocks2'),
+    ];
+
+    $taxonomies = get_taxonomies([
+        'public' => true,
+    ], 'objects');
+
+    foreach ($taxonomies as $taxonomy) {
+
+        $terms = get_terms([
+            'taxonomy'   => $taxonomy->name,
+            'hide_empty' => false,
+        ]);
+
+        if (is_wp_error($terms) || empty($terms)) {
+            continue;
+        }
+
+        foreach ($terms as $term) {
+            $field['choices'][$taxonomy->labels->name][$term->term_id] = $term->name;
+        }
+    }
+
+    return $field;
+}
+
+add_filter('acf/load_field/name=auto_tax', 'acf_load_all_terms_grouped');
+
+
+
 // Image size
 
 add_image_size( 'adblocks-thumbnail-hd', 500, 500, true );

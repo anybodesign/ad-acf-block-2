@@ -73,7 +73,7 @@ function adblocks2_posts_fields() {
 						),
 					),
 					'wrapper' => array(
-						'width' => '50',
+						'width' => '33',
 						'class' => '',
 						'id' => '',
 					),
@@ -102,7 +102,7 @@ function adblocks2_posts_fields() {
 						),
 					),
 					'wrapper' => array(
-						'width' => '50',
+						'width' => '33',
 						'class' => '',
 						'id' => '',
 					),
@@ -116,38 +116,38 @@ function adblocks2_posts_fields() {
 					'ajax' => 0,
 					'placeholder' => '',
 				),
-				// array(
-				// 	'key' => 'field_6569ef696c888',
-				// 	'label' => __( 'Custom taxonomy', 'adblocks2' ),
-				// 	'name' => 'auto_tax',
-				// 	'aria-label' => '',
-				// 	'type' => 'select',
-				// 	'instructions' => '',
-				// 	'required' => 0,
-				// 	'conditional_logic' => array(
-				// 		array(
-				// 			array(
-				// 				'field' => 'field_601a7c66d4be8',
-				// 				'operator' => '==',
-				// 				'value' => 'auto',
-				// 			),
-				// 		),
-				// 	),
-				// 	'wrapper' => array(
-				// 		'width' => '50',
-				// 		'class' => '',
-				// 		'id' => '',
-				// 	),
-				// 	'choices' => array(
-				// 	),
-				// 	'default_value' => false,
-				// 	'return_format' => 'value',
-				// 	'multiple' => 0,
-				// 	'allow_null' => 0,
-				// 	'ui' => 0,
-				// 	'ajax' => 0,
-				// 	'placeholder' => '',
-				// ),
+				array(
+					'key' => 'field_6569ef696c888',
+					'label' => __( 'Specific term', 'adblocks2' ),
+					'name' => 'auto_tax',
+					'aria-label' => '',
+					'type' => 'select',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_601a7c66d4be8',
+								'operator' => '==',
+								'value' => 'auto',
+							),
+						),
+					),
+					'wrapper' => array(
+						'width' => '33',
+						'class' => '',
+						'id' => '',
+					),
+					'choices' => array(
+					),
+					'default_value' => false,
+					'return_format' => 'value',
+					'multiple' => 0,
+					'allow_null' => 0,
+					'ui' => 0,
+					'ajax' => 0,
+					'placeholder' => '',
+				),
 				array(
 					'key' => 'field_5dfa27874faba',
 					'label' => __('Select one or many publications', 'adblocks2'),
