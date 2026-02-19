@@ -21,9 +21,13 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 3.0 - 2026-02-19
+* Banner Block: legend and captions
+* Slider Block: custom breakpoints
+
 ### 2.9 - 2026-02-06
-* Posts Blok: specific term loop
-* Posts Blok: columns CSS fix
+* Posts Block: specific term loop
+* Posts Block: columns CSS fix
 * Slider Block: Infinite loop option
 
 ### 2.8 - 2025-12-08
