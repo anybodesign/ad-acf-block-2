@@ -66,6 +66,15 @@
 	}
 }
 
+.picture-container {
+	position: relative;
+}
+.slide-caption {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 10;
+}
 
 // Text 
 

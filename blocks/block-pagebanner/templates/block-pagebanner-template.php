@@ -14,6 +14,8 @@
 	$s_speed = get_field('slideshow_speed');
 	$s_autospeed = get_field('slideshow_autospeed');
 	$s_loop = get_field('slideshow_loop');
+	$captions = get_field('captions');
+	
 	if ($s_loop == false) {
 		$infinite = 'false';
 	} else {
@@ -21,6 +23,7 @@
 	}
 
 	$scroll = get_field('scroll');
+	$legend = get_field('img_credit');
 	$scroll_btn = get_field('scroll_btn');
 	$scroll_show = get_field('scroll_show');
 	$scroll_label = get_field('scroll_label');
@@ -85,6 +88,11 @@
 				    <?php foreach( $slideshow as $slide ): ?>
 			            <div class="slick-item">
 							<img src="<?php echo esc_url($slide['sizes']['adblocks-large-hd']); ?>" alt="<?php echo esc_attr($slide['alt']); ?>" />
+							<?php if ($captions && $slide['caption'] != null) { ?>
+							<div class="slide-caption">
+								<?php echo esc_html($slide['caption']); ?>
+							</div>
+							<?php } ?>
 			            </div>
 			        <?php endforeach; ?>				
 					</div>
@@ -120,10 +128,17 @@
 					<?php } ?>
 					
 					<?php } else { 
+						echo '<div class="picture-container">';
 						echo '<img src="'.$bg.'" class="banner-bg" alt="">';
 						if ($bg_mob) {
 						echo '<img src="'.$bg_mob.'" class="banner-bg-mobile" alt="">';	
-						}	
+						}
+						if ($legend) { ?>
+							<div class="slide-caption">
+								<?php echo esc_html($legend); ?>
+							</div>	
+						<?php }
+						echo '</div>';
 					} ?>
 					
 					
