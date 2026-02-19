@@ -19,6 +19,8 @@
 	
 	
 	$type = get_field('type');
+	$breakpoints = get_field('breakpoints');
+		
 	$elems = get_field('elems');
 	$scroll = get_field('slides_scroll');
 	
@@ -33,20 +35,24 @@
 	
 	$the_posts = get_field('the_posts');
 	
-	if ($elems == 'one') { $slide = 1; }
-	if ($elems == 'two') { $slide = 2; }
-	if ($elems == 'three') { $slide = 3; }
-	if ($elems == 'four') { $slide = 4; }
-	if ($elems == 'five') { $slide = 5; }
-	if ($elems == 'six') { $slide = 6; }
-	
-	if ($scroll == null) { $slide_scroll = $slide; } // Default
-	if ($scroll == 'one') { $slide_scroll = 1; }
-	if ($scroll == 'two') { $slide_scroll = 2; }
-	if ($scroll == 'three') { $slide_scroll = 3; }
-	if ($scroll == 'four') { $slide_scroll = 4; }
-	if ($scroll == 'five') { $slide_scroll = 5; }
-	if ($scroll == 'six') { $slide_scroll = 6; }
+	if ( ! $breakpoints) {
+		
+		if ($elems == 'one') { $slide = 1; }
+		if ($elems == 'two') { $slide = 2; }
+		if ($elems == 'three') { $slide = 3; }
+		if ($elems == 'four') { $slide = 4; }
+		if ($elems == 'five') { $slide = 5; }
+		if ($elems == 'six') { $slide = 6; }
+		
+		if ($scroll == null) { $slide_scroll = $slide; } // Default
+		if ($scroll == 'one') { $slide_scroll = 1; }
+		if ($scroll == 'two') { $slide_scroll = 2; }
+		if ($scroll == 'three') { $slide_scroll = 3; }
+		if ($scroll == 'four') { $slide_scroll = 4; }
+		if ($scroll == 'five') { $slide_scroll = 5; }
+		if ($scroll == 'six') { $slide_scroll = 6; }
+	}
+		
 	
 	if ($auto == true) {
 		$autoplay = 'true';
@@ -73,7 +79,7 @@
 			<section class="<?php echo esc_attr($className); ?>" <?php echo esc_attr($anchor); ?>>
 				<div class="acf-block-container">
 					
-					<div class="the-adb-carousel  type-<?php echo esc_attr($type); ?> <?php echo esc_attr($elems); ?>" id="<?php echo $slider_id; ?>">
+					<div class="the-adb-carousel  type-<?php echo esc_attr($type); ?> <?php if ($breakpoints) { echo 'custom'; } else { echo esc_attr($elems); } ?>" id="<?php echo $slider_id; ?>">
 						<?php if ( $the_posts && $type == 'posts' ) : ?>
 							
 							<?php 
@@ -110,22 +116,45 @@
 								nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="<?php echo esc_html_e('Next panel','adblocks2'); ?>"> › </button>',
 								prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="<?php echo esc_html_e('Previous panel','adblocks2'); ?>"> ‹ </button>',
 								mobileFirst: true,
+								
+								<?php if ($breakpoints) {
+									$add_bp = get_field('add_breakpoint');
+								?>
+								responsive: [
+									<?php foreach ($add_bp as $bp) { 
+										$value = $bp['value'];
+										$elems_bp = $bp['elems_bp'];
+										$scroll_bp = $bp['slides_scroll_bp'];
+									?> 
+									{
+										breakpoint: <?php echo $value; ?>,
+										settings: {
+											slidesToShow: <?php echo $elems_bp; ?>,
+											slidesToScroll: <?php echo $scroll_bp; ?>
+										}
+									},
+									<?php } ?>
+								]
+								
+								<?php } else { ?>	
+								
 								responsive: [
 									{
-								  	breakpoint: 720,
-								  	settings: {
-										slidesToShow: <?php if ($elems != 'one') { echo '2'; } else { echo '1'; } ?>,
-										slidesToScroll: <?php if ($elems != 'one') { echo '2'; } else { echo '1'; } ?>
-								  	}
+										breakpoint: 720,
+										settings: {
+											slidesToShow: <?php if ($elems != 'one') { echo '2'; } else { echo '1'; } ?>,
+											slidesToScroll: <?php if ($elems != 'one') { echo '2'; } else { echo '1'; } ?>
+										}
 									},
 									{
-								  	breakpoint: 960,
-								  	settings: {
-										slidesToShow: <?php if ($elems != 'one') { echo $slide; } else { echo '1'; } ?>,
-										slidesToScroll: <?php if ($elems != 'one') { echo $slide_scroll; } else { echo '1'; } ?>
-								  	}
+										breakpoint: 960,
+										settings: {
+											slidesToShow: <?php if ($elems != 'one') { echo $slide; } else { echo '1'; } ?>,
+											slidesToScroll: <?php if ($elems != 'one') { echo $slide_scroll; } else { echo '1'; } ?>
+										}
 									},
 								]
+								<?php } ?>
 							});
 						});
 					</script>
