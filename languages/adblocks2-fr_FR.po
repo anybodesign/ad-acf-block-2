@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2026-02-06 23:34+0100\n"
-"PO-Revision-Date: 2026-02-06 23:34+0100\n"
+"POT-Creation-Date: 2026-02-19 23:19+0100\n"
+"PO-Revision-Date: 2026-02-19 23:20+0100\n"
 "Last-Translator: Thomas <atelier@anybodesign.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -57,15 +57,15 @@ msgstr "Masonry"
 msgid "Grid"
 msgstr "﻿Grille"
 
-#: ad-acf-blocks-2.php:316
+#: ad-acf-blocks-2.php:316 ad-acf-blocks-2/ad-acf-blocks-2.php:316
 msgid "None"
 msgstr "Aucun"
 
-#: ad-acf-blocks-2.php:366 ad-acf-blocks-2/ad-acf-blocks-2.php:329
+#: ad-acf-blocks-2.php:366 ad-acf-blocks-2/ad-acf-blocks-2.php:366
 msgid "Read more"
 msgstr "Lire la suite"
 
-#: ad-acf-blocks-2.php:366 ad-acf-blocks-2/ad-acf-blocks-2.php:329
+#: ad-acf-blocks-2.php:366 ad-acf-blocks-2/ad-acf-blocks-2.php:366
 msgid "of "
 msgstr "de "
 
@@ -149,7 +149,7 @@ msgstr ""
 "tête collant."
 
 #: ad-acf-blocks-2/blocks/block-anchor/block-anchor-fields.php:79
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:152
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:174
 msgid "Speed"
 msgstr "Vitesse"
 
@@ -230,30 +230,34 @@ msgid "Slide"
 msgstr "Slide"
 
 #: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:110
-msgid "Autoplay"
-msgstr "Lecture automatique"
-
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:130
 msgid "Slide duration"
 msgstr "Durée des slides"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:134
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:114
 msgid "Slide duration in Autoplay mode"
 msgstr "Durée des slides en mode lecture automatique"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:156
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:133
+msgid "Autoplay"
+msgstr "Lecture automatique"
+
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:153
+msgid "Infinite (loop)"
+msgstr "Infini (boucle)"
+
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:178
 msgid "Transition speed between two slides"
 msgstr "Durée de la transition entre deux slides"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:174
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:196
 msgid "Display arrows"
 msgstr "Afficher les flèches"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:194
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:216
 msgid "Display dots"
 msgstr "Afficher les points"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:214
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:236
 msgid "Posts"
 msgstr "Publications"
 
@@ -273,11 +277,11 @@ msgstr "Lire "
 msgid "Add content here"
 msgstr "Ajouter du contenu ici"
 
-#: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-template.php:103
+#: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-template.php:110
 msgid "Next panel"
 msgstr "Panneau suivant"
 
-#: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-template.php:104
+#: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-template.php:111
 msgid "Previous panel"
 msgstr "Panneau précédent"
 
@@ -602,6 +606,10 @@ msgstr "Laisser vide pour afficher toutes les publications"
 msgid "Post type"
 msgstr "Type de publication"
 
+#: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:121
+msgid "Specific term"
+msgstr "Terme spécifique"
+
 #: ad-acf-blocks-2/blocks/block-posts/block-posts-fields.php:153
 msgid "Select one or many publications"
 msgstr "Sélectionner une ou plusieurs publications"
@@ -727,28 +735,44 @@ msgstr "par&nbsp;"
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:152
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:260
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:170
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:278
 msgid "Next Pannel"
 msgstr "Panneau suivant"
 
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:153
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:261
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:171
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:279
 msgid "Previous Pannel"
 msgstr "Panneau précédent"
 
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:204
-#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:302
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:222
+#: ad-acf-blocks-2/blocks/block-posts/templates/block-posts-template.php:320
 msgid "Pannel"
 msgstr "Panneau"
 
-#: blocks/block-carousel/block-carousel-fields.php:153
-msgid "Infinite (loop)"
-msgstr "Infini (boucle)"
+#: blocks/block-carousel/block-carousel-fields.php:36
+msgid "Custom breakpoints"
+msgstr "Beakpoints personnalisés"
 
-#: blocks/block-posts/block-posts-fields.php:121
-msgid "Specific term"
-msgstr "Terme spécifique"
+#: blocks/block-carousel/block-carousel-fields.php:57
+msgid "Add breakpoints"
+msgstr "Ajouter des breakpoints"
+
+#: blocks/block-carousel/block-carousel-fields.php:82
+msgid "Add a breakpoint"
+msgstr "Ajouter un breakpoint"
+
+#: blocks/block-carousel/block-carousel-fields.php:87
+msgid "Value"
+msgstr "Valeur"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:360
+msgid "Show captions"
+msgstr "Afficher les légendes"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:406
+msgid "Banner caption"
+msgstr "Légende de la bannière"
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"
@@ -970,12 +994,6 @@ msgstr "https://anybodesign.com/"
 #~ msgid "Introduction"
 #~ msgstr "Introduction"
 
-#~ msgid "Small breakpoint"
-#~ msgstr "Petit point de rupture"
-
-#~ msgid "Medium breakpoint"
-#~ msgstr "Point de rupture moyen"
-
 #~ msgid "Large breakpoint"
 #~ msgstr "Grand point de rupture"
 
@@ -1100,9 +1118,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "Round picture"
 #~ msgstr "Image ronde"
-
-#~ msgid "Show caption"
-#~ msgstr "Afficher la légende"
 
 #~ msgid "Text and Image"
 #~ msgstr "Texte et image"
