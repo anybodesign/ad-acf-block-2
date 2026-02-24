@@ -69,6 +69,24 @@
 	
 	$i = rand();
 	$slider_id = 'adb_carousel_'.$i;
+	
+	$loc = ADB2_TEMPLATE . '/template-parts/';
+	$loc = str_replace("http://", "", $loc);
+	$loc = str_replace("https://", "", $loc);
+	$loc = str_replace($_SERVER['HTTP_HOST'], "", $loc);
+	$loc = $_SERVER['DOCUMENT_ROOT'].$loc;
+	
+	$tpl_path = $loc . 'block-posts-content.php';
+	$tpl = ADB2_TEMPLATE_PATH . '/template-parts/block-carousel-content.php';
+	
+	$loc_child = ADB2_CHILD_TEMPLATE . '/template-parts/';
+	$loc_child = str_replace("http://", "", $loc_child);
+	$loc_child = str_replace("https://", "", $loc_child);
+	$loc_child = str_replace($_SERVER['HTTP_HOST'], "", $loc_child);
+	$loc_child = $_SERVER['DOCUMENT_ROOT'].$loc_child;
+	
+	$tpl_path_child = $loc_child . 'block-carousel-content.php';
+	$tpl_child = ADB2_CHILD_TEMPLATE_PATH . '/template-parts/block-carousel-content.php';
 ?>
 
 			<?php // Block preview
@@ -88,7 +106,14 @@
 								$cat = get_the_category($p->ID);
 								$cpt = get_post_type($p->ID);
 								
-								include ADB2__PLUGIN_PATH . '/blocks/block-carousel/templates/block-carousel-content.php';
+								if ( file_exists( $tpl_path ) ) {
+									include $tpl;  
+								} elseif ( file_exists( $tpl_path_child ) ) {
+									include $tpl_child;
+								} else {
+									include ADB2__PLUGIN_PATH . '/blocks/block-carousel/templates/block-carousel-content.php';
+								}
+								
 							endforeach;							
 							?>
 							
