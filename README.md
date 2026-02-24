@@ -21,6 +21,9 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 3.1 - 2026-02-24
+* Carousel content template override
+
 ### 3.0 - 2026-02-19
 * Banner Block: legend and captions
 * Slider Block: custom breakpoints
