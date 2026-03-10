@@ -12,6 +12,7 @@
 	}
 	
 	$cols = get_field('columns');
+	$sep = get_field('separator');
 ?>
 
 			<?php // Block preview
@@ -38,7 +39,7 @@
 							<?php if ( $num ) { ?>
 							<span class="counter-item--number">
 								<?php if ($pre) { echo '<span class="counter-prefix">'.$pre.'</span>'; } ?>
-								<span class="title-data numscroller" data-min="1" data-max="<?php echo $num; ?>" data-delay="5" data-increment="<?php echo $inc; ?>">
+								<span class="title-data numscroller" data-min="1" data-max="<?php echo $num; ?>" data-delay="5" data-increment="<?php echo $inc; ?>" data-separator="<?php echo $sep; ?>">
 									<?php echo $num; ?>
 								</span>
 								<?php if ($sign) { echo '<span class="counter-sign">'.$sign.'</span>'; } ?>

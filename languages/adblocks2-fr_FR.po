@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks 2\n"
-"POT-Creation-Date: 2026-02-19 23:19+0100\n"
-"PO-Revision-Date: 2026-02-19 23:20+0100\n"
+"POT-Creation-Date: 2026-03-10 12:57+0100\n"
+"PO-Revision-Date: 2026-03-10 12:57+0100\n"
 "Last-Translator: Thomas <atelier@anybodesign.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -149,7 +149,7 @@ msgstr ""
 "tête collant."
 
 #: ad-acf-blocks-2/blocks/block-anchor/block-anchor-fields.php:79
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:174
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:327
 msgid "Speed"
 msgstr "Vitesse"
 
@@ -179,85 +179,115 @@ msgstr "Contenu personnalisé"
 msgid "Exisiting posts"
 msgstr "Publications existantes"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:35
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:36
+msgid "Custom breakpoints"
+msgstr "Beakpoints personnalisés"
+
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:57
+msgid "Add breakpoints"
+msgstr "Ajouter des breakpoints"
+
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:82
+msgid "Add a breakpoint"
+msgstr "Ajouter un breakpoint"
+
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:87
+msgid "Value"
+msgstr "Valeur"
+
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:111
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:172
 msgid "Visible elements"
 msgstr "Éléments visibles"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:48
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:75
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:124
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:153
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:193
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:228
 msgid "1"
 msgstr "1"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:49
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:76
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:125
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:154
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:194
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:229
 msgid "2"
 msgstr "2"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:50
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:77
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:126
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:155
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:195
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:230
 msgid "3"
 msgstr "3"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:51
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:78
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:127
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:156
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:196
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:231
 msgid "4"
 msgstr "4"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:52
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:79
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:128
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:157
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:197
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:232
 msgid "5"
 msgstr "5"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:53
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:80
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:129
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:158
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:198
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:233
 msgid "6"
 msgstr "6"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:62
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:140
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:207
 msgid "Slides to scroll"
 msgstr "Nombre d'éléments à faire défiler"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:90
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:243
 msgid "Fade or Slide"
 msgstr "Fade / Slide"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:104
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:257
 msgid "Fade"
 msgstr "Fade"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:105
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:258
 msgid "Slide"
 msgstr "Slide"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:110
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:263
 msgid "Slide duration"
 msgstr "Durée des slides"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:114
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:267
 msgid "Slide duration in Autoplay mode"
 msgstr "Durée des slides en mode lecture automatique"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:133
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:286
 msgid "Autoplay"
 msgstr "Lecture automatique"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:153
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:306
 msgid "Infinite (loop)"
 msgstr "Infini (boucle)"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:178
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:331
 msgid "Transition speed between two slides"
 msgstr "Durée de la transition entre deux slides"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:196
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:349
 msgid "Display arrows"
 msgstr "Afficher les flèches"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:216
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:369
 msgid "Display dots"
 msgstr "Afficher les points"
 
-#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:236
+#: ad-acf-blocks-2/blocks/block-carousel/block-carousel-fields.php:389
 msgid "Posts"
 msgstr "Publications"
 
@@ -277,11 +307,11 @@ msgstr "Lire "
 msgid "Add content here"
 msgstr "Ajouter du contenu ici"
 
-#: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-template.php:110
+#: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-template.php:141
 msgid "Next panel"
 msgstr "Panneau suivant"
 
-#: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-template.php:111
+#: ad-acf-blocks-2/blocks/block-carousel/templates/block-carousel-template.php:142
 msgid "Previous panel"
 msgstr "Panneau précédent"
 
@@ -534,23 +564,31 @@ msgid "Slideshow speed"
 msgstr "Vitesse du diaporama"
 
 #: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:360
+msgid "Show captions"
+msgstr "Afficher les légendes"
+
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:387
 msgid "Add a scroll button"
 msgstr "Ajouter un bouton de défilement"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:379
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:406
+msgid "Banner caption"
+msgstr "Légende de la bannière"
+
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:425
 msgid "Custom scroll button image"
 msgstr "Image personnalisée du bouton de défilement"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:411
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:457
 msgid "Show button label"
 msgstr "Afficher le libellé du bouton"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:430
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:476
 msgid "Custom button label"
 msgstr "Libellé personnalisé"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:442
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:141
+#: ad-acf-blocks-2/blocks/block-pagebanner/block-pagebanner-fields.php:488
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:156
 msgid "Scroll Down"
 msgstr "Défiler vers le bas"
 
@@ -562,15 +600,15 @@ msgstr "Bannière de page"
 msgid "Add a page banner at the beginning of your page."
 msgstr "Ajoutez une bannière au début de votre page."
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:58
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:61
 msgid "Add some text here"
 msgstr "Ajouter du texte ici"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:76
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:79
 msgid "Stop video playback"
 msgstr "Arrêter la lecture vidéo"
 
-#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:79
+#: ad-acf-blocks-2/blocks/block-pagebanner/templates/block-pagebanner-template.php:82
 msgid "Play video"
 msgstr "Lire la vidéo"
 
@@ -750,29 +788,25 @@ msgstr "Panneau précédent"
 msgid "Pannel"
 msgstr "Panneau"
 
-#: blocks/block-carousel/block-carousel-fields.php:36
-msgid "Custom breakpoints"
-msgstr "Beakpoints personnalisés"
+#: blocks/block-counter/block-counter-fields.php:36
+msgid "Numbers Separator"
+msgstr "Séparateur de chiffres"
 
-#: blocks/block-carousel/block-carousel-fields.php:57
-msgid "Add breakpoints"
-msgstr "Ajouter des breakpoints"
+#: blocks/block-counter/block-counter-fields.php:49
+msgid "Dot"
+msgstr "Point"
 
-#: blocks/block-carousel/block-carousel-fields.php:82
-msgid "Add a breakpoint"
-msgstr "Ajouter un breakpoint"
+#: blocks/block-counter/block-counter-fields.php:50
+msgid "Comma"
+msgstr "Virgule"
 
-#: blocks/block-carousel/block-carousel-fields.php:87
-msgid "Value"
-msgstr "Valeur"
+#: blocks/block-counter/block-counter-fields.php:51
+msgid "Thinspace"
+msgstr "Espace fine"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:360
-msgid "Show captions"
-msgstr "Afficher les légendes"
-
-#: blocks/block-pagebanner/block-pagebanner-fields.php:406
-msgid "Banner caption"
-msgstr "Légende de la bannière"
+#: blocks/block-counter/block-counter-fields.php:52
+msgid "Span"
+msgstr "Span"
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for WordPress"

@@ -117,10 +117,8 @@
 		sepHTML = '<span class="thousand-sep thinspace">&thinsp;</span>';
 		break;
 	  case "span":
-      sepHTML = '<span class="thousand-sep"></span>';
-	  break;
-	  case "space":
-	  	sepHTML = ' '; // espace par défaut
+      	sepHTML = '<span class="thousand-sep"></span>';
+		break;
 	  default:
 		return String(num); // pas de séparation
 	}
