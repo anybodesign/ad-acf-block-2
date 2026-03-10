@@ -21,6 +21,9 @@ Please inspect the source code and look for the classes you'd like to style.
 
 ## Changelog
 
+### 3.2 - 2026-03-10
+* Block counter: Numbers separator option
+
 ### 3.1 - 2026-02-24
 * Carousel content template override
 
